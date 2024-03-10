@@ -1,0 +1,89 @@
+main {
+    padding: 0 0 0 6rem;
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    main {
+        padding: var(--navbar-height) 0 0 0;
+    }
+
+    .dx-scheduler-timeline .dx-scheduler-header-panel-cell, .dx-scheduler-timeline .dx-scheduler-date-table-cell {
+        width: 40px!important;
+    }
+
+    .dx-overlay-content {
+        top: var(--navbar-height)!important;
+    }
+
+    
+
+    .dx-layout-manager-one-col {
+        padding: 20px!important;
+    }
+}
+
+.dx-scheduler-timeline .dx-scheduler-header-panel-cell,
+.dx-scheduler-timeline .dx-scheduler-date-table-cell {
+    width: 20px;
+}
+
+.dx-scheduler-timeline .dx-scheduler-header-scrollable {
+    height: 49px !important;
+}
+
+.dx-scheduler-timeline .dx-scheduler-header-row:nth-child(2){
+    display: none;
+}
+
+.weekend-day { 
+    background-color: black;
+}
+
+.dx-scheduler-appointment, .dx-item {
+    background-color: transparent!important;
+}
+
+.dx-scheduler-appointment-content {
+    padding: 5px 4px!important;
+}
+
+.cat-undefined {
+    background-color: white;
+}
+
+.cat-X { 
+    background-color: #161618;
+    opacity: 0.6;
+    color: red;
+    border: 1px solid gray;
+
+}
+.cat-M { 
+    background-color: greenyellow;
+}
+.cat-O1 { 
+    background-color: #e56a1c;
+}
+
+.cat-R2 { 
+    background-color: cornflowerblue;
+    color: white;
+}
+.cat-R1 { 
+    background-color: #2d308e;
+    color: white;
+}
+
+.dx-scheduler-timeline .dx-scheduler-header-panel-cell.dx-scheduler-header-panel-current-time-cell {
+    border-bottom: 2px solid violet;
+}
+
+.dx-scheduler-header-panel-cell.dx-scheduler-header-panel-current-time-cell, .dx-scheduler-date-time-indicator:before {
+    color: violet;
+}
+
+.dx-scheduler-date-time-indicator {
+    background-color: violet;
+}

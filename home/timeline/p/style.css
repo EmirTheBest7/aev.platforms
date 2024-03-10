@@ -1,0 +1,549 @@
+main {
+    position: relative;
+    max-width: 100%;
+}
+
+canvas {
+    position: fixed !important;
+    z-index: 0;
+}
+
+.content,
+.side-menu {
+    height: 85vh;
+    background-color: black;
+    margin: auto;
+
+}
+
+.content-container {
+    width: fit-content!important;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.side-menu {
+    left: 50%;
+    padding: 0 16px 0 16px;
+}
+
+.post {
+    border: none;
+}
+
+.post__comment {
+    /*padding: 4px 17px 12px;*/
+    background-color: black;
+}
+
+.btn {
+    border: 1px solid white;
+    border-radius: 0;
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Notification*/
+
+#toast {
+    visibility: hidden;
+    max-width: 50px;
+    height: 50px;
+    /*margin-left: -125px;*/
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    right: 0;
+    bottom: 50px;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#toast #img {
+    width: 50px;
+    height: 50px;
+
+    float: left;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    box-sizing: border-box;
+
+
+    background-color: #111;
+    color: #fff;
+}
+
+#toast #desc {
+
+
+    color: #fff;
+
+    padding: 16px;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes expand {
+    from {
+        min-width: 50px
+    }
+
+    to {
+        min-width: 350px
+    }
+}
+
+@keyframes expand {
+    from {
+        min-width: 50px
+    }
+
+    to {
+        min-width: 350px
+    }
+}
+
+@-webkit-keyframes stay {
+    from {
+        min-width: 350px
+    }
+
+    to {
+        min-width: 350px
+    }
+}
+
+@keyframes stay {
+    from {
+        min-width: 350px
+    }
+
+    to {
+        min-width: 350px
+    }
+}
+
+@-webkit-keyframes shrink {
+    from {
+        min-width: 350px;
+    }
+
+    to {
+        min-width: 50px;
+    }
+}
+
+@keyframes shrink {
+    from {
+        min-width: 350px;
+    }
+
+    to {
+        min-width: 50px;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 60px;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 60px;
+        opacity: 0;
+    }
+}
+
+
+/* Notification*/
+
+
+.comment {
+    margin-bottom: 20px;
+
+    position: relative;
+    padding: 1.2rem;
+    padding-right: 1.2rem;
+    padding-right: 1.2rem;
+    background-color: #1d283c;
+    border-radius: 0.8rem;
+    padding-right: 3rem;
+    width: 100%;
+}
+
+
+.user {
+    font-weight: bold;
+    color: white;
+}
+
+.userComments {
+    color:white;
+}
+.userComment {
+    color:white;
+}
+
+.time,
+.reply {
+    color: gray;
+}
+
+.userComment {
+    margin: 10px 0;
+}
+
+.replies {
+    margin-left: 20px;
+}
+
+#registerModal input,
+#logInModal input {
+    margin-top: 10px;
+}
+
+.fa {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.fa:hover {
+
+    color: #03c1e2 !important;
+
+    background: rgba(0, 156, 184, 0.233);
+}
+
+
+
+
+textarea.form-control {
+    height: 35px;
+    background: #1d283c;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.5;
+    color: white;
+    background-color: black;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+
+
+
+.media-comment-footer {
+    margin-top: 0.6rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+}
+
+.media-footer-option {
+    padding: 0 1rem 0 0;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: flex;
+    color:white;
+}
+
+.media-footer-option .icon-bubble-content {
+    transition: all 0.3s;
+    justify-content: center;
+    margin-right: 0.4rem;
+    border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+}
+
+.media-footer-option.repply:hover {
+    color: #03c1e2;
+}
+
+.media-footer-option.repply:hover .icon-bubble-content {
+    background-color: rgba(0, 156, 184, 0.233);
+}
+
+.media-footer-option.like:hover {
+    color: #cd0aa9;
+}
+
+.media-footer-option.like:hover .icon-bubble-content {
+    background-color: rgba(215, 9, 178, 0.169);
+}
+
+.media-footer-option.share:hover {
+    color: #009402;
+}
+
+.media-footer-option.share:hover .icon-bubble-content {
+    background-color: rgba(0, 179, 3, 0.164);
+}
+
+/* Comment Input*/
+
+.comment-box {
+    position: relative;
+width: 95%;
+height: 38px;
+border-radius: 38px;
+margin: 20px auto 0;
+border: 1px solid white;
+color: white;
+}
+
+.comment-icon,
+.go-icon {
+    position: absolute;
+top: 0;
+height: 36px;
+width: 63px;
+line-height: 36px;
+text-align: center;
+}
+
+
+.go-icon {
+    right: 0;
+    pointer-events: none;
+    will-change: opacity;
+    cursor: default;
+    opacity: 0;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transition: opacity 190ms ease-out, -webkit-transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: opacity 190ms ease-out, -webkit-transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000), -webkit-transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -webkit-transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -moz-transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -o-transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+.go-in {
+    opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -webkit-transition: opacity 190ms ease-out, -webkit-transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: opacity 190ms ease-out, -webkit-transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000), -webkit-transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -webkit-transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -moz-transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -o-transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+.comment-border {
+    display: block;
+    width: 100%;
+}
+
+.border {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 5;
+    stroke-miterlimit: 10;
+}
+
+.border {
+    stroke-dasharray: 740;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 400ms cubic-bezier(0.600, 0.040, 0.735, 0.990);
+    -webkit-transition: stroke-dashoffset 400ms cubic-bezier(0.600, 0.040, 0.735, 0.990);
+    -moz-transition: stroke-dashoffset 400ms cubic-bezier(0.600, 0.040, 0.735, 0.990);
+    -o-transition: stroke-dashoffset 400ms cubic-bezier(0.600, 0.040, 0.735, 0.990);
+}
+
+.border-commenting .border {
+    stroke-dasharray: 740;
+    stroke-dashoffset: 459;
+    transition: stroke-dashoffset 650ms cubic-bezier(0.755, 0.150, 0.205, 1.000);
+    -webkit-transition: stroke-dashoffset 650ms cubic-bezier(0.755, 0.150, 0.205, 1.000);
+    -moz-transition: stroke-dashoffset 650ms cubic-bezier(0.755, 0.150, 0.205, 1.000);
+    -o-transition: stroke-dashoffset 650ms cubic-bezier(0.755, 0.150, 0.205, 1.000);
+}
+
+.comment-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 120px;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    padding: 0 25px 0 55px;
+    color: #FFFFFF;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    outline: none;
+}
+
+.comment-input::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+.comment-input::-moz-placeholder {
+    color: #FFFFFF;
+}
+
+.comment-input:-ms-input-placeholder {
+    color: #FFFFFF;
+}
+
+.comment-input:-moz-placeholder {
+    color: #FFFFFF;
+}
+
+.comment-input::-moz-selection {
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.comment-input::selection {
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* Sharing Functions CSS */
+
+  .share-button, .copy-link {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+  }
+  
+  .share-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+  }
+  
+  .share-dialog {
+    display: none;
+    width: 95%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.15);
+    z-index: -1;
+    border: 1px solid white;
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
+  
+  .share-dialog.is-open {
+    display: block;
+    z-index: 2;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .close-button {
+    font-size: 16px;
+  }
+  
+  .close-button svg {
+    margin-right: 0;
+  }
+  
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    border: 1px solid white;
+  }
+  
+  .pen-url {
+    margin-right: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }

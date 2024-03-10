@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.result {
+  width: 100%;
+  background-color: #000;
+  min-height: 2em;
+  color: white;
+}
+
+.result > p {
+  padding: 0 1em;
+  text-align: right;
+  line-height: 2em;
+}
+
+span {
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  background-color: rgb(77,77,77);
+  color:white;
+  line-height: 2em;
+  border-top: 0.01em solid #333;
+  border-left: 0.01em solid #333;
+}
+
+.operator {
+  background-color: #FF9500;
+  color: white;
+}
+
+.double {
+  width: 50%;
+}
+
+.grey {
+  background-color: rgb(77,77,77);;
+}
+
+.clicked {
+  background-color: #cc8400;
+}

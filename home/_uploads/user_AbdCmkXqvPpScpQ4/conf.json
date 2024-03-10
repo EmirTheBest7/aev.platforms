@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "settings": [
+        {
+            "DARK_MODE": true,
+            "NOTIFY": true,
+            "POSTS_LOAD": 3, // 5, 10?
+            "ANALYTICS": false,
+            "name": "Launch Program",
+            "program": "${file}"
+        }
+    ]
+}

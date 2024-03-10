@@ -1,0 +1,18 @@
+body {
+    background: white;
+}
+
+.container {
+    margin: auto;
+    max-width: 116rem;
+    padding: 0 2rem;
+}
+
+.Toggle i {
+    top: 15px;
+    position: absolute;
+    font-size: 25px;
+    line-height: 30px;
+    left: 17px;
+    color: white;
+  }

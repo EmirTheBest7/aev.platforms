@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://aliev.io/page/main/</loc>
+  <lastmod>2023-09-22T09:49:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://aliev.io/page/careers/list/</loc>
+  <lastmod>2023-09-22T09:49:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aliev.io/page/downloads/</loc>
+  <lastmod>2023-09-22T09:49:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aliev.io/page/contact/</loc>
+  <lastmod>2023-09-22T09:49:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aliev.io/home/auth/</loc>
+  <lastmod>2023-09-22T09:49:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aliev.io/page/careers/desc/?job_url=6Gscjm9kk6vEF26K</loc>
+  <lastmod>2023-09-22T09:49:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aliev.io/page/careers/desc/?job_url=S3kbH2oQYom8BG4l</loc>
+  <lastmod>2023-09-22T09:49:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aliev.io/page/careers/desc/?job_url=5sjFayZ30VieQmEk</loc>
+  <lastmod>2023-09-22T09:49:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aliev.io/home/auth/reset/</loc>
+  <lastmod>2023-09-22T09:49:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

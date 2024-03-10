@@ -1,0 +1,245 @@
+.font-sd-pro-dis {
+  font-family: "SF Pro Display","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Varela Round', sans-serif;
+}
+
+body {
+  overflow-x: hidden!important;
+}
+
+#hidden {
+  opacity: 0;
+height: 0;
+}
+
+.wallet-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+  position: relative;
+}
+.iphone__screen__body {
+  /*position: fixed; relative
+  background-color: #f2f2f2;
+border: 10px solid #f2f2f2;
+  border-radius: 40px;
+  width: 100%;
+  height: 813px;*/
+
+  position: relative;
+background-color: #f2f2f2;
+width: 100%;
+height: 100vh;
+overflow-x: hidden;
+margin: 0 0 0 6rem;
+}
+
+.action-btn-blue {
+  border: 3px solid #C4C4C4;
+  border-radius: 100%;
+  cursor: pointer;
+  display: inline-block;
+  height: 75px;
+  width: 75px;
+  margin: 0 10px;
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  .iphone__screen__body {
+    padding: 6rem 0 0 0;
+    margin: 0;
+  }
+  
+}
+
+
+
+
+.iphone-top-absolute {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.wallet_top-copy {
+  font-size: 42px;
+  margin: inherit;
+  line-height: 0;
+}
+
+.wallet_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 0px;
+}
+
+.wallet-cc-slider {
+  margin-bottom: 10px;
+}
+
+.wallet_cc-container .swiper-pagination {
+  position: relative;
+}
+.cc-container svg {
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.5);
+  border-radius: 16px;
+  /* margin: 0 30px; */
+}
+.cc-container {
+  display: flex;
+  justify-content:center;
+
+}
+
+.wallet-cc-slider .swiper-slide {
+  /*
+  width: 306px !important;
+  height: 198px !important;*/
+
+  width: 392px!important;
+  height: 250px!important;
+  margin: 30px 30px 0 30px;
+}
+.wallet_cc-name-container .swiper-slide{
+  width: 100%;
+  height: auto;
+}
+.swiper-thumbs-container-2 .swiper-slide{
+  height: auto;
+}
+.swiper-thumbs-container-2_flex {
+  display: flex;
+  align-items: center;
+}
+.swiper-pagination-bullet {
+  background: none !important;
+  border: 1px solid #C4C4C4;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #C4C4C4 !important;
+  border: 1px solid #C4C4C4;
+}
+
+.wallet_cc-info-container {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallet_cc-name-apple,
+.wallet_cc-name-capital,
+.wallet_cc-name-marriott,
+.wallet_cc-name-bank {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 26px 0 36px;
+  line-height: 0;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.cc-info-name,
+.cc-info-number,
+.cc-info-exp,
+.cc-info-sec {
+  background-color: #f2f2f2;
+  font-size: 20px;
+  letter-spacing: .6px;
+  padding: 6px 32px;
+}
+
+
+/* .cc-info-apple,
+.cc-info-capital,
+.cc-info-marriott,
+.cc-info-bank {
+  padding: 0 40px;
+} */
+
+.view-icon-container {
+  display: flex;
+  justify-content: center;
+}
+.view-icon-container svg{
+  padding-top: 18px;
+}
+
+#eye-slash {
+  display: block;
+}
+
+
+.card {
+  position: absolute;
+  top: calc(50% - 125px);
+  left: calc(50% - 196px);
+  width: 392px;
+  height: 250px;
+  /*background-image: linear-gradient(to bottom right, #f4f2f3, #d5d3d4);*/
+  background-image: linear-gradient(to bottom right, rgb(20,20,20), rgb(32,32,32));
+  border-radius: 14px;
+  transform-style: preserve-3d;
+  transform: rotateX(16deg) rotateY(16deg) rotate(-16deg);
+  box-shadow: -2px 2px 0px #c4c2c3;
+
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+
+.card .apple {
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  font-size: 22.5px;
+  color: #f0eeef;
+  text-shadow: 0 -1px 0 #6f7376, 0 1px 0 #6f7376, -1px -1px 0 rgba(255,255,255,0.5);
+}
+.card .name {
+  position: absolute;
+  top: 140px;
+  left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6f7376;
+  letter-spacing: 0.04em;
+}
+.card .chip {
+  position: absolute;
+  top: 123px;
+  left: 294px;
+  width: 60px;
+  height: 43px;
+  background-image: linear-gradient(to bottom right, #ebe8e1, #b8b3af);
+  box-shadow: inset -1px 1px 0 0 rgba(0,0,0,0.1), inset 1px 1px 0 0 rgba(255,255,255,0.3);
+  border-radius: 8px;
+  padding: 4px 4px 3px 4px;
+}
+.card .chip span {
+  width: 25px;
+  height: 11px;
+  border: 1px solid #7c7a76;
+  border-radius: 8px;
+  float: left;
+  margin-bottom: 1px;
+}
+.card .chip span:nth-child(odd) {
+  margin-right: 6px;
+}

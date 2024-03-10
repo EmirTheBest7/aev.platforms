@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+html,
+main {
+  background-color: #f2f2f2 !important
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  main {
+    padding: 0 0 0 0;
+    padding-bottom: 0px;
+padding-bottom: 100px;
+  }
+}
+
+.wallet_cc-container {
+  background: radial-gradient(circle at top left, rgba(174, 170, 203, 0.95) 0%, rgba(166, 202, 236, 0.95) 15%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle at top center, rgba(224, 130, 167, 0.95) 20%, rgba(255, 255, 255, 0) 50%), radial-gradient(circle at top right, rgba(238, 90, 86, 0.95) 8%, rgba(254, 186, 77, 0.95) 20%, rgba(252, 224, 114, 0.95) 30%, rgba(238, 242, 215, 0.7) 45%, rgba(255, 255, 255, 0) 50%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+main .fixed-footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #000;
+  display: flex;
+  z-index: 3;
+  width: 100%
+}
+
+main .fixed-footer .foot-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 44px;
+  width: 20%;
+}
+
+main .fixed-footer .foot-card i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer
+}
+
+main .fixed-footer .foot-card .login {
+  background-color: #000;
+  font-size: 13px;
+  color: #fff !important;
+  padding: 1px 10px;
+  border-radius: 12px;
+  font-style: normal;
+  position: relative;
+  border: 1px solid #fff
+}
+
+main .fixed-footer .foot-card .login:after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(216, 49, 110, 0);
+  border-bottom-color: #fff;
+  border-width: 4px;
+  margin-left: -4px
+}
+
+main .app-download,
+main .ask-question,
+main .content-menu,
+main .login-area,
+main .user-profile {
+  padding: 1.5em 1.5em 1em 1.5em;
+  position: fixed;
+  bottom: 44px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: black;
+  display: none;
+  overflow: hidden;
+  z-index: 3;
+  height: calc(82vh - 93px);
+  border-bottom: 1px solid white;
+}
+
+
+main .ask-question::before {
+  content: '';
+position: absolute;
+width: 70px;
+height: 3px;
+background-color: #EAEBFF;
+opacity: 0.8;
+border-radius: 2px;
+top: 20px;
+right: 0;
+left: 0;
+margin: 0 auto;
+}
+
+main .login-area p {
+  width: 100%;
+  color: #fff;
+  line-height: 1.2em;
+  font-size: 14px;
+  text-align: center
+}
+
+main .login-area .mobile-number {
+  position: relative;
+  text-align: left
+}
+
+main .login-area .mobile-number input {
+  width: calc(100% - 86px);
+  border: 0;
+  min-height: 42px;
+  border-radius: 16px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-left: 15px
+}
+
+main .login-area .mobile-number button {
+  position: absolute;
+  right: 0;
+  min-height: 42px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: 0;
+  background-color: #673090;
+  color: #fff;
+  padding: 0 15px;
+  font-weight: 600
+}
+
+main .login-area span {
+  display: block;
+  margin-bottom: 15px
+}
+
+main .login-area span input {
+  width: 14.8%;
+  min-height: 48px;
+  border-radius: 12px;
+  border: 0;
+  margin-right: 6px;
+  text-align: center
+}
+
+main .login-area span input:last-child {
+  margin-right: 0
+}
+
+main .login-area .resend-otp {
+  background-color: #673090;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 5px 10px;
+  margin-top: 5px
+}
+
+main .user-profile {
+  background-color: #fff;
+  font-size: 14px
+}
+
+main .user-profile .d-flex {
+  align-items: center;
+  justify-content: left;
+  width: 100%
+}
+
+main .user-profile .d-flex .user-details {
+  flex-grow: 1
+}
+
+main .user-profile .d-flex .user-details span {
+  display: block;
+  width: 100%
+}
+
+main .user-profile .d-flex .user-details span:first-child {
+  padding-bottom: 4px;
+  margin-top: -4px
+}
+
+main .user-profile .d-flex .user-details .logout {
+  font-style: normal;
+  background-color: #d8316e;
+  color: #fff;
+  border-radius: 8px;
+  padding: 2px 12px;
+  margin-top: 15px
+}
+
+main .user-profile ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+main .user-profile ul li:before {
+  content: "-";
+  color: #000;
+  font-size: 22px;
+  padding: 0 12px 0 0;
+  position: relative;
+  top: 1px
+}
+
+main .user-profile ul li a {
+  color: #000;
+  text-decoration: none
+}
+
+main .user-profile ul li a:hover {
+  color: #d8316e;
+  font-weight: 500
+}
+
+main .user-profile img {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+main .ask-question {
+  color: #fff
+}
+
+main .ask-question p {
+  margin: 20px 0 0 0;
+  font-size: 25px;
+  line-height: 1.1em;
+  text-align: center;
+  font-weight: 700
+}
+
+main .ask-question img {
+  width: 80%;
+  max-width: 266px;
+}
+
+main .ask-question p span {
+  display: block;
+  font-size: 22px;
+  font-weight: 300
+}
+
+
+/**/
+
+.transactions {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin:1.5rem 20px 44px 20px;
+}
+
+.t-desc {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.transaction {
+  cursor: default;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:white;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.02), 0 10px 10px rgba(0,0,0,0.0);
+  border-radius: 12px;
+  margin-bottom:20px;
+}
+
+.t-details {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.t-icon-container {
+  width: 45px;
+  align-self: flex-start;
+}
+
+.t-icon {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.2);
+}
+
+.t-title {
+  text-align: left;
+  flex-grow: 1;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.t-time {
+  font-size: 1rem;
+  opacity: 0.6;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.t-amount {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #06D778;
+}
+
+.red {
+  color: #F4532D;
+}
+

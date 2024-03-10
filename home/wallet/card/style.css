@@ -1,0 +1,69 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Varela Round', sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.card {
+  position: absolute;
+  top: calc(50% - 125px);
+  left: calc(50% - 196px);
+  width: 392px;
+  height: 250px;
+  background-image: linear-gradient(to bottom right, #f4f2f3, #d5d3d4);
+  border-radius: 14px;
+  transform-style: preserve-3d;
+  transform: rotateX(16deg) rotateY(16deg) rotate(-16deg);
+  box-shadow: -2px 2px 0px #c4c2c3;
+
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+
+.card .apple {
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  font-size: 68px;
+  color: #f0eeef;
+  text-shadow: 0 -1px 0 #6f7376, 0 1px 0 #6f7376, -1px -1px 0 rgba(255,255,255,0.5);
+}
+.card .name {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6f7376;
+  letter-spacing: 0.04em;
+}
+.card .chip {
+  position: absolute;
+  top: 123px;
+  left: 294px;
+  width: 60px;
+  height: 43px;
+  background-image: linear-gradient(to bottom right, #ebe8e1, #b8b3af);
+  box-shadow: inset -1px 1px 0 0 rgba(0,0,0,0.1), inset 1px 1px 0 0 rgba(255,255,255,0.3);
+  border-radius: 8px;
+  padding: 4px 4px 3px 4px;
+}
+.card .chip span {
+  width: 23px;
+  height: 11px;
+  border: 1px solid #7c7a76;
+  border-radius: 8px;
+  float: left;
+  margin-bottom: 1px;
+}
+.card .chip span:nth-child(odd) {
+  margin-right: 6px;
+}
+
+

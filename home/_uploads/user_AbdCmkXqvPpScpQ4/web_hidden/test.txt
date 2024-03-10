@@ -1,0 +1,14 @@
+👋 I'm Emir - pleased to e-
+meet you! I'm a software developer available for freelance 
+work.
+
+Hi!
+
+My name is Emir Aliev (he/him). I live in Prague, Czech Republic.
+
+As a Software Crafter and Tech Lead, I develop full-stack web applications (mostly with PHP, Python and 
+Javascript), operate them in production and help my team grow. Lately, I’ve particularly enjoyed 
+renovating codebases, to reduce technical debt, increase robustness and development velocity.
+ (see my services 🇬🇧 / 🇫🇷 prestations)
+
+I enjoy sharing what I’ve learned, by:

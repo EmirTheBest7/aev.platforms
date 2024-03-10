@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    position: absolute;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: fixed;
+    top: 0;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+
+.vid-box {
+    display: grid;
+    top: 34px;
+    position: relative;
+}
+
+.decor {
+    color: whitesmoke;
+    position: fixed;
+    bottom: 35px;
+}

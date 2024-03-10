@@ -1,0 +1,75 @@
+/* =================================================
+
+    Design and Developed by: Emir Aliev
+    Author: Emir Aliev
+    Version: 4.1
+
+=================================================== */
+
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+
+}
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+   
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    #fullscreen, .window__maximize, .start-screen-scroll {
+        display:none!important;
+    }
+
+    .window {
+        top: 0!important;
+        left: 0!important;
+        width: 100%!important;
+        height: unset!important;
+    }
+
+    .window__controls--right > a {
+        height: 50px!important;
+        width: 50px!important;
+    }
+    .window__controls > a {
+        line-height: 50px;
+        height: 50px;
+        width: 50px;
+    }
+    .window__titlebar {
+        height: 50px;
+        line-height: 50px;
+    }
+    .window__body {
+        padding-top: 50px;
+    }
+
+    .window__actions {
+        top: 50px;
+    }
+
+    .window--explorer .window__body {
+        padding-top: 82px;
+    }
+    
+    .start-menu {
+        height: unset;
+        top: 0;
+    }
+
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+}

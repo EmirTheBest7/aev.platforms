@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>zuck.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+
+    <!-- demo styles -->
+    <link rel="stylesheet" href="./dist/style.css">
+
+    <!-- lib styles -->
+    <link rel="stylesheet" href="./dist/zuck.min.css">
+
+    <!-- lib skins -->
+    <link rel="stylesheet" href="./dist/snapssenger.css">
+</head>
+
+<body>
+
+    <div id="stories" class="storiesWrapper"></div>
+
+    <script src="https://ramon82.com/demo/zuck.js/dist/zuck.min.js"></script>
+    <script src="https://ramon82.com/demo/zuck.js/demo/script.js"></script>
+
+    <!-- partial -->
+    <script>
+        var currentSkin = getCurrentSkin();
+        var stories = new Zuck('stories', {
+            backNative: true,
+            previousTap: true,
+            skin: 'snapssenger',
+            autoFullScreen: currentSkin['params']['autoFullScreen'],
+            avatars: currentSkin['params']['avatars'],
+            paginationArrows: currentSkin['params']['paginationArrows'],
+            list: currentSkin['params']['list'],
+            cubeEffect: currentSkin['params']['cubeEffect'],
+            localStorage: true,
+            stories: [
+                Zuck.buildTimelineItem(
+                    "ramon",
+                    "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/users/1.jpg",
+                    "Ramon",
+                    "https://ramon.codes",
+                    timestamp(),
+                    [
+                        ["ramon-1", "photo", 3,
+                            "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/1.jpg",
+                            "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/1.jpg",
+                            '', false, false, timestamp()
+                        ],
+                        ["ramon-2", "video", 0,
+                            "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/2.mp4",
+                            "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/2.jpg",
+                            '', false, false, timestamp()
+                        ],
+                        ["ramon-3", "photo", 3,
+                            "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/3.png",
+                            "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/3.png",
+                            'https://ramon.codes', 'Visit my Portfolio', false, timestamp()
+                        ]
+                    ]
+                ),
+
+                Zuck.buildTimelineItem(
+                    "riversquomo",
+                    "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/users/5.jpg",
+                    "Rivers Cuomo",
+                    "",
+                    timestamp(),
+                    [
+                        ["riverscuomo", "photo", 10,
+                            "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/9.jpg",
+                            "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/9.jpg",
+                            '', false, false, timestamp()
+                        ]
+                    ]
+                )
+
+            ]
+        });
+    </script>
+
+</body>
+
+</html>

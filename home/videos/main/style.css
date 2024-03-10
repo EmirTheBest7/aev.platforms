@@ -1,0 +1,66 @@
+.filter {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.filter .active {
+    background-image: linear-gradient(to right, #0084FF, #58D3FF);
+    box-shadow: 0 3px 25px -5px #58d3ff;
+    color: white;
+}
+.filter .pill {
+    width: 85px;
+    height: 35px;
+    margin-right: 10px;
+    border: 1px solid;
+    border-radius: 50px;
+    box-shadow: 0 3px 20px -4px rgb(0 0 0 / 8%);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    line-height: 35px;
+    color: white;
+    font-weight: 600;
+}
+
+/* Articles */
+
+.main-article {
+    height: 300px;
+    background: gray;
+}
+
+.main-header {
+    margin: 0;
+    position: relative;
+    top: 20%;
+}
+
+.card_image img {
+    height: 160px;
+    width: 100%;
+}
+
+  
+.card_content {
+    padding: 1rem;
+    background: #2d3540;
+}
+
+.card_title {
+color: #ffffff;
+font-size: 1.1rem;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: capitalize;
+margin: 0px;
+}
+
+.card_text {
+color: #ffffff;
+font-size: 0.875rem;
+line-height: 1.5;
+margin-bottom: 1.25rem;    
+font-weight: 400;
+}
