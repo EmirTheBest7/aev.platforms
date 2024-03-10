@@ -14,6 +14,7 @@ if(isset($_GET['nickname']) && $_GET['nickname'] == strtolower($_SESSION['nickna
     header('location:'.$_SERVER['PHP_SELF']);
 } else if (isset($_GET['nickname']) && $_GET['nickname'] == empty($_GET) ) {
     echo "Nickname is empty";
+    //neww
 }
 
 if(isset($_GET['nickname']) && $_GET['nickname'] != $_SESSION['nickname']) {
