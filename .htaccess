@@ -51,7 +51,8 @@ RewriteCond %{REQUEST_URI} @(.*)
 RewriteRule ^(.*) /home/profile/?nickname=$1 [L,R=301]
 
 # Error Documents
-ErrorDocument 404 /home/_api/UI/?0x=404
+RedirectMatch 404 ^/home/_api/UI/?0x=404
+#ErrorDocument 404 /home/_api/UI/?0x=404
 ErrorDocument 403 /home/_api/UI/?0x=403
 ErrorDocument 502 /home/_api/UI/?0x=502
 ErrorDocument 503 /home/_api/UI/?0x=503
