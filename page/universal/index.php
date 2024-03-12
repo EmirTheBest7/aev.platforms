@@ -40,15 +40,44 @@ include('../../_inc/functions.php');
 
 	<main>
 
-		<header id="header">
-			<div class="contain">
-				<div class="breadcrumb">
-					<img src="../downloads/logo/A.svg" alt="" style="height: 35px; margin: 8px 0px;">
-				</div>
-				<div class="global_links">
-					<i class="uil uil-dice-five"></i>
-				</div>
-				<div class="clearfix"></div>
+		<header class="block absolute inset-x-0 z-50 p-5 md:p-10 flex items-start justify-between gap-10">
+			<div class="pl-5 md:pr-10 flex items-center">
+				<img src="https://aliev.io/page/downloads/logo/A.svg" alt="" width="40" height="60">
+			</div>
+
+			<div
+				class="px-6 md:px-10 py-4 md:py-6 flex items-center justify-between gap-10 bg-white/70 backdrop-blur-sm rounded-md sm:w-full lg:w-2/3 leading-none">
+				<ul class="hidden sm:flex items-center gap-6 md:gap-8">
+					<li>
+						<a href="#"
+							class="block relative after:block after:absolute after:-bottom-[5px] after:w-full after:h-px after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-right hover:after:origin-left">Link1</a>
+					</li>
+					<li>
+						<a href="#"
+							class="block relative after:block after:absolute after:-bottom-[5px] after:w-full after:h-px after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-right hover:after:origin-left">Link2</a>
+					</li>
+					<li>
+						<a href="#"
+							class="block relative after:block after:absolute after:-bottom-[5px] after:w-full after:h-px after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-right hover:after:origin-left">Link3</a>
+					</li>
+				</ul>
+				<ul class="flex items-center gap-6 md:gap-8">
+					<li>
+						<button type="button" aria-label="Search" class="p-3 -m-3 rounded-full transition-colors hover:bg-violet-50">
+							<i class="uil uil-search" style="font-size: 20px;"></i>
+						</button>
+					</li>
+					<li>
+						<button type="button" aria-label="Cart" class="p-3 -m-3 rounded-full transition-colors hover:bg-violet-50">
+							<i class="uil uil-shopping-bag" style="font-size: 20px;"></i>
+						</button>
+					</li>
+					<li>
+						<button type="button" aria-label="Account" class="p-3 -m-3 rounded-full transition-colors hover:bg-violet-50">
+							<i class="uil uil-user" style="font-size: 20px;"></i>
+						</button>
+					</li>
+				</ul>
 			</div>
 		</header>
 
