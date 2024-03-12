@@ -81,7 +81,7 @@ include('../../_inc/functions.php');
 			</div>
 		</header>
 
-		<header class="l-header l-header--extended" style="padding-top: 87.5px;">
+		<header class="l-header l-header--extended" style="padding-top: 150px;">
 
 			<div class="l-header__background" style="background-color: rgb(25,25,25)">
 
@@ -151,7 +151,7 @@ include('../../_inc/functions.php');
 
 
 
-		<section class="l-case-media">
+		<section class="l-case-media" hidden>
 			<div class="l-container">
 				<div class="l-grid">
 
@@ -251,115 +251,14 @@ include('../../_inc/functions.php');
 		</section>
 
 		<footer id="site-footer">
-
-			<section class="horizontal-footer-section" id="footer-top-section">
-				<div id="footer-logo">
-					<picture>
-						<img src="<?php echo LOGO;?>" alt="footer logo" role="presentation">
-					</picture>
-				</div>
-				<div id="footer-top-menu-container" role="menubar">
-					<ul id="footer-top-menu" role="menu">
-						<li class="footer-top-menu-item" role="menuitem">
-							<a href="#" class="footer-top-menu-link">IT Services</a>
-						</li>
-						<li class="footer-top-menu-item footer-top-menu-item-active" role="menuitem">
-							<a href="#" class="footer-top-menu-link">Web development</a>
-						</li>
-						<li class="footer-top-menu-item" role="menuitem">
-							<a href="#" class="footer-top-menu-link">SEO</a>
-						</li>
-						<li class="footer-top-menu-item" role="menuitem">
-							<a href="#" class="footer-top-menu-link">UI/UX</a>
-						</li>
-					</ul>
-				</div>
-				<div id="footer-buttons-container">
-					<a href="#" class="ripple-button" role="button">View our Projects</a>
-				</div>
-			</section>
-
-			<section class="horizontal-footer-section" id="footer-middle-section">
-				<div id="footer-about" class="footer-columns footer-columns-large">
-					<h1>Our Address</h1>
-					<address>
-						<p><i class="uil uil-map-marker"></i>ХЗ</p>
-						<p><i class="uil uil-phone-alt"></i>(+420) 123 456 789</p>
-						<p><i class="uil uil-envelope-alt"></i></img>hello@aliev.io</p>
-						<p><i class="uil uil-clock-eight"></i>8:00 AM – 8:00 PM</p>
-					</address>
-				</div>
-				<div class="footer-columns">
-					<h1>Overview</h1>
-					<ul class="footer-column-menu" role="menu">
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">Services </a>
-						</li>
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">Pricing</a>
-						</li>
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">Portfolio</a>
-						</li>
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">News</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer-columns">
-					<h1>Resources</h1>
-					<ul class="footer-column-menu" role="menu">
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">FAQ</a>
-						</li>
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">Media</a>
-						</li>
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">Guides</a>
-						</li>
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">Free Resources</a>
-						</li>
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">Testimonials</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer-columns">
-					<h1>Information</h1>
-					<ul class="footer-column-menu" role="menu">
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">About Us</a>
-						</li>
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">Terms of Use</a>
-						</li>
-						<li class="footer-column-menu-item">
-							<a href="#" class="footer-column-menu-item-link" role="menuitem">Legal Information</a>
-						</li>
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">Message Us</a>
-						</li>
-						<li class="footer-column-menu-item" role="menuitem">
-							<a href="#" class="footer-column-menu-item-link">Leave a Feedback</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="horizontal-footer-section" id="footer-bottom-section">
-				<div id="footer-copyright-info">
-					&copy; Designed by <img style="height:11px;" src="<?php echo LOGO; ?>">
-					Platforms. <script>
-						document.write(new Date().getFullYear())
-					</script>. All rights reserved.
-				</div>
-				<div id="footer-social-buttons">
-					<i class="uil uil-instagram"></i>
-				</div>
-			</section>
-
+				<section class="horizontal-footer-section" id="footer-bottom-section">
+					<div id="footer-copyright-info">
+						© Designed by <img style="height:11px;" src="<?php echo LOGO; ?>"> Platforms in Prague.</div>
+						<div id="footer-social-buttons">
+							<i class="uil uil-instagram"></i>
+						</div>
+				</section>
+	
 		</footer>
 
 
