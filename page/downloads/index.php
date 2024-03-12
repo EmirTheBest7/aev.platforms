@@ -100,7 +100,7 @@ include('../../_inc/functions.php');
                                             </div>
                                             <div class="content">
                                                 <div class="main" style=" color: white; border-top: 1px solid white;   position: relative;padding: 6px 15px;height: 36px;display: flex;justify-content: space-between;">
-                                                    <div>Logo_</div>
+                                                    <div>E.COM</div>
                                                     <button onclick="window.open('./logo/ALIEV.svg')" class="btn ripple-button" style="padding: 0;">Download</button>
                                                 </div>
                                             </div>
@@ -116,8 +116,8 @@ include('../../_inc/functions.php');
                                             </div>
                                             <div class="content">
                                                 <div class="main" style=" color: white; border-top: 1px solid white;   position: relative;padding: 6px 15px;height: 36px;display: flex;justify-content: space-between;">
-                                                    <div>Logo_</div>
-                                                    <button onclick="window.open('./logo/ALIEV.svg')"
+                                                    <div>Dreamers</div>
+                                                    <button onclick="window.open('./logo/Dreamers.svg')"
                                                         class="btn ripple-button" style="padding: 0;">Download</button>
                                                 </div>
                                             </div>
