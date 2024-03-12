@@ -17,6 +17,7 @@ if($_SERVER["HTTP_HOST"] === "192.168.0.103" || "localhost" || "127.0.0.1"){
     echo True;
 } else {
     echo False;
+    //False
 }*/
 
 echo random_str(16);
