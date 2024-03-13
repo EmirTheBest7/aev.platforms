@@ -42,7 +42,7 @@ include('../../_inc/functions.php');
 
 		<header class="block absolute inset-x-0 z-50 p-5 md:p-10 flex items-start justify-between gap-10">
 			<div class="pl-5 md:pr-10 flex items-center">
-				<img src="https://aliev.io/page/downloads/logo/A.svg" alt="" width="40" height="60">
+				<img src="https://aliev.io/page/downloads/logo/A.svg" alt="" width="35" height="60">
 			</div>
 
 			<div
