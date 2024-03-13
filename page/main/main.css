@@ -337,8 +337,6 @@ body {
     pointer-events: none;
     transition: all 0.3s;
     font-family: Inter, sans-serif;
-    color: #0d0f21;
-    background-color: #d0d1de;
     line-height: 1.5;
     width: 310px;
     max-width: 500px;
@@ -346,10 +344,13 @@ body {
     margin-right: auto;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.93);
     border-radius: 10px;
     position: fixed;
     border: 1px solid gray;
+    right: 0;
+    left: 0;
+    top: 0;
   }
   
   .RccSCT7:target {
@@ -379,8 +380,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 36px;
+    height: 36px;
     border-radius: .25rem;
     border: none;
     background-color: transparent;
