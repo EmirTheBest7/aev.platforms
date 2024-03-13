@@ -270,6 +270,141 @@ body {
 
 /* Notifications Box */
 
+/* PWA Modal */
+
+.hCSSVt {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #a5a5a8;
+    text-align: center;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column
+  }
+  
+  .fiTMpP {
+    font-size: 9px;
+    line-height: 12px;
+    margin-bottom: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #fff
+  }
+  
+  .hVRUym {
+    margin: 8px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-image: initial;
+    border-left: 2px dashed rgba(255, 255, 255, .24);
+    height: 32px;
+    width: 0
+  }
+  
+  .jMKjKI {
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgba(76, 215, 244, .08);
+    color: #4cd7f4;
+    border-radius: 12px;
+    padding: 16px;
+    min-width: 48px;
+    min-height: 48px;
+    transition: all .2s ease-in-out 0s;
+    border: 1px solid;
+    margin-top: 5px
+  }
+  
+  .RccSCT7 {
+    z-index: 99999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    font-family: Inter, sans-serif;
+    color: #0d0f21;
+    background-color: #d0d1de;
+    line-height: 1.5;
+    width: 310px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: #000;
+    border-radius: 10px;
+    position: fixed;
+    border: 1px solid gray;
+  }
+  
+  .RccSCT7:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .RccSCT7-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: .5rem 2rem 0;
+    color: #fff
+  }
+  
+  .logo-circle {
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 24px
+  }
+  
+  .btn-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .25rem;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 17px
+  }
+  
+  .btn-close:hover {
+    background-color: #000;
+    border: 1px solid #fff
+  }
+  
+  .RccSCT7-body {
+    padding: 0 2.5rem 2rem 2.5rem;
+  }
+  
+  .RccSCT7-description {
+    color: #6a6b76;
+    margin-top: 0
+  }
+
+/* /PWA Modal */
+
+
 .ripple-button {
     font-size: unset!important;
     padding: 3px 12px!important;

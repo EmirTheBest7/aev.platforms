@@ -71,6 +71,36 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
 
   <div class="aev-notifications"></div>
 
+  <!-- PWA Modal -->
+	<div class="RccSCT7" id="RccSCT7-open">
+		<div class="RccSCT7-header">
+			<div class="RccSCT7-logo" style="display: flex; line-height: 56px;">
+				<span class="logo-circle"><i class="uil uil-mobile-android"></i></span>Install PWA
+			</div>
+			<a href="#" title="Close" class="btn-close"><i class="uil uil-multiply"></i></a>
+		</div>
+
+		<div class="RccSCT7-body">
+			<p class="RccSCT7-description">Looks like you're using a mobile browser. Follow these instructions to download
+				your PWA App:</p>
+
+			<div class="hCSSVt">
+				<div class="fiTMpP">1</div>
+				<span class="sc-dqYEFG dxXMXL">
+					Tap the share button in your browser
+				</span>
+				<button type="button" class="sc-eqUAAy jMKjKI"><i class="uil uil-upload"></i></button>
+				<div class="sc-giVogm hVRUym"></div>
+				<div class="fiTMpP">2</div><span class="sc-dqYEFG dxXMXL">
+					Tap the “Add to Home Screen” button</span>
+				<button type="button" class="sc-eqUAAy jMKjKI">
+					<i class="uil uil-plus-square"></i>
+				</button>
+			</div>
+
+		</div>
+	</div>
+
 
   <nav class="Navbar">
     <a href="#" id="toggle" class="Toggle Navbar-toggle" data-toggle="collapse"
@@ -189,6 +219,10 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
               </select>
             </div>
 
+            <span class="settings__title field-title">PWA</span>
+            <div class="setting" onclick="window.location='#RccSCT7-open';">
+              <label for="pwa_install">PWA Install</label>
+            </div>
             <span class="settings__title field-title">Appearence</span>
             <div class="setting">
               <input type="checkbox" id="dark_mode" checked disabled/>
