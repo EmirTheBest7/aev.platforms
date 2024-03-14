@@ -1480,7 +1480,8 @@ body {
 }
 
 .contact--lockup .modal--options li:nth-child(1) {
-    background-color: #1478c8;
+    display: inline-flex;
+    margin: 0 auto 25px auto;
 }
 
 .contact--lockup .modal--options li:nth-child(2) {
