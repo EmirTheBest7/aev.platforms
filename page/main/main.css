@@ -1482,6 +1482,7 @@ body {
 .contact--lockup .modal--options li:nth-child(1) {
     display: inline-flex;
     margin: 0 auto 25px auto;
+    justify-content: space-between;
 }
 
 .contact--lockup .modal--options li:nth-child(2) {
