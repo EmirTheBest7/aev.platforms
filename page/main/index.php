@@ -275,8 +275,8 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
 
     <ul class="Navbar-quickLinks">
       <li><a href="https://www.instagram.com/aev.platforms/" target="_blank"><i class="uil uil-instagram icon-3d"></i></a></li>
-      <li><a href="#link"><i class="uil uil-twitter icon-3d"></i></a></li>
-      <li><a href="#link"><i class="uil uil-github icon-3d"></i></a></li>
+      <li><a href="#link"><i class="uil uil-youtube icon-3d"></i></a></li>
+      <li><a href="https://t.me/aev_platforms"><i class="uil uil-telegram-alt icon-3d" style="font-size: 26px;"></i></a></li>
     </ul>
   </nav>
 
@@ -353,7 +353,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                     </a>
                   </li>
                   <li class="slider--item slider--item-center">
-                    <a href="#0">
+                    <a href="https://t.me/pragueflow">
                       <div class="slider--item-image">
                         <img src="./img/PragueFlow.jpg" alt="2">
                       </div>
@@ -475,7 +475,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                   </div>
                   <ul class="modal--options">
                     <li>
-                      <a href="https://t.me/emirmain" style="background-color: #1478c8; width: calc(50% - 5px); font-size: 15px;"><i class="uil uil-telegram-alt"></i></a>
+                      <a href="https://t.me/aev_platforms" style="background-color: #1478c8; width: calc(50% - 5px); font-size: 15px;"><i class="uil uil-telegram-alt"></i></a>
                       <a href="https://www.instagram.com/aev.platforms/" style="width: calc(50% - 5px); font-size: 15px; background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);">
                         <i class="uil uil-instagram"></i>
                       </a>
