@@ -118,16 +118,53 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 				<p><?php echo $jobs_row['job_name']; ?> in <?php echo $jobs_row['job_location']; ?>.</p>
 				<p><strong>Salary &amp; Benefits:</strong></p>
 				<p>
-					<?php echo $jobs_row['job_benefits']; ?>
+					<div class="acs-desc">
+						<p>At our startup, we believe in recognizing and rewarding our team members for their hard work, dedication, and contributions. Our <strong>ACS System</strong> (ΛΞV Credit System) ensures that effort translates directly into tangible rewards. Here's what you can expect:</p>
+						<h4>1. ACS Credits:</h4>
+						<ul>
+							<li>Instead of traditional monetary bonuses, you'll earn <strong>ACS credits</strong> for completing tasks, achieving milestones, or contributing to our company's growth.</li>
+							<li>These credits serve as a digital currency within our startup ecosystem.</li>
+						</ul>
+						<h4>2. Task Completion Rewards:</h4>
+						<ul>
+							<li>Successfully complete a task, whether it's coding a feature, designing a logo, closing a sale, or organizing team events, and receive a predetermined amount of <strong>ACS credits</strong>.</li>
+						</ul>
+						<h4>3. Credit Accumulation:</h4>
+						<ul>
+							<li>Your accumulated <strong>ACS credits</strong> are stored securely in your digital wallet.</li>
+							<li>The more tasks you complete, the higher your <strong>ACS balance</strong> grows.</li>
+						</ul>
+						<h4>4. Conversion to Real Money:</h4>
+						<ul>
+							<li>The exciting part: <strong>ACS credits</strong> are convertible to real money!</li>
+							<li>Transfer your earned credits from your wallet to your bank account or preferred payment method.</li>
+						</ul>
+						<h4>5. Fairness and Transparency:</h4>
+						<ul>
+							<li>We value transparency. You'll always know the value of your contributions and the corresponding <strong>ACS credits</strong> you've earned.</li>
+						</ul>
+						<h4>6. Motivation and Recognition:</h4>
+						<ul>
+							<li><strong>ACS credits</strong> provide a tangible way to recognize and motivate you.</li>
+							<li>Whether it's a small task or a major project, every effort counts.</li>
+						</ul>
+						<h4>7. Security and Accountability:</h4>
+						<ul>
+							<li>Our system maintains a secure ledger of all transactions.</li>
+							<li>Each credit transfer is recorded, ensuring accountability and preventing misuse.</li>
+						</ul>
+						<p>Join us and let your hard work pay off! 💡💰</p>
+					</div>
+					
 					<br>
-					— 🖖 Hey buddy attitude and open culture<br>
-					— ⏰ Flexible working hours<br>
-					— 🍺 Meetups, team building activities, and other community events<br>
+					— 🖖 Hey buddy attitude and open culture<br><br>
+					— ⏰ Flexible working hours<br><br>
+					— 🍺 Meetups, team building activities, and other community events<br><br>
 					— 🛍️ Discounted prices on electronics thanks to our partner<br><br>
 				</p>
 				
 				<p><strong>Type of Role:</strong></p>
-				<p>This is a full-time permanent role working to a rota that includes weekends and late nights.</p>
+				<p>This is a freelance role that includes weekends and late nights.</p>
 				<p><strong>Key Tasks and Responsibilities:</strong></p>
 				<ul>
 					<?php 
