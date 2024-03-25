@@ -119,8 +119,69 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
             <button class="ext-sign-in-btn" onclick="register()"> Widgets</button>
           </li>
           <li><hr></li>
-          <li><a href="#link">Services <i class="uil uil-plus"></i></a></li>
-          <li style="display: none;"><a href="#link">Portfolio <i class="uil uil-plus"></i></a></li>
+          
+          <li>
+            <ul id="aDHieSVT" class="aDHieSVT">
+
+              <li>
+                <div class="aDHieSVT-link">Explore <i class="uil uil-plus"></i></div>
+                <ul class="aDHieSVT-submenu">
+                  <li style="padding: 5px!important">
+                      <a class="aDHieSVT-card">
+                        <div class="aDHieSVT-wrapper">
+                          <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
+                            <span class="uil uil-apps" style="display: flex; justify-content: center; align-items: center; padding: 5px 2px 5px 5px;">
+                            </span>
+                          </div>
+                          <div><h3>Services</h3></div>
+                        </div>
+                        <p style="font-size: 10px; padding-left: 38px;">Explore possibilities</p>
+                      </a>
+                  </li>
+                  <li style="padding: 5px!important">
+                      <a class="aDHieSVT-card">
+                        <div class="aDHieSVT-wrapper">
+                          <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
+                            <span class="uil uil-compress" style="display: flex; justify-content: center; align-items: center; padding: 5px 2px 5px 5px;">
+                            </span>
+                          </div>
+                          <div><h3>Portfolio</h3></div>
+                        </div>
+                        <p style="font-size: 10px; padding-left: 38px;">Our collection</p>
+                      </a>
+                  </li>
+                  <li style="padding: 5px!important">
+                      <a class="aDHieSVT-card">
+                        <div class="aDHieSVT-wrapper">
+                          <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
+                            <span class="uil uil-apps" style="display: flex; justify-content: center; align-items: center; padding: 5px 2px 5px 5px;">
+                            </span>
+                          </div>
+                          <div><h3>Ecosystem</h3></div>
+                        </div>
+                        <p style="font-size: 10px; padding-left: 38px;">Explore the ΛΞV ecosystem</p>
+                      </a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <div class="aDHieSVT-link">Learn <i class="uil uil-plus"></i></div>
+                <ul class="aDHieSVT-submenu">
+                  <li><a href="#">{{}}</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="aDHieSVT-link">Build <i class="uil uil-plus"></i></div>
+                <ul class="aDHieSVT-submenu">
+                  <li><a href="#">Quickstart</a></li>
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">CLI</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
         </ul>
         
         <div class="Navbar-menu-minor">
@@ -748,6 +809,32 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
 
     $(document).ready(function () {
         create_custom_dropdowns();
+    });
+
+    $(function() {
+        var Accordion = function(el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+    
+            
+            var links = this.el.find('.aDHieSVT-link');
+            links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+        }
+    
+        Accordion.prototype.dropdown = function(e) {
+            var $el = e.data.el;
+                $this = $(this),
+                $next = $this.next();
+    
+            $next.slideToggle();
+            $this.parent().toggleClass('aDHieSVT-open');
+    
+            if (!e.data.multiple) {
+                $el.find('.aDHieSVT-submenu').not($next).slideUp().parent().removeClass('aDHieSVT-open');
+            };
+        }	
+    
+        var accordion = new Accordion($('#aDHieSVT'), false);
     });
 
   </script>
