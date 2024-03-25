@@ -130,7 +130,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                       <a class="aDHieSVT-card">
                         <div class="aDHieSVT-wrapper">
                           <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
-                            <span class="uil uil-apps" style="display: flex; justify-content: center; align-items: center; padding: 5px 2px 5px 5px;">
+                            <span class="uil uil-fire" style="display: flex; justify-content: center; align-items: center; padding: 5px 2px 5px 5px;">
                             </span>
                           </div>
                           <div><h3>Services</h3></div>
@@ -168,15 +168,15 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
               <li>
                 <div class="aDHieSVT-link">Learn <i class="uil uil-plus"></i></div>
                 <ul class="aDHieSVT-submenu">
-                  <li><a href="#">{{}}</a></li>
+                  <li><a class="uil uil-corner-down-right" style="padding: 15px 0 15px 70px!important;" href="#">{{}}</a></li>
                 </ul>
               </li>
               <li>
                 <div class="aDHieSVT-link">Build <i class="uil uil-plus"></i></div>
                 <ul class="aDHieSVT-submenu">
-                  <li><a href="#">Quickstart</a></li>
-                  <li><a href="#">Documentation</a></li>
-                  <li><a href="#">CLI</a></li>
+                  <li><a class="uil uil-bolt-alt" style="padding: 15px 0 15px 70px!important;" href="#">Quickstart</a></li>
+                  <li><a class="uil uil-book-open" style="padding: 15px 0 15px 70px!important;" href="#">Documentation</a></li>
+                  <li><a class="uil uil-code-branch" style="padding: 15px 0 15px 70px!important;" href="#">CLI</a></li>
                 </ul>
               </li>
             </ul>
