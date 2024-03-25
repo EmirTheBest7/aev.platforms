@@ -126,7 +126,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
               <li>
                 <div class="aDHieSVT-link">Explore <i class="uil uil-plus"></i></div>
                 <ul class="aDHieSVT-submenu">
-                  <li style="padding: 5px!important">
+                  <li style="padding: 15px!important">
                       <a class="aDHieSVT-card">
                         <div class="aDHieSVT-wrapper">
                           <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
@@ -135,10 +135,10 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                           </div>
                           <div><h3>Services</h3></div>
                         </div>
-                        <p style="font-size: 10px; padding-left: 38px;">Explore possibilities</p>
+                        <p style="font-size: 12px;">Explore possibilities</p>
                       </a>
                   </li>
-                  <li style="padding: 5px!important">
+                  <li style="padding: 15px!important">
                       <a class="aDHieSVT-card">
                         <div class="aDHieSVT-wrapper">
                           <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
@@ -147,10 +147,10 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                           </div>
                           <div><h3>Portfolio</h3></div>
                         </div>
-                        <p style="font-size: 10px; padding-left: 38px;">Our collection</p>
+                        <p style="font-size: 12px;">Our collection</p>
                       </a>
                   </li>
-                  <li style="padding: 5px!important">
+                  <li style="padding: 15px!important">
                       <a class="aDHieSVT-card">
                         <div class="aDHieSVT-wrapper">
                           <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
@@ -159,7 +159,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                           </div>
                           <div><h3>Ecosystem</h3></div>
                         </div>
-                        <p style="font-size: 10px; padding-left: 38px;">Explore the ΛΞV ecosystem</p>
+                        <p style="font-size: 12px;">Explore the ΛΞV ecosystem</p>
                       </a>
                   </li>
                 </ul>
