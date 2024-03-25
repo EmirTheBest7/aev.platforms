@@ -126,7 +126,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
               <li>
                 <div class="aDHieSVT-link">Explore <i class="uil uil-plus"></i></div>
                 <ul class="aDHieSVT-submenu">
-                  <li style="padding: 15px!important">
+                  <li style="padding: 0 15px!important">
                       <a class="aDHieSVT-card">
                         <div class="aDHieSVT-wrapper">
                           <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
@@ -138,7 +138,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                         <p style="font-size: 12px;">Explore possibilities</p>
                       </a>
                   </li>
-                  <li style="padding: 15px!important">
+                  <li style="padding: 0 15px!important">
                       <a class="aDHieSVT-card">
                         <div class="aDHieSVT-wrapper">
                           <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
@@ -150,7 +150,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                         <p style="font-size: 12px;">Our collection</p>
                       </a>
                   </li>
-                  <li style="padding: 15px!important">
+                  <li style="padding: 0 15px!important">
                       <a class="aDHieSVT-card">
                         <div class="aDHieSVT-wrapper">
                           <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
