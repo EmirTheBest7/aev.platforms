@@ -106,18 +106,17 @@ if (location.pathname.match(/fullcpgrid/i) ? true : false) {
   notis = new Notifications(document.querySelector(".aev-notifications"))
   
   const demonotis = [
-    () => {notis.create("Neon notifications", "wow, these notifications really do look beautiful", 5)},
-    () => {notis.create("Hover effects", "and the hover effects make it even better!", 5)},
-    () => {notis.create("Ease of use", "on top of that, you can easily add this to any project", 10)},
-    () => {notis.create("Customisation", "you can even customise the duration and add actions on click", 10)},
-    () => {notis.create("Click me", "try clicking this for a surprise!", 5, true, () => notis.create("Surprise", "Wow, you clicked the previous notification,", 4))},
-    () => {notis.create("Animations", "all the animations stay smooth even when notifications disappear out of order or when multiple appear at once", 15)},
+    //() => {notis.create("Click me", "try clicking this for a surprise!", 5, true, () => notis.create("Surprise", "Wow, you clicked the previous notification,", 4))},
+    () => {notis.create("Welcome to ΛΞV 🚀🌟", "Hi! Thanks for stopping by. At ΛΞV, we’re passionate about technology. Let’s embark on this digital journey together! 💡", 10)},
+    () => {notis.create("Collaboration", "We believe in the power of collaboration. Connect with fellow enthusiasts, share ideas, and let’s build something amazing together", 10)},
+    () => {notis.create("Inovations", "Buckle up! Our tech journey is full of twists, turns, and magic. Let’s innovate together! 🌐✨", 10)},
+    () => {notis.create("Explore", "Explore, ask, and geek out! Let’s learn and grow together. 🤓👩‍💻👨‍💻", 10)},
   ]
   let i = 1;
   demonotis[0]()
   setInterval(()=>{
     if (i == demonotis.length) {
-      notis.create("Final!", "click on this notification to restart the demo or go look at the code if you're interested", 0, true, () => {i = 0})
+      notis.create("Thank you!", "Stay tuned for more updates and exciting features in our community.", 0, true, () => {i = 0})
     } else if (i < demonotis.length) {
       demonotis[i]()
     }
