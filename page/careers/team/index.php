@@ -4,7 +4,11 @@ include('../../../_inc/functions.php');
 
 $con = connect();
 
-header("Location: https://aliev.io/page/empty/");
+if(isset($_SESSION["token_id"])) {
+	echo "";
+} else {
+	header("Location: https://aliev.io/page/empty/");
+}
 
 ?>
 
