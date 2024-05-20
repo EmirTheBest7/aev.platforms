@@ -11,7 +11,7 @@ main {width: calc(100% - 6rem);}
 -webkit-animation: border-expand 0.2s cubic-bezier(0.4, 0.0, 0.4, 1) 0s alternate forwards;-moz-animation: border-expand 0.2s cubic-bezier(0.4, 0.0, 0.4, 1) 0s alternate forwards;transition:all 1s cubic-bezier(0.4, 0.0, 1, 1);}
 .tabs a span {position:absolute;margin-left:-40px;margin-top:-24px;width:80px;background:#4dc4ff;height:100%;display:block;border-radius:50%;opacity:0;}
 .tabs a span.clicked {-webkit-animation: expand 0.6s cubic-bezier(0.4, 0.0, 0.4, 1) 0s normal;-moz-animation: expand 0.6s cubic-bezier(0.4, 0.0, 0.4, 1) 0s normal;border-bottom:2px solid #4dc4ff;}
-.content {box-shadow:inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);height:500px;padding-top:50px;position:relative;top:0px;overflow:hidden;}
+.content {box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4); height: 100%; padding-top: 30px; position: relative; top: 0px; overflow: scroll;}
 .item {background:white;width:440px;padding-bottom:30px;margin:0 auto 2em;}
 .itemhead {padding:30px;overflow:hidden;position:relative;}
 .itemhead img {border-radius:100%;float:left}
