@@ -430,4 +430,8 @@ a {
     #content #left ul#location-bar {
         border-bottom: 1px solid white;
     }
+
+    .fish {
+      height: 60%;
+    }
 }
