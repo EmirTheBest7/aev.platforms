@@ -54,7 +54,7 @@ mysqli_set_charset($con,"utf8");
     <ul class="comp-filter flex">
       <li class="uk-active" uk-filter-control="group: tag"><a href="#">All</a></li>
       <div style="border-left: 1px solid #000;"></div>
-      <li onclick="resetSearchBar();" uk-filter-control="filter: [tag='ΛΞV.HR'];"><a href="#">AEV.HR</a></li>
+      <li onclick="resetSearchBar();" uk-filter-control="filter: [tag='ΛΞV - HR'];"><a href="#">AEV.HR</a></li>
       <li onclick="resetSearchBar();" uk-filter-control="filter: [tag='4RLTY'];"><a href="#">RealtyIncome</a></li>
       <li onclick="resetSearchBar();" uk-filter-control="filter: [tag='NXR.EX'];"><a href="#">Nexer</a></li>
     </ul>
