@@ -41,14 +41,15 @@ html {
 }
 
 .fish, .fish-shadow {
-  width: 640px;
+  width: 100%;
   height: auto;
   position: absolute;
-  top: -145px;
-  left: -177px;
+  top: 0;
+  left: 0;
   -moz-animation: fish 3s forwards ease-in-out;
   -webkit-animation: fish 3s forwards ease-in-out;
   animation: fish 3s forwards ease-in-out;
+  pointer-events: none;
 }
 .fish path, .fish-shadow path {
   fill: #fff;

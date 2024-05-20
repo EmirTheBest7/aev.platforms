@@ -37,9 +37,9 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
 
 
   <title>ΛΞV</title>
+  <link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-  <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
   <link rel="stylesheet" href="<?php echo BASE_URL . "_assets/css/core.css" ?>">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -63,25 +63,19 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
       </div>
       <div id='content'>
         <div id='left'>
-          <div id='map'>
-
-          </div>
+          <div id="map" class="map"></div>
           <ul id='location-bar'>
             <li>
-              <a class='location' data-location='Prague'
-                href='https://f.cl.ly/items/452R3S1440221Z3m372j/israel.png'>Prague 🇨🇿</a>
+              <a class='location' data-location='Prague' href='#'>Prague 🇨🇿</a>
             </li>
             <li>
-              <a class='location' data-location='Dubai'
-                href='https://f.cl.ly/items/452R3S1440221Z3m372j/israel.png'>Dubai 🇦🇪</a>
+              <a class='location' data-location='Dubai' href='#'>Dubai 🇦🇪</a>
             </li>
             <li>
-              <a class='location' data-location='Kiev' href='https://f.cl.ly/items/452R3S1440221Z3m372j/israel.png'>Kiev
-                🇺🇦</a>
+              <a class='location' data-location='Kiev' href='#'>Kiev 🇺🇦</a>
             </li>
             <li>
-              <a class='location' data-location='London'
-                href='https://f.cl.ly/items/452R3S1440221Z3m372j/israel.png'>London 🇬🇧</a>
+              <a class='location' data-location='London' href='#'>London 🇬🇧</a>
             </li>
           </ul>
         </div>
@@ -104,7 +98,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
         </div>
       </div>
 
-      <div class="fish-shadow-con hide">
+      <div class="fish-shadow-con">
         <svg class="fish-shadow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           preserveAspectRatio="xMidYMin slice" viewBox="0 0 743 645">
 
@@ -219,7 +213,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
 
         </svg>
       </div>
-      <svg class="fish hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      <svg class="fish" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         preserveAspectRatio="xMidYMin slice" viewBox="0 0 743 645">
 
         <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
@@ -334,6 +328,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
   </main>
   <!-- partial -->
 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.4.1/mapbox-gl.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
 

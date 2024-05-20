@@ -1,3 +1,4 @@
+/*
 var MarkerAnnotation = mapkit.MarkerAnnotation, clickAnnotation;
 var work = new mapkit.Coordinate(50.0751, 14.4565);
 
@@ -44,4 +45,48 @@ map.element.addEventListener("click", function (event) {
         color: "#c969e0"
     });
     map.addAnnotation(clickAnnotation);
+});
+*/
+
+
+
+// MapKit 
+
+mapboxgl.accessToken =
+  "pk.eyJ1IjoiZW1pcnRoZWJlc3Q3IiwiYSI6ImNsd2Zqc2hhYTIwY2cyaXBwYnNmd2s2cTkifQ.X_Jrng5TsIslBA0jRrP6Ig";
+// Basic map instance
+const center = [14.426444, 50.086136];
+const map = new mapboxgl.Map({
+  container: "map",
+  style: "mapbox://styles/mapbox/dark-v10?optimize=true",
+  center: center,
+  zoom: 13
+});
+const el = document.createElement("div");
+el.className = "marker";
+new mapboxgl.Marker()
+  .setLngLat(center)
+  .setPopup(
+    new mapboxgl.Popup({ offset: 25 }).setHTML( // add popups
+    `
+      <h3>Find us here!</h3>
+      <h4>
+        ΛΞV | Digital studio.<br/>
+        Korunní 810, Praha 10
+      </h4>`)
+  )
+  .addTo(map);
+
+function flyToStore(cordinates) {
+  map.flyTo({
+    center: cordinates,
+    zoom: 15
+  });
+}
+
+window.addEventListener("load", (event) => {
+  const listing = document.getElementById("listing");
+  listing.addEventListener("click", (event) => {
+    flyToStore(center);
+  });
 });
