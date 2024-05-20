@@ -19,11 +19,12 @@ mysqli_set_charset($con,"utf8");
 		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>ΛΞV | Careers List</title>
   <link rel="stylesheet" href="<?php echo BASE_URL . "_assets/css/core.css" ?>">
+  <link rel='stylesheet' href='./uikit.min.css'>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 
-<body>
+<body class="filter-main" uk-filter="target: .filter">
   <!-- partial:index.partial.html -->
 
   <nav class="Navbar">
@@ -49,17 +50,27 @@ mysqli_set_charset($con,"utf8");
   </nav>
 
   <section class="search container">
-    <h2>Search for your next job</h2>
-    <form action="">
-      <input type="text" placeholder="Search by title, skill" disabled/>
-      <input type="text" placeholder="City, state, or zip code" disabled/>
-      <button class="search__btn">Search</button>
+
+    <ul class="comp-filter flex">
+      <li class="uk-active" uk-filter-control="group: tag"><a href="#">All</a></li>
+      <div style="border-left: 1px solid #000;"></div>
+      <li onclick="resetSearchBar();" uk-filter-control="filter: [tag='ΛΞV.HR'];"><a href="#">AEV.HR</a></li>
+      <li onclick="resetSearchBar();" uk-filter-control="filter: [tag='4RLTY'];"><a href="#">RealtyIncome</a></li>
+      <li onclick="resetSearchBar();" uk-filter-control="filter: [tag='NXR.EX'];"><a href="#">Nexer</a></li>
+    </ul>
+
+    <form onsubmit="return false;" class="flex">
+        <input onkeyup="filterSearch();" uk-filter-control="" class="uk-search-input" type="search" placeholder="Search..." style="color: black;">
+        <button class="search__btn">Search</button>
     </form>
   </section>
 
   <section class="listings container">
+      
+
     <h3 class="listings__heading">Based on your profile</h3>
-    <ul class="listings__grid">
+    <ul class="listings__grid filter" tabindex="0">
+      <p class="skills-no-result uk-hidden">No results</p>
       <?php 
 
         $jobs_result = mysqli_query($con, "SELECT * FROM jobs") or die( mysqli_error());
@@ -67,7 +78,7 @@ mysqli_set_charset($con,"utf8");
 
           echo '
 
-          <li class="jobcard">
+          <li class="jobcard skills-el" tag="'.$jobs_row['job_company'].'" data-name="'.strtolower($jobs_row['job_name']).'">
             <img src="'. BASE_URL . "_assets/images/careers/". $jobs_row['job_logo'] .'" alt="" class="jobcard__logo" />
             <div class="jobcard__heading">'.$jobs_row['job_name'].'</div>
             <div class="jobcard__text">'.$jobs_row['job_company'].'</div>
@@ -82,6 +93,10 @@ mysqli_set_charset($con,"utf8");
     </ul>
   </section>
   <!-- partial -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.6/js/uikit.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src="./script.js"></script>
 
 </body>
 

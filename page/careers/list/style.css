@@ -74,7 +74,7 @@ body {
 
 .search {
   margin: 16px auto;
-  padding: 16px 64px 24px 64px;
+  padding: 16px 10px 24px 10px;
   background-color: var(--search-bg);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
 }
@@ -89,15 +89,17 @@ body {
 .search form {
   text-align: center;
   font-size: 16px;
+  padding-top: 15px;
 }
 
 .search input {
   font: inherit;
   padding: 8px;
-  width: 40%;
+  width: 100%;
   border: 1px solid #ccc;
-  border-radius: 2px;
+  border-radius: 10px;
   margin-right: 4px;
+  background: white!important;
 }
 
 .search button {
@@ -183,5 +185,38 @@ body {
   font-size: 25px;
   line-height: 30px;
   left: 17px;
+  color: white;
+}
+
+.uk-search-icon-flip svg{
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.visible{
+  display: block !important;
+}
+
+.uk-animation-shake{
+  animation-name: uk-shake !important;
+}
+
+.comp-filter {
+  display: flex;
+  padding: 0;
+  overflow-x: scroll;
+}
+.comp-filter li {
+  margin: 0 10px;
+  border-radius: 7px;
+  padding: 5px 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.uk-active {
+  background: #0073b1;
   color: white;
 }
