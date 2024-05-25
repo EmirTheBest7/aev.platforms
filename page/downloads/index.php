@@ -163,10 +163,6 @@ include('../../_inc/functions.php');
                             </tr>
                             <tr>
                                 <td data-th="File Name">Whitepaper</td>
-                                <td data-th="Action"><button class="ripple-button custom-cursor-on-hover">-<i class="uil uil-import"></i></button></td>
-                            </tr>
-                            <tr>
-                                <td data-th="File Name">Whitepaper</td>
                                 <td data-th="Action">-</td>
                             </tr>
                             <tr>
