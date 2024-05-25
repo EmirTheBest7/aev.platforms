@@ -65,7 +65,7 @@ body {
 }
 .header__left {
   box-sizing: border-box;
-  width: 50%;
+  width: 100%;
   float: left;
   padding-left: 10px;
   padding-right: 10px;

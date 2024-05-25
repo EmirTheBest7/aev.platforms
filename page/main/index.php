@@ -191,8 +191,8 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
             <li><a href="../downloads/">Downloads</a></li>
           </ul>
           <ul>
-            <li><a href="#link">Advertising</a></li>
             <li><a href="#link">Privacy Policy</a></li>
+            <li><a href="../investor-relations/">Investor Relations</a></li>
             <li><a href="../contact/">Contact</a></li>
             <li>
               <a style="color:white;" href="<?php echo BASE_URL . "/home/"; ?>"><span class="ripple-button"><?php if(isset($_SESSION["token_id"])){ echo "Dashboard";} else {echo "Log In";}  ?></span></a>
