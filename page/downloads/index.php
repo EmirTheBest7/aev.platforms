@@ -154,7 +154,28 @@ include('../../_inc/functions.php');
                     </article>
                 </div>
                 <div id="test3" class="c-tab--content">Software</div>
-                <div id="test4" class="c-tab--content">Presentation, Whitelist</div>
+                <div id="test4" class="c-tab--content">
+                    <table class="rwd-table video-sec">
+                        <tbody>
+                            <tr>
+                                <th>File</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td data-th="File Name">Whitepaper</td>
+                                <td data-th="Action"><button class="ripple-button custom-cursor-on-hover">-<i class="uil uil-import"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td data-th="File Name">Whitepaper</td>
+                                <td data-th="Action">-</td>
+                            </tr>
+                            <tr>
+                                <td data-th="File Name">ACS_System</td>
+                                <td data-th="Action">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </main>
