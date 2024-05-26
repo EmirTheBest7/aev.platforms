@@ -41,6 +41,7 @@ include('../../_inc/functions.php');
                 <ul>
                     <li class="tabitem app-name">Investor Relations</li>
                     <li class="tabitem active"><a href="#box1"><i class="uil uil-graph-bar"></i> Stock Price<span></span></a></li>
+                    <li class="tabitem"><a href="#box2"><i class="uil uil-newspaper"></i> News<span></span></a></li>
                 </ul>
             </div>
         </div>
@@ -76,6 +77,10 @@ include('../../_inc/functions.php');
                 </div>
                 
                         
+            </div>
+
+            <div id="box2" class="box">
+                <iframe class="news-iframe" src="https://e.widgetbot.io/channels/1244065397611823264/1244076984619892736"></iframe>
             </div>
         </div>
 

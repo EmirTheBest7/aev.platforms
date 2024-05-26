@@ -35,6 +35,10 @@ main {width: calc(100% - 6rem);}
 
 @media only screen and (max-width: 767px) {main {width: calc(100%);}}
 
+.news-iframe { height: calc(100% - 50px); border: none; position: fixed; bottom: 0px; width: calc(100% - 6rem); }
+@media only screen and (max-width: 767px) { .news-iframe{ height: calc(100% - 88px); width: 100%; border: none; position: fixed; bottom: 0px; } }
+
+
 @-webkit-keyframes expand {
     0% {
         background:rgba(255,255,141,1);
