@@ -171,7 +171,7 @@ include('../../_inc/functions.php');
                             </tr>
                             <tr>
                                 <td data-th="File Name">ACS_System.pdf</td>
-                                <td data-th="Action">-</td>
+                                <td data-th="Action"><button class="ripple-button" href="./docs/ACS_System.pdf" download="ACS_System.pdf">Download</button></td>
                             </tr>
                         </tbody>
                     </table>
