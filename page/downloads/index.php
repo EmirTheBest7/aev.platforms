@@ -61,8 +61,8 @@ include('../../_inc/functions.php');
             <nav class="c-tabs secondary-nav" data-toggle="c-tabs" role="navigation">
                 <ul class="c-tab--navigation secondary-nav__list">
                     <li class="c-tab--item secondary-nav__item active"><a href="#test1" class="active">Logos</a></li>
-                    <li class="c-tab--item secondary-nav__item"><a href="#test2">Wallpapers</a></li>
-                    <li class="c-tab--item secondary-nav__item"><a href="#test3">Programs</a></li>
+                    <li class="c-tab--item secondary-nav__item hide"><a href="#test2">Wallpapers</a></li>
+                    <li class="c-tab--item secondary-nav__item hide"><a href="#test3">Programs</a></li>
                     <li class="c-tab--item secondary-nav__item"><a href="#test4">Docs</a></li>
                     <li class="c-tab--slider">
                         <div class="c-tab-indicator"></div>
