@@ -42,7 +42,7 @@
             <span class="glider"></span>
         </div>
 
-        <button class="add-db"><i class="uil uil-plus-circle"></i></button>
+        <button class="add-db" onclick="location.href='./add'"><i class="uil uil-plus-circle"></i></button>
 
         
     </div>
