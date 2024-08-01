@@ -1,6 +1,6 @@
 <?php
 
-	include_once("./_inc/functions.php"); error_reporting(0);
+	include_once("./_inc/functions.php"); 
 
 	echo "Success!";
 	
