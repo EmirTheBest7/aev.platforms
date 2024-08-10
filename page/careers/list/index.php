@@ -56,7 +56,7 @@ mysqli_set_charset($con,"utf8");
       <div style="border-left: 1px solid #000;"></div>
       <li onclick="resetSearchBar();" uk-filter-control="filter: [tag='ΛΞV - HR'];"><a href="#">AEV.HR</a></li>
       <li onclick="resetSearchBar();" uk-filter-control="filter: [tag='4RLTY'];"><a href="#">3E.RLTY</a></li>
-      <li onclick="resetSearchBar();" uk-filter-control="filter: [tag='NXR.EX'];"><a href="#">Nexer</a></li>
+      <li onclick="resetSearchBar();" uk-filter-control="filter: [tag='NXR.EX'];"><a href="#">NXR.EX</a></li>
     </ul>
 
     <form onsubmit="return false;" class="flex">
