@@ -414,13 +414,13 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                     </a>
                   </li>
                   <li class="slider--item slider--item-center">
-                    <a href="https://t.me/pragueflow">
+                    <a href="https://t.me/aev_platforms">
                       <div class="slider--item-image">
-                        <img src="./img/PragueFlow.jpg" alt="2">
+                        <img src="./img/IMG_2285.JPG" alt="2">
                       </div>
-                      <p class="slider--item-title">Prague Flow 🇨🇿</p>
+                      <p class="slider--item-title">ΛΞV Community.</p>
                       <p class="slider--item-description">
-                        Connecting inovators in Prague.<br/> Feel free to join us & stay tunned!
+                        Connecting inovators around the world.<br/> Feel free to join us & stay tunned!
                       </p>
                     </a>
                   </li>
