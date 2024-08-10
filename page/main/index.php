@@ -414,7 +414,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                     </a>
                   </li>
                   <li class="slider--item slider--item-center">
-                    <a href="https://t.me/aev_platforms">
+                    <a target="_blank" href="https://t.me/s/aev_platforms">
                       <div class="slider--item-image">
                         <img src="./img/IMG_2285.JPG" alt="2">
                       </div>
