@@ -403,9 +403,9 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
               <div class="work--lockup">
                 <ul class="slider">
                   <li class="slider--item slider--item-left">
-                    <a href="#0">
+                    <a target="_blank" href="https://t.me/Hester_EAbot">
                       <div class="slider--item-image">
-                        <img src="./img/IMG_7780.jpg" alt="1">
+                        <img src="./img/hester.jpeg" alt="1">
                       </div>
                       <p class="slider--item-title">HesterGPT 🧠</p>
                       <p class="slider--item-description">
