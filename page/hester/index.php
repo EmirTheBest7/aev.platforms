@@ -55,6 +55,10 @@ session_start();
       </h4>
     </li>
   </ul>
+
+  <div class="intro-text">
+    <p class="text custom-cursor-on-hover">Hi! I’m <span class="intro-title">HesterGPT</span>, your new experimental AI assistant on your device. I can assist you with writing, planning, learning, and much more.</p>
+  </div>
 </header>
 <div class="chat-list">
 </div>

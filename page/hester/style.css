@@ -250,6 +250,24 @@ body.hide-header .header {
   position: relative;
 }
 
+.intro-text {
+  padding: 1.25rem;
+  cursor: pointer;
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  background: var(--secondary-color);
+  text-align: left;
+  margin: 20px 0;
+}
+
+.intro-title {
+  background: linear-gradient(10deg, #217bfe 0%, #ac87eb 30%, #ee4d5d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 
 .typing-area .icon {
