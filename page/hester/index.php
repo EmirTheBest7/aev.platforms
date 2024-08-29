@@ -51,7 +51,7 @@ session_start();
     <li class="suggestion">
       <h4 class="text">
         Plan a trip
-        <span>to experience Seoul like a local</span>
+        <span>to experience Crimea like a local</span>
       </h4>
     </li>
   </ul>
