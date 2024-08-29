@@ -403,7 +403,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
               <div class="work--lockup">
                 <ul class="slider">
                   <li class="slider--item slider--item-left">
-                    <a target="_blank" href="https://t.me/Hester_EAbot">
+                    <a target="_blank" href="../hester/">
                       <div class="slider--item-image">
                         <img src="./img/hester.jpeg" alt="1">
                       </div>

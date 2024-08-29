@@ -18,8 +18,14 @@ session_start();
 <body>
 <!-- partial:index.partial.html -->
 <header class="header">
+
+  <div class="btn-top-div">
+    <button class="btn-top" onClick="javascript:window.open('https://aliev.io/@Hester', '_blank');"><img src="<?php echo LOGO; ?>" alt="Λ L I Ξ V" class="logo"></button>
+    <button class="btn-top" onClick="javascript:window.open('https://t.me/Hester_EAbot', '_blank');">Telegram <i class="uil uil-telegram-alt"></i></button>
+  </div>
+
   <h2 class="title">
-    Hello <?php echo (isset($_SESSION['username'])) ? strtolower(strtok($_SESSION['username'], " "))."@eros:~$" : 'user@eros:~$'  ; ?>.
+    Hello <?php echo (isset($_SESSION['username'])) ? "{".strtolower(strtok($_SESSION['username'], " "))."}" : '{User}'  ; ?>.
   </h2>
   <h4 class="subtitle">
     How can I help you today?
