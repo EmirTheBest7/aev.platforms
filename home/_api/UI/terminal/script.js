@@ -58,7 +58,7 @@ var Terminal = Terminal || function (cmdLineContainer, outputContainer) {
 
 
   const CMDS_ = [
-    'cat', 'clear', 'clock', 'date', 'echo', 'help', 'uname', 'whoami', 'controls', 'v2'
+    'cat', 'clear', 'clock', 'date', 'echo', 'help', 'uname', 'whoami', 'controls', 'v2', 'store'
   ];
 
   const GAMES_ = [
@@ -187,6 +187,9 @@ var Terminal = Terminal || function (cmdLineContainer, outputContainer) {
           break;
         case 'whoami':
           output('user');
+          break;
+        case 'store':
+        output(window.location.href = 'Page/store/');
           break;
         case 'docs':
           output('[AEV|Docs] is openned in new window!');
