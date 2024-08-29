@@ -61,7 +61,7 @@ session_start();
 <div class="typing-area">
   <form action="#" class="typing-form">
     <div class="input-wrapper">
-      <input type="text" class="typing-input" placeholder="Enter a Prompt here." required>
+      <input type="text" class="typing-input" placeholder="Enter a Prompt here. {API Key must be included.}" required>
       <button class="icon"><i class="fa-regular fa-paper-plane"></i></button>
     </div>
     <div class="actions-buttons">
