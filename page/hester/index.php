@@ -63,7 +63,7 @@ session_start();
       <i id="delete-chat-button" class="icon fa-solid fa-trash-can"></i>
     </div>
   </form>
-  <p class="dis-text">AI can make mistakes. Check important info.</p>
+  <p class="dis-text">HesterGPT can make mistakes. Check important info.</p>
 </div>
 <!-- partial -->
   <script  src="./script.js"></script>
