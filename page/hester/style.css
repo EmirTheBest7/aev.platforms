@@ -334,3 +334,9 @@ body.hide-header .header {
     margin-top: 0.5rem;
   }
 }
+
+@media (max-height: 400px) and (max-width: 300px) {
+  .dis-text, .btn-top-div, .suggestion-list {
+    display: none!important;
+  }
+}
