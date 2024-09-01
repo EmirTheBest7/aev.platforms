@@ -208,7 +208,7 @@ body.hide-header .header {
   height: 100%;
   border: none;
   outline: none;
-  border-radius: 6.2rem;
+  border: 1px solid gray;
   background: var(--secondary-color);
   padding: 1.1rem 4rem 1.1rem 1.5rem;
   font-size: 1rem;
@@ -277,7 +277,7 @@ body.hide-header .header {
   align-items: center;
   justify-content: center;
   background: var(--secondary-color);
-  border-radius: 50%;
+  border: 1px solid gray;
   cursor: pointer;
 }
 .typing-area .icon:hover {
