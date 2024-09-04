@@ -253,7 +253,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
           
           <button class="ext-sign-in-back btn" onclick="login()" style="position: absolute;margin: 0 10%;"> <i class="uil uil-angle-left-b"></i> Back</button>
 
-          <div class="widget__time" style="text-transform: capitalize; padding: 15%; font-family: 'Ndot';">
+          <div class="widget__time" style="text-transform: uppercase; padding: 15%; font-family: 'Ndot';">
             <h1 id="widget_weekday">{{WeekDay}}</h1>
             <h1 id="widget_daymonth">{{Day.month}}</h1>
           </div>
@@ -286,7 +286,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
           <button class="ext-sign-in-back btn" onclick="login()" style="margin: 0 10%;">Back <i class="uil uil-angle-right-b"></i></button>
 
           <div class="settings">
-          <h1 style="text-transform: capitalize;padding: 10%;">Settings <i class="uil uil-setting"></i></h1>
+          <h1 style="text-transform: uppercase;padding: 10%;">Settings <i class="uil uil-setting"></i></h1>
             <span class="settings__title field-title">Functional key</span>
             <div class="result__viewbox" id="result" contenteditable="true">{{ ... }}</div>
             <button class="result__viewbox__btn">Check</button>
