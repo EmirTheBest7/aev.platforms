@@ -106,7 +106,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
 
     <div id="chat-circle" class="btn btn-raised">
       <div id="chat-overlay"></div>
-      <img src="../hester/HesterGPT.svg" style="width: 24px;">
+      <img src="./img/HesterGPT.svg" style="width: 24px;">
     </div>
 
     <div class="ai-box">
