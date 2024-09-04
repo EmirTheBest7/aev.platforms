@@ -102,7 +102,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
 	</div>
 
   <!-- HesterGPT -->
-  <div class="ai-box-div" style="z-index:9999;">
+  <div class="ai-box-div" style="z-index:9999; position: absolute;">
 
     <div id="chat-circle" class="btn btn-raised">
       <div id="chat-overlay"></div>
