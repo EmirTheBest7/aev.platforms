@@ -101,6 +101,28 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
 		</div>
 	</div>
 
+  <!-- HesterGPT -->
+  <div class="ai-box-div" style="z-index:9999;">
+
+    <div id="chat-circle" class="btn btn-raised">
+      <div id="chat-overlay"></div>
+      <img src="../hester/HesterGPT.svg" style="width: 24px;">
+    </div>
+
+    <div class="ai-box">
+      <div class="ai-box-header">
+        HesterGPT [Beta]
+        <span class="ai-box-toggle"><i class="uil uil-multiply"></i></span>
+      </div>
+      <div class="ai-box-body">
+
+        <iframe src="https://aliev.io/page/hester/" style="width: 100%; height: 100%; border: 0;"></iframe>
+
+      </div>
+      
+    </div>
+  </div>
+
 
   <nav class="Navbar">
     <a href="#" id="toggle" class="Toggle Navbar-toggle" data-toggle="collapse"
@@ -703,7 +725,16 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
   document.getElementById("widget_weekday").innerHTML = widget_weekday;
   document.getElementById("widget_daymonth").innerHTML = widget_daymonth;
 
-  
+  // HesterGPT
+  $("#chat-circle").click(function() {    
+    $("#chat-circle").toggle('scale');
+    $(".ai-box").toggle('scale');
+  })
+    
+  $(".ai-box-toggle").click(function() {
+    $("#chat-circle").toggle('scale');
+    $(".ai-box").toggle('scale');
+  })
 
   // Languages Dropdown
   function create_custom_dropdowns() {
