@@ -253,7 +253,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
           
           <button class="ext-sign-in-back btn" onclick="login()" style="position: absolute;margin: 0 10%;"> <i class="uil uil-angle-left-b"></i> Back</button>
 
-          <div class="widget__time" style="text-transform: capitalize; padding: 15%;">
+          <div class="widget__time" style="text-transform: capitalize; padding: 15%; font-family: 'Ndot';">
             <h1 id="widget_weekday">{{WeekDay}}</h1>
             <h1 id="widget_daymonth">{{Day.month}}</h1>
           </div>
