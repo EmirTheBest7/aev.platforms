@@ -149,7 +149,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                 <div class="aDHieSVT-link">Explore <i class="uil uil-plus"></i></div>
                 <ul class="aDHieSVT-submenu">
                   <li style="padding: 10px 15px!important">
-                      <a class="aDHieSVT-card">
+                      <a class="aDHieSVT-card" href="https://aliev.io/page/empty/" target="_blank">
                         <div class="aDHieSVT-wrapper">
                           <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
                             <span class="uil uil-fire" style="display: flex; justify-content: center; align-items: center; padding: 5px 2px 5px 5px;">
@@ -161,7 +161,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                       </a>
                   </li>
                   <li style="padding: 10px 15px!important">
-                      <a class="aDHieSVT-card">
+                      <a class="aDHieSVT-card" href="https://aliev.io/page/empty/" target="_blank">
                         <div class="aDHieSVT-wrapper">
                           <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
                             <span class="uil uil-compress" style="display: flex; justify-content: center; align-items: center; padding: 5px 2px 5px 5px;">
@@ -173,7 +173,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                       </a>
                   </li>
                   <li style="padding: 10px 15px!important">
-                      <a class="aDHieSVT-card">
+                      <a class="aDHieSVT-card" href="https://aliev.io/page/empty/" target="_blank">
                         <div class="aDHieSVT-wrapper">
                           <div style=" border: 1px solid; border-radius: 5px; font-size: 17px;">
                             <span class="uil uil-apps" style="display: flex; justify-content: center; align-items: center; padding: 5px 2px 5px 5px;">
@@ -190,15 +190,15 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
               <li>
                 <div class="aDHieSVT-link">Learn <i class="uil uil-plus"></i></div>
                 <ul class="aDHieSVT-submenu">
-                  <li><a class="uil uil-corner-down-right" style="padding: 15px 0 15px 60px!important;" href="#">{{}}</a></li>
+                  <li><a class="uil uil-corner-down-right" style="padding: 15px 0 15px 60px!important;" href="https://aliev.io/home/_api/UI/">{{}}</a></li>
                 </ul>
               </li>
               <li>
                 <div class="aDHieSVT-link">Build <i class="uil uil-plus"></i></div>
                 <ul class="aDHieSVT-submenu">
-                  <li><a class="uil uil-bolt-alt" style="padding: 15px 0 15px 60px!important;" href="#">Quickstart</a></li>
-                  <li><a class="uil uil-book-open" style="padding: 15px 0 15px 60px!important;" href="#">Documentation</a></li>
-                  <li><a class="uil uil-code-branch" style="padding: 15px 0 15px 60px!important;" href="#">CLI</a></li>
+                  <li><a class="uil uil-bolt-alt" style="padding: 15px 0 15px 60px!important;" href="https://aliev.io/home/_api/Docs/">Quickstart</a></li>
+                  <li><a class="uil uil-book-open" style="padding: 15px 0 15px 60px!important;" href="https://aliev.io/home/_api/Docs/">Documentation</a></li>
+                  <li><a class="uil uil-code-branch" style="padding: 15px 0 15px 60px!important;" href="https://aliev.io/home/_api/UI/">CLI</a></li>
                 </ul>
               </li>
             </ul>
