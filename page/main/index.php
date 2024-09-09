@@ -190,7 +190,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
               <li>
                 <div class="aDHieSVT-link">Learn <i class="uil uil-plus"></i></div>
                 <ul class="aDHieSVT-submenu">
-                  <li><a class="uil uil-corner-down-right" style="padding: 15px 0 15px 60px!important;" href="https://aliev.io/home/_api/UI/">{{}}</a></li>
+                  <li><a class="uil uil-corner-down-right" style="padding: 15px 0 15px 60px!important;" href="https://aliev.io/home/_api/UI/?0x=404">{{}}</a></li>
                 </ul>
               </li>
               <li>
