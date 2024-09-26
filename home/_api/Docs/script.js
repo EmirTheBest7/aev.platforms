@@ -94,8 +94,3 @@ var left_position = $new_tab.position().left;
 
 $indicator.css({ 'width': new_tab_width + 'px', 'left': left_position + 'px' });
 }
-
-function loadPage(loadLinkURL) {
-  //document.getElementById('content1').innerHTML = window.location.assign="./mds/architecture.html";
-  $( "#loadContent" ).load( loadLinkURL );
-}

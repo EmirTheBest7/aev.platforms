@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: url('');
+    background-size: cover;
+  }
+
+#viewDiv {
+    background-color: #808080;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: calc(100% - var(--navbar-height));
+    max-width: 100vw;
+    position: absolute;
+}
+#topTitle {
+    height: 50px;
+    width: 100%;
+    background-color: #022b59;
+    text-align: center;
+    margin: 0px;
+}
+#appTitle {
+    text-align: center;
+    margin: 0px;
+}
+#layerList {
+    height: 500px;
+    width: 0px;
+    background-color: #808080;
+    z-index: 10;
+}
+#layerButton, #legendButton {
+    margin-left: 5px;
+    margin-top: -32px;
+    float: left;
+    outline: none;
+}
+.app-titles {
+    color: #fff;
+    font-family: helvetica;
+}
+.app-button {
+    background-color: inherit;
+    color: #fff;
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    border: unset;
+}
+    .app-button:hover {
+        background-color: #034085;
+        box-shadow: 5px 5px 5px #01172f;
+        cursor: pointer;
+    }
+    .app_button:active {
+        background-color: #034085;
+        border: solid 1px #808080;
+    }
+.esri-layer-list, .esri-legend {
+    display: none;
+}
+.esri-widget {
+    opacity: .5;
+}
+    .esri-widget:hover {
+        opacity: 1;
+    }
+.visibility {
+    display: block;
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .container {
+        position: absolute;
+        top: var(--navbar-height);
+        bottom: 0;
+        width: 100%;
+        background: url('');
+        background-size: cover;
+    }
+
+    #viewDiv {
+        width: 100%!important;
+    }
+}

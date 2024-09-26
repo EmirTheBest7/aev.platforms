@@ -123,6 +123,54 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
     </div>
   </div>
 
+  <!-- AEV App Menu & Panel -->
+  <div class="aev-user-panel">
+    <div class="aev-apps-menu"><i class="uil uil-apps"></i></div>
+    <div class="aev-user-badge">
+      <div class="circle">
+        <img src="<?php if(isset($_SESSION["token_id"])){ echo $_SESSION['user_photo'];} else {echo "https://aliev.io/_assets/images/avatar.png";}  ?>" alt="">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;" xml:space="preserve">
+          <circle cx="50" cy="50" r="48"></circle>
+        </svg>
+      </div>
+    </div>
+  
+
+    <div class="aev-profile-options">
+      <div class="profile-items">
+        <ul class="first-set">
+        
+
+          <div class="aev-profile-card">
+            <img src="<?php if(isset($_SESSION["token_id"])){ echo $_SESSION['user_photo'];} else {echo "https://aliev.io/_assets/images/avatar.png";}  ?>" class="aev-avatar">
+            <div class="aev-name">Hi, User!</div>
+            <div class="aev-email">hello@aliev.io</div>
+            <div class="aev-profile-buttons">
+              <button><?php if(isset($_SESSION["token_id"])){ echo "Dashboard";} else { echo "Sign In";}  ?></button>
+              <button><?php if(isset($_SESSION["token_id"])){ echo '<i style="color: red;" class="uil uil-sign-out-alt"></i> Logout';} else { echo '<i class="uil uil-sign-in-alt"></i> Sign In';}  ?></button>
+            </div>
+          </div>
+
+        </ul>
+
+      </div>
+    </div>
+    
+    <div class="aev-app-launcher">
+      <div class="apps">
+        <ul class="first-set">
+          <li><a href="https://aliev.io/home/profile/"><img style="border-radius: 50%; padding: 7px;" src="<?php if(isset($_SESSION["token_id"])){ echo $_SESSION['user_photo'];} else {echo "https://aliev.io/_assets/images/avatar.png";}  ?>" /><span>Account</span></a></li>
+          <li><a href="#"><img src="./img/icons/timeline.svg" /><span>Space</span></a></li>
+          <li><a href="#"><img src="./img/icons/maps.svg" /><span>Maps</span></a></li>
+          <li><a href="#"><img src="./img/icons/messenger.svg" /><span>Messenger</span></a></li>
+          <li><a href="#"><img src="./img/icons/video.svg" /><span>Videos</span></a></li>
+          <li><a href="#"><img src="./img/icons/hester.svg" /><span>HesterGPT</span></a></li>
+          <li><a href="#"><img src="./img/icons/Cloudshot.svg" /><span>_API</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 
   <nav class="Navbar">
     <a href="#" id="toggle" class="Toggle Navbar-toggle" data-toggle="collapse"
@@ -304,48 +352,51 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
 
             <span class="settings__title field-title">PWA</span>
             <div class="setting" onclick="window.location='#RccSCT7-open';">
-              <label for="pwa_install">PWA Install</label>
+              <label for="pwa_install"><i class="uil uil-mobile-android"></i> PWA Install</label>
+            </div>
+            <div class="setting" onclick="#">
+              <label for="shortcuts"><i class="uil uil-keyboard"></i> Shortcuts</label>
             </div>
             <span class="settings__title field-title">Appearence</span>
             <div class="setting">
               <input type="checkbox" id="dark_mode" checked disabled/>
-              <label for="dark_mode">Dark Mode</label>
+              <label for="dark_mode"><i class="uil uil-moon-eclipse"></i> Dark Mode</label>
             </div>
             <div class="setting">
               <input type="checkbox" checked disabled/>
-              <label for="uppercase">Animations</label>
+              <label for="uppercase"><i class="uil uil-minus-path"></i> Animations</label>
             </div>
 
             <span class="settings__title field-title">settings</span>
             <div class="setting">
               <input type="checkbox" id="uppercase" checked />
-              <label for="uppercase">Uppercase</label>
+              <label for="uppercase"><i class="uil uil-letter-english-a"></i> Uppercase</label>
             </div>
             <div class="setting">
               <input type="checkbox" id="lowercase" checked />
-              <label for="lowercase">Lowercase</label>
+              <label for="lowercase"><i class="uil uil-font"></i> Lowercase</label>
             </div>
             <div class="setting">
               <input type="checkbox" id="number" checked />
-              <label for="number">Numbers</label>
+              <label for="number"><i class="uil uil-list-ol-alt"></i> Numbers</label>
             </div>
             <div class="setting">
               <input type="checkbox" id="symbol" />
-              <label for="symbol">Symbols</label>
+              <label for="symbol"><i class="uil uil-english-to-chinese"></i> Symbols</label>
             </div>
 
             <span class="settings__title field-title">cookies</span>
             <div class="setting">
               <input type="checkbox" id="cookies_functional" checked disabled/>
-              <label for="cookies_functional">Functional</label>
+              <label for="cookies_functional"><i class="uil uil-puzzle-piece"></i> Functional</label>
             </div>
             <div class="setting">
               <input type="checkbox" id="cookies_statistics" disabled/>
-              <label for="cookies_statistics">Statistics</label>
+              <label for="cookies_statistics"><i class="uil uil-chart-pie-alt"></i> Statistics</label>
             </div>
             <div class="setting">
               <input type="checkbox" id="cookies_marketing" disabled/>
-              <label for="cookies_marketing">Marketing</label>
+              <label for="cookies_marketing"><i class="uil uil-crosshairs"></i> Marketing</label>
             </div>
 
           </div>
@@ -536,7 +587,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                 <?php include("./widgets/3droom/index.php"); ?>
               </div>
               <div class="about--options">
-                <a href="../careers/team/">
+                <a href="https://aliev.io/page/careers/list/">
                   <h3>Our Team</h3>
                 </a>
                 <a href="#0">
@@ -729,12 +780,64 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
   $("#chat-circle").click(function() {    
     $("#chat-circle").toggle('scale');
     $(".ai-box").toggle('scale');
-  })
+  });
     
   $(".ai-box-toggle").click(function() {
     $("#chat-circle").toggle('scale');
     $(".ai-box").toggle('scale');
-  })
+  });
+
+  //Apps
+
+  //Click event handler to toggle dropdown
+  (function () {
+    $('.aev-apps-menu').click(function () {
+      event.stopPropagation();
+      $('.aev-app-launcher').toggle();
+    });
+    //Hide the launcher if visible
+    $(document).click(function () {
+      $('.aev-app-launcher').hide();
+    });
+    $('.aev-user-badge').click(function () {
+      $('.aev-app-launcher').hide();
+    });
+
+    //Prevent hiding on click inside app launcher
+    $('.aev-app-launcher').click(function (event) {
+      event.stopPropagation();
+    });
+
+    return;
+
+  }).call(this);
+
+
+
+  //Profile
+  //Click event handler to toggle dropdown
+  (function () {
+    $('.aev-user-badge').click(function () {
+      event.stopPropagation();
+      $('.aev-profile-options').toggle();
+    });
+    //Hide the launcher if visible
+    $(document).click(function () {
+      $('.aev-profile-options').hide();
+    });
+    $('.aev-apps-menu').click(function () {
+      $('.aev-profile-options').hide();
+    });
+
+
+    //Prevent hiding on click inside app launcher
+    $('.aev-profile-options').click(function (event) {
+      event.stopPropagation();
+    });
+
+    return;
+
+  }).call(this);
 
   // Languages Dropdown
   function create_custom_dropdowns() {
@@ -798,6 +901,19 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
         var text = $(this).data('display-text') || $(this).text();
         $(this).closest('.dropdown-select').find('.current').text(text);
         $(this).closest('.dropdown-select').prev('select').val($(this).data('value')).trigger('change');
+    });
+
+    //FadeIn&Out for .aev-user-panel
+    $(document).ready(function() {
+        $('.aev-apps-menu, .aev-user-badge').click(function() {
+            $('.aev-notifications').fadeOut(1000);
+        });
+
+        $(document).click(function(event) {
+            if (!$(event.target).closest('.aev-apps-menu, .aev-user-badge').length) {
+                $('.aev-notifications').fadeIn(1000);
+            }
+        });
     });
 
     // Keyboard events

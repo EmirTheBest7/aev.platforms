@@ -66,7 +66,7 @@ var Terminal = Terminal || function (cmdLineContainer, outputContainer) {
   ];
 
   const TOOLS_ = [
-    'currency', 'crypto', 'domain', 'editor', 'donate', 'qr'
+    'currency', 'crypto', 'domain', 'editor', 'donate', 'qr', 'math'
   ];
 
   const ADMIN_ = [
@@ -277,6 +277,9 @@ var Terminal = Terminal || function (cmdLineContainer, outputContainer) {
           break;
         case 'qr':
           output(window.location.href = 'Tools/qr/');
+          break;
+        case 'math':
+          output(window.location.href = 'Tools/math/');
           break;
         /* Tools */
 
