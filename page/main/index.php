@@ -159,13 +159,17 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
     <div class="aev-app-launcher">
       <div class="apps">
         <ul class="first-set">
-          <li><a href="https://aliev.io/home/profile/"><img style="border-radius: 50%; padding: 7px;" src="<?php if(isset($_SESSION["token_id"])){ echo $_SESSION['user_photo'];} else {echo "https://aliev.io/_assets/images/avatar.png";}  ?>" /><span>Account</span></a></li>
-          <li><a href="#"><img src="./img/icons/timeline.svg" /><span>Space</span></a></li>
-          <li><a href="#"><img src="./img/icons/maps.svg" /><span>Maps</span></a></li>
-          <li><a href="#"><img src="./img/icons/messenger.svg" /><span>Messenger</span></a></li>
-          <li><a href="#"><img src="./img/icons/video.svg" /><span>Videos</span></a></li>
-          <li><a href="#"><img src="./img/icons/hester.svg" /><span>HesterGPT</span></a></li>
-          <li><a href="#"><img src="./img/icons/Cloudshot.svg" /><span>_API</span></a></li>
+          <li><a href="https://aliev.io/home/profile/" target="_blank"><img style="border-radius: 50%; padding: 7px;" src="<?php if(isset($_SESSION["token_id"])){ echo $_SESSION['user_photo'];} else {echo "https://aliev.io/_assets/images/avatar.png";}  ?>" /><span>Account</span></a></li>
+          <li><a href="https://aliev.io/home/timeline/" target="_blank"><img src="./img/icons/timeline.svg" /><span>Space</span></a></li>
+          <li><a href="https://aliev.io/page/maps/" target="_blank"><img src="./img/icons/maps.svg" /><span>Maps</span></a></li>
+          <li><a href="https://aliev.io/home/messenger/" target="_blank"><img src="./img/icons/messenger.svg" /><span>Messenger</span></a></li>
+          <li><a href="https://aliev.io/home/videos/" target="_blank"><img src="./img/icons/video.svg" /><span>Videos</span></a></li>
+          <li><a href="https://aliev.io/page/hester/" target="_blank"><img src="./img/icons/hester.svg" /><span>HesterGPT</span></a></li>
+          <li><a href="https://aliev.io/home/finance/" target="_blank"><img src="./img/icons/Plant.svg" /><span>Finance</span></a></li>
+          <li><a href="https://aliev.io/home/_api/UI/" target="_blank"><img src="./img/icons/Cloudshot.svg" /><span>_API</span></a></li>
+          <li><a href="https://aliev.io/home/_api/Docs/" target="_blank"><img src="./img/icons/Book.svg" /><span>Docs</span></a></li>
+          <li><a href="https://aliev.io/page/updates/" target="_blank"><img src="./img/icons/Paste.svg" /><span>Journal</span></a></li>
+          <li><a href="#" target="_blank"><img src="./img/icons/Folder.svg" /><span>App</span></a></li>
         </ul>
       </div>
     </div>
