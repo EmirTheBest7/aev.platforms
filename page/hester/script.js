@@ -5,7 +5,7 @@ const typingForm = document.querySelector(".typing-form"),
   toggleThemeButton = document.getElementById("toggle-theme-button"),
   deleteChatButton = document.getElementById("delete-chat-button"),
   suggestions = document.querySelectorAll(".suggestion-list .suggestion"),
-  API_KEY = "", //Replace here Your API_KEY
+  API_KEY = "AIzaSyArssjkfyMCF9JiH_gQtLTNkBvQIHDHcs8", //Replace here Your API_KEY
   API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`,
   createMessageElement = (content, ...classes) => {
     const div = document.createElement("div");
@@ -51,10 +51,12 @@ const typingForm = document.querySelector(".typing-form"),
       });
       const data = await response.json();
       if (!response.ok) throw new Error(data.error.message);
-      const apiResponse = data?.candidates[0].content.parts[0].text.replace(
+      let apiResponse = data?.candidates[0].content.parts[0].text.replace(
         /\*\*(.*?)\*\*/g,
         "$1"
       );
+      apiResponse = apiResponse.replace(/Gemini/g, "HesterGPT");
+      apiResponse = apiResponse.replace(/Google/g, "Λ L I Ξ V Platforms");
       showTypingEffect(apiResponse, textElement, incomingMessageDiv);
     } catch (error) {
       isResponseGenerating = false;
@@ -66,7 +68,7 @@ const typingForm = document.querySelector(".typing-form"),
   },
   showLoadingAnimation = () => {
     const html = `<div class="message-content">
-      <img src="https://aliev.io/page/main/img/hester.jpeg" alt="Gemini Image" class="avatar">
+      <img src="https://aliev.io/page/main/img/hester.jpeg" alt="HesterGPT Image" class="avatar">
       <p class="text"></p>
       <div class="loading-indicator">
         <div class="loading-bar"></div>
