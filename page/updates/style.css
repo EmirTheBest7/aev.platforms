@@ -20,6 +20,7 @@ main {width: calc(100% - 6rem);}
 .item p:first-of-type {margin-top:0}
 .item p {padding:0px 30px;font-size:19px;line-height:26px;margin:0;margin-top:1em;}
 .item a {text-decoration:none;color:#4dc4ff;font-weight:500;font-size:0.8em;}
+.item ul {font-size: 19px; padding: 0 45px;}
 
 .heart:hover {box-shadow:0 1px 0 0 rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.1)}
 .heart #favorite {fill:#636363}
