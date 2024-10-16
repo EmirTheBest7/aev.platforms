@@ -1,0 +1,27 @@
+{
+    "apps": [
+      { "name": "ΛΞV Account", "url": "https://aliev.io/home/auth/" },
+      { "name": "ΛΞV Space", "url": "https://aliev.io/home/timeline/" },
+      { "name": "ΛΞV Maps", "url": "https://aliev.io/page/maps/" },
+      { "name": "ΛΞV Messenger", "url": "https://aliev.io/home/messenger/" },
+      { "name": "ΛΞV Videos", "url": "https://aliev.io/home/videos/" },
+      { "name": "HesterGPT Lite", "url": "https://aliev.io/page/hester/" },
+      { "name": "HesterGPT Pro", "url": "#Empty" },
+      { "name": "ΛΞV Finance", "url": "https://aliev.io/home/finance/" },
+      { "name": "ΛΞV _API", "url": "https://aliev.io/home/_api/UI/" },
+      { "name": "ΛΞV _API", "url": "https://aliev.io/home/_api/Docs/" },
+      { "name": "ΛΞV Journal", "url": "https://aliev.io/page/updates" },
+      { "name": "ΛΞV Contacts", "url": "https://aliev.io/page/contact" },
+      { "name": "ΛΞV Jobs", "url": "https://aliev.io/page/careers/list/" },
+      { "name": "ΛΞV Downloads", "url": "https://aliev.io/page/downloads/" },
+      { "name": "ΛΞV Investor Relations", "url": "https://aliev.io/page/investor-relations/" },
+
+      { "name": "Darknet", "url": "#Empty" },
+
+      { "name": "Instagram", "url": "https://www.instagram.com/aev.platforms/" },
+      { "name": "Telegram", "url": "https://t.me/s/aev_platforms" },
+
+      { "name": "Home Page", "url": "https://www.aliev.io" }
+    ]
+  }
+  

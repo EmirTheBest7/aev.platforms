@@ -71,6 +71,17 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
 
   <div class="aev-notifications"></div>
 
+    <!-- Spotlight -->
+	<div id="spotlight" popover>
+    <input autocomplete="off" role="combobox" spellcheck="false" aria-expanded="false"
+      aria-controls="spotlight-options" aria-activedescendant="" autofocus id="spotlight-search"
+      type="text" placeholder="Re:search..." />
+    <input aria-hidden="true" type="text" disabled readonly class="spotlight-under-text"/>
+    <div popover defaultopen id="spotlight-options" role="listbox">
+      <!-- "Options" get injected here -->
+    </div>
+  </div>
+
   <!-- PWA Modal -->
 	<div class="RccSCT7" id="RccSCT7-open">
 		<div class="RccSCT7-header">
@@ -187,7 +198,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
       <div id="login1" class="switch-group">
         
         <ul class="Navbar-menu-major">
-          <li style="text-align: center; padding: 0 14%;"><input type="text" class="m-spotlight-search" placeholder="Re:Search" disabled></li>
+          <li style="text-align: center; padding: 0 14%;"><input type="text" class="m-spotlight-search" placeholder="Re:Search"></li>
           <li class="mod-buttons flex">
             <button class="ext-sign-in-btn" onclick="settings_in()">Settings</button>
             <button class="ext-sign-in-btn" onclick="register()"> Widgets</button>
@@ -741,6 +752,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
 
   <script src="<?php echo BASE_URL . "_assets/js/core.js"; ?>"></script>
   <script src="./aev-notify.js"></script>
+  <script src="./spotlight.js"></script>
 
   <script>
 

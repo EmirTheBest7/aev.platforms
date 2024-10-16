@@ -1,3 +1,5 @@
+@import url("https://unpkg.com/open-props/open-props.min.css");
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @font-face {
     font-family: Ndot;
@@ -2432,6 +2434,88 @@ animation: icon3d 200ms infinite;
     width: 65%;
 }
 
+/* Spotlight */
+#spotlight,
+#spotlight-options {
+  border: 0;
+  padding: 0;
+  width: 48rem;
+  max-width: calc(100% - (2 * 1rem));
+  background: hsl(0 0% 10% / 0.9);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+}
+
+#spotlight {
+  top: 25%;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#spotlight-search::placeholder {
+  color: hsl(0, 0%, 47%);
+}
+
+#spotlight:has(#spotlight-options:open) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#spotlight-options {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid hsl(0, 0%, 40%);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+[data-option], .resultItem {
+  background: transparent;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: center;
+  gap: 1ch;
+  padding-left: 3rem;
+  cursor: pointer;
+  color: #f1f3f5;
+}
+
+[data-option][aria-selected="true"] {
+  background: #1971c1;
+}
+
+#spotlight-search,
+[readonly] {
+  padding: 20px;
+  width: 100%;
+  background: transparent;
+  padding-left: 50px;
+  outline: transparent;
+  color: white;
+  border: 0;
+}
+
+[readonly] {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#spotlight-options {
+  margin: 0;
+  top: calc(var(--top, 0) * 1px);
+  left: calc(var(--left, 0) * 1px);
+  max-height: 245px;
+  overflow-y: scroll;
+}
+
+
 .m-spotlight-search {
     width: 97%;
     height: 36px;
@@ -2442,6 +2526,8 @@ animation: icon3d 200ms infinite;
     color: white;
     padding-left: 20px;
 }
+
+/* Spotlight */
 
 .mod-buttons {
     justify-content: space-around;
