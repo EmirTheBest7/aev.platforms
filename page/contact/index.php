@@ -93,7 +93,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
           <p class='other entypo-mail'>
             <a href='#'>hello@aliev.io</a>
           </p>
-          <p class='other entypo-phone'>+420 000 000 000</p>
+          <p class='other entypo-phone'>+420 736 455 744</p>
           <p class='other'>CIN: 14290863</p>
         </div>
       </div>

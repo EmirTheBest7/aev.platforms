@@ -283,10 +283,6 @@ body {
     box-shadow: rgba(1, 1, 1) 0 0 0;
 }
 
-#intergramChat .banner {
-    display: none!important;
-}
-
 /* Hester GPT */
 #chat-circle {
     position: fixed;
@@ -1356,7 +1352,7 @@ body {
         right: -190px;
     }
 
-    .aev-user-panel {
+    .aev-user-panel, #spotlight {
         display: none!important;
     }
 }
@@ -2490,7 +2486,7 @@ animation: icon3d 200ms infinite;
   color: #f1f3f5;
 }
 
-[data-option][aria-selected="true"] {
+[data-option][aria-selected="true"], .resultItem:hover {
   background: #1971c1;
 }
 
