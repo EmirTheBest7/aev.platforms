@@ -283,6 +283,10 @@ body {
     box-shadow: rgba(1, 1, 1) 0 0 0;
 }
 
+#intergramChat .banner {
+    display: none!important;
+}
+
 /* Hester GPT */
 #chat-circle {
     position: fixed;
