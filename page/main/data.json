@@ -1,27 +1,28 @@
 {
     "apps": [
-      { "name": "ΛΞV Account", "url": "https://aliev.io/home/auth/" },
-      { "name": "ΛΞV Space", "url": "https://aliev.io/home/timeline/" },
-      { "name": "ΛΞV Maps", "url": "https://aliev.io/page/maps/" },
-      { "name": "ΛΞV Messenger", "url": "https://aliev.io/home/messenger/" },
-      { "name": "ΛΞV Videos", "url": "https://aliev.io/home/videos/" },
-      { "name": "HesterGPT Lite", "url": "https://aliev.io/page/hester/" },
-      { "name": "HesterGPT Pro", "url": "#Empty" },
-      { "name": "ΛΞV Finance", "url": "https://aliev.io/home/finance/" },
-      { "name": "ΛΞV _API", "url": "https://aliev.io/home/_api/UI/" },
-      { "name": "ΛΞV Docs", "url": "https://aliev.io/home/_api/Docs/" },
-      { "name": "ΛΞV Journal", "url": "https://aliev.io/page/updates" },
-      { "name": "ΛΞV Contacts", "url": "https://aliev.io/page/contact" },
-      { "name": "ΛΞV Jobs", "url": "https://aliev.io/page/careers/list/" },
-      { "name": "ΛΞV Downloads", "url": "https://aliev.io/page/downloads/" },
-      { "name": "ΛΞV Investor Relations", "url": "https://aliev.io/page/investor-relations/" },
+      { "id": "1", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Account", "url": "https://aliev.io/home/auth/" },
+      { "id": "2", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Space", "url": "https://aliev.io/home/timeline/" },
+      { "id": "3", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Maps", "url": "https://aliev.io/page/maps/" },
+      { "id": "4", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Messenger", "url": "https://aliev.io/home/messenger/" },
+      { "id": "5", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Videos", "url": "https://aliev.io/home/videos/" },
+      { "id": "6", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "HesterGPT Lite", "url": "https://aliev.io/page/hester/" },
+      { "id": "7", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "HesterGPT Pro", "url": "#Empty" },
+      { "id": "8", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Finance", "url": "https://aliev.io/home/finance/" },
+      { "id": "9", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV _API", "url": "https://aliev.io/home/_api/UI/" },
+      { "id": "10", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Docs", "url": "https://aliev.io/home/_api/Docs/" },
+      { "id": "11", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Journal", "url": "https://aliev.io/page/updates" },
+      { "id": "12", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Contacts", "url": "https://aliev.io/page/contact" },
+      { "id": "13", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Jobs", "url": "https://aliev.io/page/careers/list/" },
+      { "id": "14", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Downloads", "url": "https://aliev.io/page/downloads/" },
+      { "id": "15", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "ΛΞV Investor Relations", "url": "https://aliev.io/page/investor-relations/" },
 
-      { "name": "Darknet", "url": "#Empty" },
+      { "id": "16", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "Darknet", "url": "#Empty" },
+      { "id": "17", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "QirimTalk", "url": "https://qirimtalk.com/" },
 
-      { "name": "Instagram", "url": "https://www.instagram.com/aev.platforms/" },
-      { "name": "Telegram", "url": "https://t.me/s/aev_platforms" },
+      { "id": "18", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "Instagram", "url": "https://www.instagram.com/aev.platforms/" },
+      { "id": "19", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "Telegram", "url": "https://t.me/s/aev_platforms" },
 
-      { "name": "Home Page", "url": "https://www.aliev.io" }
+      { "id": "20", "icon": "https://aliev.io/page/main/img/icons/timeline.svg", "name": "Home Page", "url": "https://www.aliev.io" }
     ]
   }
   
