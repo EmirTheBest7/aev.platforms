@@ -211,6 +211,7 @@ h6 span {
 
 .card-back {
   transform: rotateY(180deg);
+  display: none;
 }
 
 .checkbox:checked~.card-3d-wrap .card-3d-wrapper {
