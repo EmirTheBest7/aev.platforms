@@ -1281,7 +1281,8 @@ body {
     left: 0;
     width: 30px;
     height: 4px;
-    background-color: #0f33ff
+    background-color: #0f33ff;
+    visibility: hidden;
 }
 
 .intro--banner h1 {
@@ -1352,8 +1353,13 @@ body {
         right: -190px;
     }
 
-    .aev-user-panel, #spotlight {
+    .aev-user-panel, #spotlight, .marquee {
         display: none!important;
+    }
+
+    .marquee:before,
+    .marquee:after {
+        width: 5rem;
     }
 }
 
@@ -2897,4 +2903,77 @@ select {
 
 .dropdown-select a:hover {
     color: #666;
+}
+
+/* Marquee */
+
+.marquee {
+    height: 50px;
+    background-color: #111;
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to right, #0f33ff 4px, transparent 4px) 0 0, linear-gradient(to right, #0f33ff 4px, transparent 4px) 0 100%, linear-gradient(to left, #0f33ff 4px, transparent 4px) 100% 0, linear-gradient(to left, #0f33ff 4px, transparent 4px) 100% 100%, linear-gradient(to bottom, #0f33ff 4px, transparent 4px) 0 0, linear-gradient(to bottom, #0f33ff 4px, transparent 4px) 100% 0, linear-gradient(to top, #0f33ff 4px, transparent 4px) 0 100%, linear-gradient(to top, #0f33ff 4px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: -15px;
+    right: 0;
+}
+
+.marquee:before,
+.marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.marquee-content {
+    position: absolute;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+
+.marquee-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    max-height: 100%;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.marquee-content li::after {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    content: "";
+}
+
+.marquee-content li img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+}
+
+@keyframes scrolling {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
 }

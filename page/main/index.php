@@ -446,6 +446,20 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
           <li class="l-section section section--is-active">
             <div class="intro">
               <div class="intro--banner">
+                <div class="marquee">
+                  <ul class="marquee-content">
+                    <li><img id="btc-icon" src="" alt="BTC Icon"> BTC $<span id="btc-price">0.00</span></li>
+                    <li><img id="eth-icon" src="" alt="ETH Icon"> ETH $<span id="eth-price">0.00</span></li>
+                    <li><img id="aevt-icon" src="" alt="AEVT Icon"> AEVT $<span>0.00</span></li>
+                    <li><img id="aevd-icon" src="" alt="AEVD Icon"> AEVD $<span id="aevd-price">0.00</span></li>
+                    <li><img id="usdt-icon" src="" alt="USDT Icon"> USDT $<span id="usdt-price">0.00</span></li>
+                    <li><img id="sol-icon" src="" alt="SOL Icon"> SOL $<span id="sol-price">0.00</span></li>
+                    <li><img id="ton-icon" src="" alt="TON Icon"> TON $<span id="ton-price">0.00</span></li>
+                    <li><img id="dot-icon" src="" alt="DOT Icon"> DOT $<span id="dot-price">0.00</span></li>
+                    <li><img id="sui-icon" src="" alt="SUI Icon"> SUI $<span id="sui-price">0.00</span></li>
+                    <li><img id="apt-icon" src="" alt="APT Icon"> APT $<span id="apt-price">0.00</span></li>
+                  </ul>
+                </div>
                 <!--<h1>Your next<br>interactive<br>experience</h1>-->
                 <h1>Build your<br>digital success<br>with us<span style="color: #0f33ff;">.</span></h1>
                 <button class="cta">Hire Us
@@ -802,6 +816,37 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
     $("#chat-circle").toggle('scale');
     $(".ai-box").toggle('scale');
   });
+
+  function updateCryptoData() {
+      // Fetch prices
+      fetch('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,USDT,SOL,TON,DOT,SUI,APT,USDC&tsyms=USD')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('btc-price').textContent = data.BTC.USD;
+          document.getElementById('eth-price').textContent = data.ETH.USD;
+          document.getElementById('usdt-price').textContent = data.USDT.USD;
+          document.getElementById('sol-price').textContent = data.SOL.USD;
+          document.getElementById('ton-price').textContent = data.TON.USD;
+          document.getElementById('dot-price').textContent = data.DOT.USD;
+          document.getElementById('sui-price').textContent = data.SUI.USD;
+          document.getElementById('apt-price').textContent = data.APT.USD;
+          document.getElementById('aevd-price').textContent = data.USDC.USD;
+        })
+        .catch(error => console.error('Error fetching prices:', error));
+
+      // Update icons (assuming you have them hosted somewhere, or using a public CDN)
+      document.getElementById('aevt-icon').src = 'https://github.com/EmirTheBest7/AEVT/blob/main/_assets/main-logo/logo.png?raw=true';
+      document.getElementById('aevd-icon').src = 'https://github.com/EmirTheBest7/AEVT/blob/main/_assets/min-logo/logo.png?raw=true';
+      document.getElementById('btc-icon').src = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png';
+      document.getElementById('eth-icon').src = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png';
+      document.getElementById('usdt-icon').src = 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png';
+      document.getElementById('sol-icon').src = 'https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png';
+      document.getElementById('ton-icon').src = 'https://s2.coinmarketcap.com/static/img/coins/64x64/11419.png';
+      document.getElementById('dot-icon').src = 'https://s2.coinmarketcap.com/static/cloud/img/logo/polkadot/Polkadot_Logo_Animation_64x64.gif';
+      document.getElementById('sui-icon').src = 'https://s2.coinmarketcap.com/static/img/coins/64x64/20947.png';
+      document.getElementById('apt-icon').src = 'https://s2.coinmarketcap.com/static/img/coins/64x64/21794.png';
+
+  } updateCryptoData();
 
   //Apps
 
