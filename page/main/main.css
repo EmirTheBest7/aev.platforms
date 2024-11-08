@@ -6,6 +6,15 @@
     src: url(../../_assets/fonts/Ndot-55.otf) format("opentype");
 }
 
+:root {
+    --marquee-width: 80vw;
+    --marquee-height: 50px;
+    --marquee-elements: 10;
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s); 
+}
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
