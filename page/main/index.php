@@ -170,6 +170,9 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
     <div class="aev-app-launcher">
       <div class="apps">
         <ul class="first-set">
+          <p class="aev-app-launcher-header">Web Apps</p>
+
+
           <li><a href="https://aliev.io/home/profile/" target="_blank"><img style="border-radius: 50%; padding: 7px;" src="<?php if(isset($_SESSION["token_id"])){ echo $_SESSION['user_photo'];} else {echo "https://aliev.io/_assets/images/avatar.png";}  ?>" /><span>Account</span></a></li>
           <li><a href="https://aliev.io/home/timeline/" target="_blank"><img src="./img/icons/timeline.svg" /><span>Space</span></a></li>
           <li><a href="https://aliev.io/page/maps/" target="_blank"><img src="./img/icons/maps.svg" /><span>Maps</span></a></li>
@@ -196,7 +199,7 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
               </button>
             </div>
           </div>
-          
+
         </ul>
       </div>
     </div>
