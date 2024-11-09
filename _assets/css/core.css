@@ -84,6 +84,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .hide {
   display: none!important;
 }
