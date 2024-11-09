@@ -181,6 +181,22 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
           <li><a href="https://aliev.io/home/_api/Docs/" target="_blank"><img src="./img/icons/Book.svg" /><span>Docs</span></a></li>
           <li><a href="https://aliev.io/page/updates/" target="_blank"><img src="./img/icons/Paste.svg" /><span>Journal</span></a></li>
           <li><a href="#" target="_blank"><img src="./img/icons/Folder.svg" /><span>App</span></a></li>
+
+          <div class="aev-apps-footer">
+            <div class="aev-apps-footer-container">
+              <button class="aev-apps-footer-button">
+                  <div class="aev-apps-footer-content"> <img src="https://aliev.io/page/downloads/logo/A.svg" alt="Logo" class="aev-apps-footer-logo"> 
+                    <span class="aev-apps-footer-text">aliev.io</span> 
+                  </div>
+              </button>
+              <button class="aev-apps-footer-button">
+                  <div class="aev-apps-footer-content"> <img src="https://aliev.io/page/downloads/logo/A.svg" alt="Logo" class="aev-apps-footer-logo"> 
+                    <span class="aev-apps-footer-text">All Apps</span> 
+                  </div>
+              </button>
+            </div>
+          </div>
+          
         </ul>
       </div>
     </div>
