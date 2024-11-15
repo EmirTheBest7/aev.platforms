@@ -1,0 +1,488 @@
+@import url("https://unicons.iconscout.com/release/v4.0.0/css/line.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color .6s ease, color .3s ease, border-color .6s ease
+}
+
+:root {
+  --pfcolor1: #222222;
+  --pfbackground: #141414;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  color: white;
+  background-color: #15202b
+}
+
+
+main {
+  position: relative;
+}
+
+.view-container {
+  width: 600px;
+  border: 1px solid #38444d;
+  margin: 40px auto
+}
+
+.header {
+  font-size: 18px;
+  font-weight: 800;
+  color: white
+}
+
+.secondary {
+  color: #8898a6
+}
+
+.subtext {
+  font-size: 14px;
+  color: #8898a6;
+  margin-top: 3px
+}
+
+a {
+  color: rgb(255, 174, 30);
+  text-decoration: none
+}
+
+.navigation {
+  display: grid;
+  grid-template: auto auto/60px auto;
+  padding: 8px
+}
+
+.arrow_back {
+  grid-row: 1/3;
+  align-self: center;
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative
+}
+
+.arrow_back:hover:after {
+  opacity: .1
+}
+
+.arrow_back:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255, 174, 30);
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity .3s
+}
+
+.wallpaper {
+  background-color: #3e5366;
+  height: 200px;
+  background: url(./prague.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pre-bio {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-bottom: 12px
+}
+
+.pfp {
+  background-color: salmon;
+  width: calc(130px - 2 * 4px);
+  height: calc(130px - 2 * 4px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 4px solid #15202b;
+  background-image: url(https://aliev.io/page/main/img/PragueFlow.jpg);
+  background-size: cover;
+  cursor: pointer
+}
+
+.pfp:hover:after {
+  content: "";
+  background-color: #15202b;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  opacity: .1
+}
+
+.btn {
+  font-weight: 600;
+  border: 1px solid rgb(255, 174, 30);
+  color: rgb(255, 174, 30);
+  padding: 12px 20px;
+  border-radius: 99999px;
+  cursor: pointer;
+  background-color: rgba(255, 174, 30, 0);
+  transition: background-color .2s
+}
+
+.btn:hover {
+  background-color: rgba(255, 174, 30, .1)
+}
+
+.bio {
+  padding: 15px;
+  padding-bottom: 0
+}
+
+.bio>div {
+  margin-bottom: 12px;
+  color: white
+}
+
+.tabs {
+  display: flex;
+  align-items: stretch;
+  font-weight: 700;
+  font-size: 15px;
+  color: #8898a6
+}
+
+.tabs>div {
+  flex-grow: 1;
+  text-align: center;
+  padding: 18px;
+  position: relative;
+  cursor: pointer;
+  transition: all .2s;
+  background-color: rgba(var(--accent-color-rbg), 0)
+}
+
+.tabs>div:hover {
+  color: rgb(255, 174, 30);
+  background-color: rgba(255, 174, 30, .1)
+}
+
+.selected {
+  color: rgb(255, 174, 30);
+  border-bottom: 3px solid rgb(255, 174, 30)
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  background: var(--pfbackground);
+  padding: 10px;
+  border-left: 5px solid #71aaeb;
+  border-radius: 4px;
+}
+
+.hashtag {
+  font-weight: bold;
+  color: #71aaeb;
+}
+
+.profile-container {
+  border: 1px solid #363738;
+  margin: 10px;
+  background-color: var(--pfcolor1);
+  border-radius: 12px;
+}
+.fb-profile > .fb-image-lg{
+  z-index: 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.fb-image-profile{
+  margin: -90px 10px 0px 50px;
+  z-index:9;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media(max-width: 768px){
+  
+  .fb-profile-text > h1{
+    font-weight: 700px;
+    font-size: 16px;
+  }
+  
+  .fb-image-profile{
+    margin: -45px 10px 0px 25px;
+    z-index: 9;
+    width: 20%;
+  }
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.toggle-button {
+  flex: 1;
+  margin: 5px;
+  padding: 0; /* Removed padding to ensure content fits properly */
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Grid layout for button content */
+.button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.button-image {
+  width: 100%; /* Full width of the button */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px;
+}
+
+.button-text {
+  font-size: 12px; /* Adjust size as needed */
+  margin-top: 5px; /* Space between image and text */
+}
+
+.content-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.content {
+  display: none;
+  border: 1px solid #363738;
+  margin: 10px;
+  background-color: var(--pfcolor1);
+  border-radius: 12px;
+}
+
+
+/* Post */
+
+.post {
+    display: block;
+    padding: 15px 20px 17px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    border-radius: 2px;
+    color: white;
+  }
+  
+  .post__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 11px;
+  }
+  
+  .post__autorAvatar {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #E6EDF4;
+    background-image: url(https://aliev.io/page/main/img/PragueFlow.jpg);
+    background-position: 50%;
+    background-size: contain;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .post-btn {
+    border-radius: 12px;
+    color: black;
+    background: white;
+    font-weight: bold;
+    border: none;
+    width: 95%;
+    margin: 15px auto;
+    display: block;
+    padding: 15px 0;
+  }
+  
+  .post__meta {
+    padding-left: 15px;
+  }
+  
+  .post__autorName {
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .post__time {
+    font-size: 12.5px;
+    text-align: left;
+    color: #828282;
+  }
+  
+  .post__content {
+    margin-bottom: 16px;
+  }
+  
+  .post__title {
+    margin-bottom: 15px;
+    font-size: 13px;
+    line-height: 19.006px;
+    text-align: left;
+  }
+  
+  .post__link {
+    position: relative;
+    box-sizing: border-box;
+    height: 292px;
+    border: solid 1px rgba(0, 20, 51, 0.117647);
+    border-radius: 2px;
+  }
+  
+  .post__img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .post__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 63px;
+    background-color: #fff;
+    border-top: solid 1px rgba(0, 20, 51, 0.117647);
+  }
+  
+  .caption {
+    padding: 10px 15px 11px;
+  }
+  
+  .caption__title {
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
+  .caption__link {
+    font-size: 12.5px;
+    color: #939393;
+    line-height: 12px;
+  }
+  
+  .share {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    line-height: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #2a5885;
+  }
+  
+  .share__like {
+    margin-right: 20px;
+  }
+  
+  .share__like:before {
+    display: inline-block;
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2214%22%20viewBox%3D%220%200%2016%2014%22%20style%3D%22fill%3A%233D6899%3B%22%3E%3Cpath%20d%3D%22M8%203.2C7.4-0.3%203.2-0.8%201.4%201%20-0.5%202.9-0.5%205.8%201.4%207.7%201.9%208.2%206.9%2013%206.9%2013%207.4%2013.6%208.5%2013.6%209%2013L14.5%207.7C16.5%205.8%2016.5%202.9%2014.6%201%2012.8-0.7%208.6-0.3%208%203.2Z%22%2F%3E%3C%2Fsvg%3E") no-repeat 0 0;
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 7px;
+      width: 17px;
+      height: 14px;
+      margin-top: 1px;
+      opacity: 0.35;
+      filter: alpha(opacity=35);
+    content: '';
+  }
+  
+  .share__comment {
+    margin-right: 20px;
+  }
+  
+  .share__comment:before {
+    display: inline-block;
+    vertical-align: top;
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%225%206%2014%2014%22%20style%3D%22fill%3A%233D6899%3B%22%3E%3Cpath%20d%3D%22M5%207C5%206.4%205.4%206%206%206L18%206C18.5%206%2019%206.5%2019%207L19%2015C19%2015.6%2018.6%2016%2018%2016L6%2016C5.5%2016%205%2015.5%205%2015L5%207ZM9%2016L9%2020%2014%2016%209%2016Z%22%2F%3E%3C%2Fsvg%3E") no-repeat 0 0;
+      width: 15px;
+      height: 14px;
+      margin: 2px 0 -1px;
+      padding-right: 7px;
+    content: '';
+      opacity: 0.35;
+      filter: alpha(opacity=35);
+  }
+  
+  .share__share:before {
+    display: inline-block;
+    vertical-align: top;
+        background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22fill%3A%233D6899%3B%22%3E%3Cpath%20d%3D%22M0%205.5L0%206.5C0%208%201.6%209%203%209L8%209C8.4%209%209.1%209.2%2010.7%2010.3%2011.7%2011.1%2012.9%2012%2012.9%2012L14%2012%2014%206%2014%206%2014%206%2014%200%2012.9%200C12.9%200%2011.7%200.9%2010.7%201.7%209.1%202.8%208.4%203%208%203L3%203C1.6%203%200%204%200%205.5ZM7.5%2012L6.4%209%204%209%205.3%2014C7.3%2014%207.5%2013.3%207.5%2012Z%22%2F%3E%3C%2Fsvg%3E");
+      width: 14px;
+      height: 14px;
+      margin-top: 1px;
+      opacity: 0.35;
+      filter: alpha(opacity=35);
+    content: '';
+  }
+  
+  .share__view {
+    margin-left: auto;
+  }
+  
+  .share__view:before {
+    display: inline-block;
+    vertical-align: top;
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2210%22%20viewBox%3D%221%202%2014%2010%22%20style%3D%22fill%3A%23828a99%3B%22%3E%3Cpath%20d%3D%22M8%2012C3.8%2012%201%208%201%207%201%206%203.8%202%208%202%2012.2%202%2015%206%2015%207%2015%208%2012.2%2012%208%2012ZM8%2010.5C9.9%2010.5%2011.5%208.9%2011.5%207%2011.5%205.1%209.9%203.5%208%203.5%206.1%203.5%204.5%205.1%204.5%207%204.5%208.9%206.1%2010.5%208%2010.5ZM8%208.6C7.1%208.6%206.4%207.9%206.4%207%206.4%206.1%207.1%205.4%208%205.4%208.9%205.4%209.6%206.1%209.6%207%209.6%207.9%208.9%208.6%208%208.6Z%22%2F%3E%3C%2Fsvg%3E") no-repeat 0 0;
+    width: 14px;
+    height: 10px;
+    margin: 2px 0 0;
+    padding-right: 5px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    content: '';
+  }
+
+  .upper-container { display: flex; justify-content: space-between; width: 100%;} .left-div { width: 60%; background-color: #4CAF50; color: white; padding: 20px; box-sizing: border-box; } .right-div { width: 20%; background-color: #f44336; color: white; padding: 20px; box-sizing: border-box; }
+
+
+  @media only screen and (max-width: 767px) {
+    /* Mobile Layout: 320px. */
+    .view-container {
+      width: 100%;
+      margin: 0;
+    }
+
+    .navigation {
+      display: none;
+    }
+  }
