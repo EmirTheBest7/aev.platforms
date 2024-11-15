@@ -38,7 +38,7 @@ include('../../../_inc/functions.php');
       </ul>
     </nav>
 
-    <div id="main">
+    <main id="main">
       <div class="view-container">
         <div class="navigation">
           <div class="arrow_back" style="font-size: 28px; "><i class="uil uil-arrow-left"></i></div>
@@ -217,115 +217,108 @@ include('../../../_inc/functions.php');
             </div>
           </div>
         </div>
-      </div>
-      <div id="content3" class="content">
-        <div class="post">
-          <div class="post__header">
-            <div class="post__autorAvatar"></div>
-            <div class="post__meta">
-              <div class="post__autorName">Prague Flow 🇨🇿 | Знакомства в Праге</div>
-              <div class="post__time">час назад</div>
-            </div>
-          </div>
-          <div class="post__content">
-            <div class="post__title">
-              <h1>Hashtags Guide</h1>
-              <p>Для публикации вашего поста, вы <strong>ОБЯЗАТЕЛЬНО</strong> должны указать в нем один из
-                нижепредставленных
-                хэштегов.</p>
-              <ul>
-                <li><span class="hashtag">#познакомлюсь@pragueflow</span> - поиск друзей и новых знакомств</li>
-                <li><span class="hashtag">#девушки_only@pragueflow</span> - хэштег только для девушек, которые хотят
-                  общаться только с
-                  девушками</li>
-                <li><span class="hashtag">#идея@pragueflow</span> - хэштег для тех, кто ищет единомышленников для
-                  какого-то проекта
-                </li>
-                <li><span class="hashtag">#учеба@pragueflow</span> - совместное изучение языков, точных наук,
-                  безвозмездная помощь в
-                  учебе и тд.</li>
-                <li><span class="hashtag">#спорт@pragueflow</span> - совместные занятия спортом и активный образ
-                  жизни
-                </li>
-                <li><span class="hashtag">#путешествие@pragueflow</span> - поиск попутчиков, совместные поездки</li>
-                <li><span class="hashtag">#мероприятие@pragueflow</span> - походы в клубы, бары, рестораны и тд.
-                </li>
-                <li><span class="hashtag">#кино@pragueflow</span> - для тех, кто ищет компанию для походов в кино
-                </li>
-                <li><span class="hashtag">#музыка@pragueflow</span> - посты, посвященные музыке</li>
-                <li><span class="hashtag">#танцы@pragueflow</span> - совместные занятия танцами</li>
-                <li><span class="hashtag">#фото@pragueflow</span> - бесплатная фото-видео съемка</li>
-                <li><span class="hashtag">#тату@pragueflow</span> - объявление о татуировках бесплатно, free price
-                  или
-                  за расходники
-                </li>
-                <li><span class="hashtag">#летсплэй@pragueflow</span> - поиск тиммейтов для онлайн игр</li>
-                <li><span class="hashtag">#игры@pragueflow</span> - квесты и настольные игры</li>
-                <li><span class="hashtag">#соседи@pragueflow</span> - поиск соседей для совместной аренды квартиры
-                  (обязательное
-                  условие - подробно рассказать о себе и о требованиях к будущим соседям)</li>
-                <li><span class="hashtag">#поиск@pragueflow</span> - поиск кого либо</li>
-                <li><span class="hashtag">#остальное@pragueflow</span> - всё не из вышеупомянутого (выгуливание псов
-                  -
-                  всё сюда)</li>
-              </ul>
-            </div>
-            <div class="post__link" style="display: none;">
-              <img class="post__img" src="#">
-              <div class="post__caption caption">
-                <div class="caption__title">1222 рубля для моих друзей!</div>
-                <div class="caption__link">share.flocktory.com</div>
+        <div id="content3" class="content">
+          <div class="post">
+            <div class="post__header">
+              <div class="post__autorAvatar"></div>
+              <div class="post__meta">
+                <div class="post__autorName">Prague Flow 🇨🇿 | Знакомства в Праге</div>
+                <div class="post__time">час назад</div>
               </div>
             </div>
+            <div class="post__content">
+              <div class="post__title">
+                <h1>Hashtags Guide</h1>
+                <p>Для публикации вашего поста, вы <strong>ОБЯЗАТЕЛЬНО</strong> должны указать в нем один из
+                  нижепредставленных
+                  хэштегов.</p>
+                <ul>
+                  <li><span class="hashtag">#познакомлюсь@pragueflow</span> - поиск друзей и новых знакомств</li>
+                  <li><span class="hashtag">#девушки_only@pragueflow</span> - хэштег только для девушек, которые хотят
+                    общаться только с
+                    девушками</li>
+                  <li><span class="hashtag">#идея@pragueflow</span> - хэштег для тех, кто ищет единомышленников для
+                    какого-то проекта
+                  </li>
+                  <li><span class="hashtag">#учеба@pragueflow</span> - совместное изучение языков, точных наук,
+                    безвозмездная помощь в
+                    учебе и тд.</li>
+                  <li><span class="hashtag">#спорт@pragueflow</span> - совместные занятия спортом и активный образ
+                    жизни
+                  </li>
+                  <li><span class="hashtag">#путешествие@pragueflow</span> - поиск попутчиков, совместные поездки</li>
+                  <li><span class="hashtag">#мероприятие@pragueflow</span> - походы в клубы, бары, рестораны и тд.
+                  </li>
+                  <li><span class="hashtag">#кино@pragueflow</span> - для тех, кто ищет компанию для походов в кино
+                  </li>
+                  <li><span class="hashtag">#музыка@pragueflow</span> - посты, посвященные музыке</li>
+                  <li><span class="hashtag">#танцы@pragueflow</span> - совместные занятия танцами</li>
+                  <li><span class="hashtag">#фото@pragueflow</span> - бесплатная фото-видео съемка</li>
+                  <li><span class="hashtag">#тату@pragueflow</span> - объявление о татуировках бесплатно, free price
+                    или
+                    за расходники
+                  </li>
+                  <li><span class="hashtag">#летсплэй@pragueflow</span> - поиск тиммейтов для онлайн игр</li>
+                  <li><span class="hashtag">#игры@pragueflow</span> - квесты и настольные игры</li>
+                  <li><span class="hashtag">#соседи@pragueflow</span> - поиск соседей для совместной аренды квартиры
+                    (обязательное
+                    условие - подробно рассказать о себе и о требованиях к будущим соседям)</li>
+                  <li><span class="hashtag">#поиск@pragueflow</span> - поиск кого либо</li>
+                  <li><span class="hashtag">#остальное@pragueflow</span> - всё не из вышеупомянутого (выгуливание псов
+                    -
+                    всё сюда)</li>
+                </ul>
+              </div>
+              <div class="post__link" style="display: none;">
+                <img class="post__img" src="#">
+                <div class="post__caption caption">
+                  <div class="caption__title">1222 рубля для моих друзей!</div>
+                  <div class="caption__link">share.flocktory.com</div>
+                </div>
+              </div>
+            </div>
+            <div class="post__share share">
+              <div class="share__like">Нравится</div>
+              <div class="share__comment">Комментировать</div>
+              <div class="share__share"></div>
+              <div class="share__view">1</div>
+            </div>
           </div>
-          <div class="post__share share">
-            <div class="share__like">Нравится</div>
-            <div class="share__comment">Комментировать</div>
-            <div class="share__share"></div>
-            <div class="share__view">1</div>
+        </div>
+        <div id="content4" class="content">
+          <div class="post">
+            <div class="post__header">
+              <div class="post__autorAvatar"></div>
+              <div class="post__meta">
+                <div class="post__autorName">Prague Flow 🇨🇿 | Знакомства в Праге</div>
+                <div class="post__time">час назад</div>
+              </div>
+            </div>
+            <div class="post__content">
+              <div class="post__title">
+                <p>Уважаемые читатели,</p><br><br>
+                <p>Мы рады сообщить, что в настоящее время мы работаем над новым материалом, который скоро будет готов.
+                  Пожалуйста, проявите немного терпения, и скоро вы сможете наслаждаться свежим и увлекательным контентом.
+                </p><br><br>
+                <p>С уважением, PragueFlow</p>
+              </div>
+              <div class="post__link" style="display: none;">
+                <img class="post__img" src="#">
+                <div class="post__caption caption">
+                  <div class="caption__title">1222 рубля для моих друзей!</div>
+                  <div class="caption__link">share.flocktory.com</div>
+                </div>
+              </div>
+            </div>
+            <div class="post__share share">
+              <div class="share__like">Нравится</div>
+              <div class="share__comment">Комментировать</div>
+              <div class="share__share"></div>
+              <div class="share__view">1</div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="content4" class="content">
-        <div class="post">
-          <div class="post__header">
-            <div class="post__autorAvatar"></div>
-            <div class="post__meta">
-              <div class="post__autorName">Prague Flow 🇨🇿 | Знакомства в Праге</div>
-              <div class="post__time">час назад</div>
-            </div>
-          </div>
-          <div class="post__content">
-            <div class="post__title">
-              <p>Уважаемые читатели,</p><br><br>
-              <p>Мы рады сообщить, что в настоящее время мы работаем над новым материалом, который скоро будет готов.
-                Пожалуйста, проявите немного терпения, и скоро вы сможете наслаждаться свежим и увлекательным контентом.
-              </p><br><br>
-              <p>С уважением, PragueFlow</p>
-            </div>
-            <div class="post__link" style="display: none;">
-              <img class="post__img" src="#">
-              <div class="post__caption caption">
-                <div class="caption__title">1222 рубля для моих друзей!</div>
-                <div class="caption__link">share.flocktory.com</div>
-              </div>
-            </div>
-          </div>
-          <div class="post__share share">
-            <div class="share__like">Нравится</div>
-            <div class="share__comment">Комментировать</div>
-            <div class="share__share"></div>
-            <div class="share__view">1</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
 
 
     </main>
