@@ -42,8 +42,8 @@ include('../../../_inc/functions.php');
       <div class="view-container">
         <div class="navigation">
           <div class="arrow_back" style="font-size: 28px; "><i class="uil uil-arrow-left"></i></div>
-          <div class="header">Prague Flow 🇨🇿 | Знакомства в Праге</div>
-          <div class="subtext">∞ Tweets</div>
+          <div class="header">Prague Flow 🇨🇿 | Знакомства в Праге <i class="uil uil-check-circle" style=" font-size: 20px; "></i></div>
+          <div class="subtext">∞ Посты</div>
         </div>
         <div class="wallpaper">
         </div>
@@ -56,23 +56,24 @@ include('../../../_inc/functions.php');
           </div>
 
           <div>
-            <div class="header">Prague Flow 🇨🇿 | Знакомства в Праге</div>
+            <div class="header">Prague Flow 🇨🇿 | Знакомства в Праге <i class="uil uil-check-circle" style=" font-size: 20px; "></i></div>
             <div class="subtext">TG: @pragueflow</div>
           </div>
 
           <div>
             🚀 🇨🇿 Дружба и общение русскоязычных жителей Праги и Чехии
             <br><br>
-            Тексты и фото присылать 👉 <a href="https://t.me/Ksenia97_uwu">[Админ]</a> или скоро можно будет публиковать прямо на сайте
+            Тексты и фото присылать 👉 <a href="https://t.me/Ksenia97_uwu">[Админ]</a> или 
+            скоро можно будет публиковать прямо на <a href="https://aliev.io/page/services/pragueflow/">сайте</a>.
             <br><br>
             Автор анонимный, ответы и реакции в комментариях 💬
             <br><br>
             Также Вы можете писать в живом чате t.me/pragueflow_chat
             <br><br>
-            <i class="uil uil-user-exclamation"></i> Админ @Ksenia97_uwu, @emirmain
+            <i class="uil uil-user-exclamation"></i> Админ <a href="https://t.me/Ksenia97_uwu">@Ksenia97_uwu</a>, <a href="https://t.me/emirmain">@emirmain</a>
           </div>
           <div><a href="https://t.me/pragueflow_chat/">t.me/pragueflow_chat/</a>
-            <span class="secondary">Joined March 2021</span></div>
+            <span class="secondary">Подпишитесь!</span></div>
 
           <div>
           ∞ <span class="secondary">Following</span>
@@ -81,10 +82,10 @@ include('../../../_inc/functions.php');
         </div>
 
         <div class="tabs">
-          <div class="selected">Tweets</div>
-          <div>Tweets & replies</div>
-          <div>Media</div>
-          <div>Likes</div>
+          <div class="selected">Главное</div>
+          <div>Посты и ответы</div>
+          <div>Медиа</div>
+          <div>Лайки</div>
         </div>
 
         <button class="post-btn" onclick="javascript:location.href='https://t.me/Ksenia97_uwu'"><i class="uil uil-comment"></i> Предложить новость</button>
