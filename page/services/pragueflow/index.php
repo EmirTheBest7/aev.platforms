@@ -93,25 +93,25 @@ include('../../../_inc/functions.php');
         <div class="button-container">
           <button class="toggle-button" onclick="toggleContent('content1')">
             <div class="button-content">
-              <img src="ZMtPs0-zbR8.jpeg" alt="Button Image" class="button-image">
+              <img src="./rules.png" alt="Button Image" class="button-image">
               <span class="button-text">Правила</span>
             </div>
           </button>
           <button class="toggle-button" onclick="toggleContent('content2')">
             <div class="button-content">
-              <img src="ZMtPs0-zbR8.jpeg" alt="Button Image" class="button-image">
+              <img src="./recommendation.png" alt="Button Image" class="button-image">
               <span class="button-text">Рекомендации</span>
             </div>
           </button>
           <button class="toggle-button" onclick="toggleContent('content3')">
             <div class="button-content">
-              <img src="ZMtPs0-zbR8.jpeg" alt="Button Image" class="button-image">
+              <img src="./hashtag.png" alt="Button Image" class="button-image">
               <span class="button-text">Хэштеги</span>
             </div>
           </button>
           <button class="toggle-button" onclick="toggleContent('content4')">
             <div class="button-content">
-              <img src="ZMtPs0-zbR8.jpeg" alt="Button Image" class="button-image">
+              <img src="./bulb.png" alt="Button Image" class="button-image">
               <span class="button-text">Полезное</span>
             </div>
           </button>
