@@ -14,7 +14,14 @@ window.addEventListener("blur", () => {
   //random title, switch each second from AEV to random title
 })
 
-
+//Hide All errors from browser
+if (typeof console._commandLineAPI !== 'undefined') {
+  console.API = console._commandLineAPI;
+} else if (typeof console._inspectorCommandLineAPI !== 'undefined') {
+  console.API = console._inspectorCommandLineAPI;
+} else if (typeof console.clear !== 'undefined') {
+  console.API = console;
+}
 
 $('#toggle').click(function() {
   $(this).toggleClass('is-active');
