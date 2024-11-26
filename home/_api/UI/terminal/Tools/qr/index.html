@@ -11,9 +11,25 @@
 <!-- partial:index.partial.html -->
 <input id="text" type="text" value="#EMPTY" style="width:200px" class="mt-4" />
 <div id="qrcode" style="width:200px; height:200px; margin-top:15px;"></div>
+<button class="button" style="top: 20px; position: relative; border: none;" onclick="downloadFile()"></button>
 <!-- partial -->
   <script src='https://cdn.jsdelivr.net/gh/baroninn/qrcodejs@master/jquery.min.js'></script>
 <script src='https://cdn.jsdelivr.net/gh/baroninn/qrcodejs@master/qrcode.js'></script><script  src="./script.js"></script>
+
+<script>
+function downloadFile() {
+    const fileName = 'SmartyExt.zip'; // Replace with your actual file name
+    const filePath = '/SmartyQR/' + fileName; // Replace with the correct file path
+
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+
 
 </body>
 </html>
