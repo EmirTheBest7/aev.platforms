@@ -225,14 +225,6 @@ body.hide-header .header {
   gap: 0.75rem;
 }
 
-.send-icon {
-  margin: 8px; 
-  background: blue; 
-  height: 40px; 
-  width: 40px; 
-  border: 1px solid gray;
-}
-
 .btn-top-div {
   display: flex; 
   position: fixed; 
@@ -296,9 +288,12 @@ body.hide-header .header {
   position: absolute;
   right: 0;
   outline: none;
-  border: none;
   color: var(--text-color);
-  background: none;
+  margin: 8px;
+  background: blue;
+  height: 40px;
+  width: 40px;
+  border: 1px solid gray;
 }
 .dis-text {
   font-size: 0.85rem;
@@ -342,6 +337,14 @@ body.hide-header .header {
     font-size: 0.75rem;
     margin-top: 0.5rem;
   }
+
+  .typing-area .input-wrapper .icon {
+    margin: 5px; 
+    background: blue;
+    height: 40px; 
+    width: 40px; 
+    border: 1px solid gray;
+  }
 }
 
 /* Support Assistant Mode */
@@ -350,9 +353,9 @@ body.hide-header .header {
     display: none!important;
   }
 
-  .send-icon {
+  .typing-area .input-wrapper .icon {
     margin: 5px; 
-    background: blue; 
+    background: blue;
     height: 40px; 
     width: 40px; 
     border: 1px solid gray;

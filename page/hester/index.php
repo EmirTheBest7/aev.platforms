@@ -66,7 +66,7 @@ session_start();
   <form action="#" class="typing-form">
     <div class="input-wrapper">
       <input type="text" class="typing-input" placeholder="Enter a Prompt here. {API Key must be included.}" required>
-      <button class="send-icon icon"><i class="fa-regular fa-paper-plane"></i></button>
+      <button class="icon"><i class="fa-regular fa-paper-plane"></i></button>
     </div>
     <div class="actions-buttons">
       <i id="toggle-theme-button" class="icon fa-regular fa-sun"></i>
