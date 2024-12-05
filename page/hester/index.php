@@ -70,6 +70,7 @@ session_start();
     </div>
     <div class="actions-buttons">
       <i id="toggle-theme-button" class="icon fa-regular fa-sun"></i>
+      <i id="access-mic-button" class="icon uil uil-microphone-slash"></i>
       <i id="delete-chat-button" class="icon fa-solid fa-trash-can"></i>
     </div>
   </form>

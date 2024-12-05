@@ -349,7 +349,7 @@ body.hide-header .header {
 
 /* Support Assistant Mode */
 @media (max-height: 400px) and (max-width: 300px) {
-  .dis-text, .btn-top-div, .suggestion-list {
+  .dis-text, .btn-top-div, .suggestion-list, .access-mic-button {
     display: none!important;
   }
 
