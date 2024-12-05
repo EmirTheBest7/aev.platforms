@@ -32,10 +32,10 @@ session_start();
   </h4>
 
   <select data-menu>
-    <option>HesterGPT v1.5</option>
-    <option selected>HesterGPT 1o</option>
+    <option selected>HesterGPT v1.5</option>
+    <option>HesterGPT 1o</option>
   </select>
-  
+
   <ul class="suggestion-list">
     <li class="suggestion">
       <h4 class="text">
