@@ -11,7 +11,7 @@
   --text-color: #e3e3e3;
   --subtitle-color: #828282;
   --placegilder-color: #a6a6a6;
-  --primary-color: #242424;
+  --primary-color: rgb(24, 28, 31);
   --secondary-color: #383838;
   --secondary-hover-color: #444;
 }
@@ -225,6 +225,14 @@ body.hide-header .header {
   gap: 0.75rem;
 }
 
+.send-icon {
+  margin: 8px; 
+  background: blue; 
+  height: 40px; 
+  width: 40px; 
+  border: 1px solid gray;
+}
+
 .btn-top-div {
   display: flex; 
   position: fixed; 
@@ -340,5 +348,13 @@ body.hide-header .header {
 @media (max-height: 400px) and (max-width: 300px) {
   .dis-text, .btn-top-div, .suggestion-list {
     display: none!important;
+  }
+
+  .send-icon {
+    margin: 5px; 
+    background: blue; 
+    height: 40px; 
+    width: 40px; 
+    border: 1px solid gray;
   }
 }
