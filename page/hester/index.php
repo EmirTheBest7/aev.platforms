@@ -30,6 +30,12 @@ session_start();
   <h4 class="subtitle">
     How can I help you today?
   </h4>
+
+  <select data-menu>
+    <option>HesterGPT v1.5</option>
+    <option selected>HesterGPT 1o</option>
+  </select>
+  
   <ul class="suggestion-list">
     <li class="suggestion">
       <h4 class="text">
@@ -77,6 +83,7 @@ session_start();
   <p class="dis-text">HesterGPT can make mistakes. Check important info.</p>
 </div>
 <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
   <script  src="./script.js"></script>
 
 </body>
