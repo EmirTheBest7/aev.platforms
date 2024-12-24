@@ -124,6 +124,23 @@ include('../../_inc/functions.php');
                                         </div>
                                     </div>
                                 </li>
+                                <li class="thumb-wrap">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="branded">
+                                                <img style="filter: invert(1);"
+                                                    src="<?php echo BASE_URL . "page/downloads/logo/ALIEV_3D.png"; ?>">
+                                            </div>
+                                            <div class="content">
+                                                <div class="main" style=" color: white; border-top: 1px solid white;   position: relative;padding: 6px 15px;height: 36px;display: flex;justify-content: space-between;">
+                                                    <div>Logo_3D</div>
+                                                    <button onclick="window.open('./logo/ALIEV_3D.png')"
+                                                        class="btn ripple-button" style="padding: 0;">Download</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
 
                             </ul>
                         </div>
