@@ -60,16 +60,13 @@
             color: var(--text-color);
         }
         button {
-            background-color: #4CAF50;
+            background: linear-gradient(10deg, #217bfe 0%, #ac87eb 30%, #ee4d5d 100%);
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 1em;
-        }
-        button:hover {
-            background-color: #45a049;
         }
         img {
             max-width: 100%;
@@ -78,7 +75,13 @@
             border-radius: 5px;
         }
 
-        h1 {color: lime;}
+        h1 {
+            font-size: 2.7rem;
+            background: linear-gradient(10deg, #217bfe 0%, #ac87eb 30%, #ee4d5d 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -90,11 +93,12 @@
     <div class="container">
         <div class="form-container">
             <div class="form-group">
-                <h1>HesterGPT | ImageGX [Beta]</h1>
+                <h1>Avrora | ImageGX [Beta]</h1>
                 <label for="promptInput">Enter your prompt:</label>
                 <input type="text" id="promptInput" placeholder="Enter your prompt">
             </div>
             <button onclick="generateImage()">Generate Image</button>
+            <label>Generation may take some time...</label>
         </div>
         <div class="image-container" id="imageContainer">
             <!-- Generated image will be displayed here -->
