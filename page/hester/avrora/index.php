@@ -87,6 +87,7 @@
             position: absolute;
             left: 0;
             bottom: 0;
+            padding: 10px;
             width: 100%;
             color: white;
             text-align: center;

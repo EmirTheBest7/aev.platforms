@@ -20,8 +20,8 @@ session_start();
 <header class="header">
 
   <div class="btn-top-div">
-    <button class="btn-top" onClick="javascript:window.open('https://aliev.io/@Hester', '_blank');"><img src="<?php echo LOGO; ?>" alt="Λ L I Ξ V" class="logo"></button>
-    <button class="btn-top" onClick="javascript:window.open('https://t.me/Hester_EAbot', '_blank');">Telegram <i class="uil uil-telegram-alt"></i></button>
+    <button class="btn-top" onClick="javascript:window.open('https://aliev.io/@Hester', '_blank');"><img src="https://aliev.io/page/downloads/logo/A.svg" alt="Λ L I Ξ V" class="logo"></button>
+    <button class="btn-top" onClick="javascript:window.open('https://t.me/Hester_EAbot', '_blank');"><i class="uil uil-telegram-alt"></i></button>
   </div>
 
   <h2 class="title">
