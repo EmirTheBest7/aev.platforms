@@ -31,9 +31,10 @@ session_start();
     How can I help you today?
   </h4>
 
-  <select data-menu>
-    <option selected>HesterGPT v1.5</option>
-    <option>HesterGPT 1o</option>
+  <select data-menu onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+    <option selected disabled="disabled">HesterGPT v1.5</option>
+    <option disabled="disabled">HesterGPT 1o</option>
+    <option value="./avrora/">Avrora</option>
   </select>
 
   <ul class="suggestion-list">
