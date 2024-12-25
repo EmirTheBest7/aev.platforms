@@ -177,7 +177,7 @@ body.hide-header .header {
   height: 11px;
   width: 100%;
   border-radius: 0.14rem;
-  background: linear-gradient(to right, #c471f5, var(--primary-color), #c471f5);
+  /*background: linear-gradient(to right, #c471f5, var(--primary-color), #c471f5);*/
   animation: animate 3s linear infinite;
 }
 .chat-list .loading-indicator .loading-bar:last-child {
