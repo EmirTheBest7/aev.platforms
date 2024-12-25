@@ -548,11 +548,11 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                   <li class="slider--item slider--item-right">
                     <a href="#0">
                       <div class="slider--item-image">
-                        <img src="./img/IMG_7781.jpg" alt="3">
+                        <img src="./img/AVRORA.jpeg" alt="3">
                       </div>
-                      <p class="slider--item-title">EROS 💻</p>
+                      <p class="slider--item-title">Avrora 🎨 [SOON]</p>
                       <p class="slider--item-description">
-                        Family of operating systems that use the EROS kernel and are open source
+                        Your creative AI artist. Bring your imagination to life
                       </p>
                     </a>
                   </li>
@@ -587,6 +587,17 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                       <p class="slider--item-title">Cortex Browser</p>
                       <p class="slider--item-description">
                         We're on a mission man, internet free state.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="slider--item">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="./img/IMG_7781.jpg" alt="7">
+                      </div>
+                      <p class="slider--item-title">EROS 💻</p>
+                      <p class="slider--item-description">
+                        Family of operating systems that use the EROS kernel and are open source
                       </p>
                     </a>
                   </li>
