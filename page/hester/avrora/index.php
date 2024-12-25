@@ -104,12 +104,16 @@
     <div class="container">
         <div class="form-container">
             <div class="form-group">
-                <h1>Avrora | ImageGX [Beta]</h1>
+                <h1>Avrora [Beta]</h1>
                 <label for="promptInput">Enter your prompt:</label>
                 <input type="text" id="promptInput" placeholder="Enter your prompt">
             </div>
             <button onclick="generateImage()">Generate Image</button>
             <label>Generation may take some time...</label>
+
+            <div class="intro-text" style="padding: 10px; color: white; margin: 10px 0; border: 1px solid white;">
+                <p class="text custom-cursor-on-hover">Hi there! I'm <span class="intro-title">Avrora</span>, your creative AI artist. Give me a prompt, and I'll bring your imagination to life with beautiful paintings. Let's create some art together!</p>
+            </div>
         </div>
         <div class="image-container" id="imageContainer">
             <!-- Generated image will be displayed here -->

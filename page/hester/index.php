@@ -25,7 +25,7 @@ session_start();
   </div>
 
   <h2 class="title">
-    Hello, <?php echo (isset($_SESSION['username'])) ? "{".strtolower(strtok($_SESSION['username'], " "))."}" : 'Friend!'  ; ?>.
+    Hello, <?php echo (isset($_SESSION['username'])) ? "{".strtolower(strtok($_SESSION['username'], " "))."}" : 'Friend!'  ; ?>
   </h2>
   <h4 class="subtitle">
     How can I help you today?
