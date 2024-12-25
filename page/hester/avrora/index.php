@@ -82,6 +82,16 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
+        .footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -103,6 +113,10 @@
         <div class="image-container" id="imageContainer">
             <!-- Generated image will be displayed here -->
         </div>
+    </div>
+
+    <div class="footer">
+        <p>© Λ L I Ξ V Platforms.</p>
     </div>
 
     <script>
