@@ -51,7 +51,8 @@ body.hide-header .header {
 }
 .header .title {
   font-size: 2.7rem;
-  background: linear-gradient(10deg, #217bfe 0%, #ac87eb 30%, #ee4d5d 100%);
+  /*background: linear-gradient(10deg, #217bfe 0%, #ac87eb 30%, #ee4d5d 100%);*/
+  background: rgb(244, 226, 141);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -263,7 +264,8 @@ body.hide-header .header {
 }
 
 .intro-title {
-  background: linear-gradient(10deg, #217bfe 0%, #ac87eb 30%, #ee4d5d 100%);
+  /*background: linear-gradient(10deg, #217bfe 0%, #ac87eb 30%, #ee4d5d 100%);*/
+  background: rgb(244, 226, 141);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
