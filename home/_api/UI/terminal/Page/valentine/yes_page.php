@@ -12,13 +12,6 @@
         // Execute cURL request
         $response = curl_exec($ch);
 
-        // Check for errors
-        if ($response === false) {
-            echo 'Error: ' . curl_error($ch);
-        } else {
-            echo 'Message sent successfully!';
-        }
-
         // Close cURL
         curl_close($ch);
     }
