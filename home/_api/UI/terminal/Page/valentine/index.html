@@ -46,14 +46,29 @@
         function handleYesClick() {
             window.location.href = "yes_page.html";
 
+            // Telegram bot token and chat ID
+            var token = '7434012785:AAEcr8twAW7Tv-l7sDblOPd5esrlwE8yLh0';
+            var chatId = '2130023332';
+            var message = 'She said yes!';
+
             // Telegram API URL
-            var url = `https://api.telegram.org/bot7434012785:AAEcr8twAW7Tv-l7sDblOPd5esrlwE8yLh0/sendMessage?chat_id=2130023332&text=SheSaidYes!`;
+            var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
 
             // Send HTTP request
             var xhr = new XMLHttpRequest();
             xhr.open('GET', url, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        console.log('Message sent successfully');
+                    } else {
+                        console.error('Failed to send message', xhr.responseText);
+                    }
+                }
+            };
             xhr.send();
         }
+
     </script>
 </body>
 </html>
