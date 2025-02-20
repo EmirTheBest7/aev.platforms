@@ -57,6 +57,7 @@ const typingForm = document.querySelector(".typing-form"),
       );
       apiResponse = apiResponse.replace(/Gemini/g, "HesterGPT");
       apiResponse = apiResponse.replace(/Google/g, "Λ L I Ξ V Platforms");
+      apiResponse = apiResponse.replace(/google\.com/g, "aliev.io");
       showTypingEffect(apiResponse, textElement, incomingMessageDiv);
     } catch (error) {
       isResponseGenerating = false;
