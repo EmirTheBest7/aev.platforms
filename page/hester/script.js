@@ -6,7 +6,7 @@ const typingForm = document.querySelector(".typing-form"),
   deleteChatButton = document.getElementById("delete-chat-button"),
   suggestions = document.querySelectorAll(".suggestion-list .suggestion"),
   API_KEY = "AIzaSyArssjkfyMCF9JiH_gQtLTNkBvQIHDHcs8", //Replace here Your API_KEY
-  API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`,
+  API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-thinking-exp-01-21:generateContent?key=${API_KEY}`,
   createMessageElement = (content, ...classes) => {
     const div = document.createElement("div");
     div.classList.add("message", ...classes);
@@ -60,7 +60,20 @@ const typingForm = document.querySelector(".typing-form"),
       showTypingEffect(apiResponse, textElement, incomingMessageDiv);
     } catch (error) {
       isResponseGenerating = false;
-      textElement.innerText = error.message;
+      let errorMessage;
+      switch (error.message) {
+        case 'NetworkError when attempting to fetch resource.':
+          errorMessage = 'Network error: Please check your internet connection.';
+          break;
+        case 'API key not valid. Please pass a valid API key.':
+          errorMessage = 'Invalid API key: Please use a valid API key.';
+          break;
+        default:
+          errorMessage = error.message.includes('developers.google.com')
+            ? 'Error: Please check the documentation at api.aliev.io for more details.'
+            : 'An unexpected error occurred. Please try again later.';
+      }
+      textElement.innerText = errorMessage;
       textElement.classList.add("error");
     } finally {
       incomingMessageDiv.classList.remove("loading");
