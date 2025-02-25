@@ -511,10 +511,15 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                       Join Us
                   </button>
               </a>
-                <a href="#0" style="visibility: hidden;">
-                  <h3>3</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
+              <a href="#0" style="color: white; padding: 8px 15px; border-radius: 16px; border: 1px solid #282828; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/artint.jpeg);">
+                  <h3 style="margin-bottom: 0;">HesterGPT v1.6 🤖</h3>
+                  <p style="padding: 0;margin: 10px 0px;">Build v1.6 is here! Experience the next level of AI innovation.</p>
+
+                  <button class="ripple-button" style="background: rgb(3, 81, 190);color: yellow; border-radius: 8px;"
+                      onclick="window.open('https://aliev.io/page/hester/', '_blank')">
+                      🚀 Start
+                  </button>
+              </a>
               </div>
             </div>
           </li>
