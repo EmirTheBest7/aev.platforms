@@ -2587,15 +2587,46 @@ animation: icon3d 200ms infinite;
 }
 
 
-.m-spotlight-search {
-    width: 97%;
+.m-spotlight-search, .menu-ask-ai {
+    width: 100%;
     height: 36px;
     border-radius: 8px;
     border: none;
     margin-bottom: 15px;
-    background: rgb(29,29,31);
+    background: rgb(29, 29, 31);
     color: white;
     padding-left: 20px;
+}
+
+.menu-ask-ai {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    text-align: center;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.menu-ask-ai:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.menu-ask-ai:focus {
+    outline: none;
 }
 
 /* Spotlight */

@@ -217,7 +217,10 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
       <div id="login1" class="switch-group">
         
         <ul class="Navbar-menu-major">
-          <li style="text-align: center; padding: 0 14%;"><input type="text" class="m-spotlight-search" placeholder="Re:Search"></li>
+          <li style="text-align: center; padding: 0 14%;">
+            <input type="text" class="m-spotlight-search" placeholder="Re:Search">
+            <div class="menu-ask-ai"><img src="../hester/HesterGPT.svg" style=" width: 20px; margin-right: 5px; ">Ask HesterGPT</div>
+          </li>
           <li class="mod-buttons flex">
             <button class="ext-sign-in-btn" onclick="settings_in()">Settings</button>
             <button class="ext-sign-in-btn" onclick="register()"> Widgets</button>
