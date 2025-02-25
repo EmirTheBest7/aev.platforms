@@ -28,9 +28,7 @@ session_start();
     <span is="type-async" id="type-text">...</span>
     <span class="blinking-cursor">_</span>
   </h2>
-  <h4 class="subtitle">
-    How can I help you today?
-  </h4>
+  <!-- <h4 class="subtitle">How can I help you today?</h4> -->
 
   <select data-menu onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
     <option selected disabled="disabled">HesterGPT v1.6</option>
