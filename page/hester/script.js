@@ -263,3 +263,86 @@ $(document).click(e => {
       $('.select-menu').removeClass('open');
   }
 })
+
+// Text Typing Animation
+
+async function init () {
+  const node = document.querySelector("#type-text")
+  
+  await sleep(1000)
+  node.innerText = ""
+  await node.type('Hello, ')
+  
+  while (true) {
+    await node.type("Friend!");
+    await sleep(2000);
+    await node.delete("Friend!");
+
+    await node.type("User!");
+    await sleep(2000);
+    await node.delete("User!");
+
+    await node.type("Explorer!");
+    await sleep(2000);
+    await node.delete("Explorer!");
+
+    await node.type("Creator!");
+    await sleep(2000);
+    await node.delete("Creator!");
+
+    await node.type("Adventurer!");
+    await sleep(2000);
+    await node.delete("Adventurer!");
+
+    await node.type("Innovator!");
+    await sleep(2000);
+    await node.delete("Innovator!");
+
+    await node.type("Learner!");
+    await sleep(2000);
+    await node.delete("Learner!");
+
+    await node.type("Visionary!");
+    await sleep(2000);
+    await node.delete("Visionary!");
+
+    await node.type("Achiever!");
+    await sleep(2000);
+    await node.delete("Achiever!");
+
+    await node.type("Enthusiast!");
+    await sleep(2000);
+    await node.delete("Enthusiast!");
+  }
+}
+
+
+// Source code 🚩
+
+const sleep = time => new Promise(resolve => setTimeout(resolve, time))
+
+class TypeAsync extends HTMLSpanElement {
+  get typeInterval () {
+    const randomMs = 100 * Math.random()
+    return randomMs < 50 ? 10 : randomMs
+  }
+  
+  async type (text) {
+    for (let character of text) {
+      this.innerText += character
+      await sleep(this.typeInterval)
+    }
+  }
+  
+  async delete (text) {
+    for (let character of text) {
+      this.innerText = this.innerText.slice(0, this.innerText.length -1)
+      await sleep(this.typeInterval)
+    }
+  }
+}
+
+customElements.define('type-async', TypeAsync, { extends: 'span' })
+
+
+init()

@@ -25,7 +25,8 @@ session_start();
   </div>
 
   <h2 class="title">
-    Hello, <?php echo (isset($_SESSION['username'])) ? "{".strtolower(strtok($_SESSION['username'], " "))."}" : 'Friend!'  ; ?>
+    <span is="type-async" id="type-text">...</span>
+    <span class="blinking-cursor">_</span>
   </h2>
   <h4 class="subtitle">
     How can I help you today?

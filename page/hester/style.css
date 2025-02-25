@@ -252,6 +252,18 @@ body.hide-header .header {
   position: relative;
 }
 
+
+/* Typing Animatiom */
+.blinking-cursor {
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+} /* */
+
 .intro-text {
   padding: 1.25rem;
   cursor: pointer;
