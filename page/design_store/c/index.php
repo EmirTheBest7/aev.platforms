@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Products Dashboard UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
   <link rel="stylesheet" href="../_assets/css/style.css">
   <link rel="stylesheet" href="./style.css">
