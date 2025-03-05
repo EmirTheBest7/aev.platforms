@@ -66,33 +66,39 @@
         </button>
         <button class="app-content-headerButton">Add Product</button>
       </div>
+
       <div class="app-content-actions">
-        <input class="search-bar" placeholder="Search..." type="text">
+        <input class="search-bar" id="search-bar" placeholder="Search..." type="text">
         <div class="app-content-actions-wrapper">
           <div class="filter-button-wrapper">
             <button class="action-button filter jsFilter"><span>Filter</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></button>
             <div class="filter-menu">
               <label>Category</label>
-              <select>
-                <option>All Categories</option>
-                <option>Furniture</option>                     <option>Decoration</option>
-                <option>Kitchen</option>
-                <option>Bathroom</option>
+              <select id="category-filter">
+                  <option value="all">All Categories</option>
+                  <option value="furniture">Furniture</option>
+                  <option value="decoration">Decoration</option>
+                  <option value="kitchen">Kitchen</option>
+                  <option value="bathroom">Bathroom</option>
               </select>
+
               <label>Status</label>
-              <select>
-                <option>All Status</option>
-                <option>Active</option>
-                <option>Disabled</option>
+              <select id="status-filter">
+                  <option value="all">All Status</option>
+                  <option value="active">Active</option>
+                  <option value="disabled">Disabled</option>
               </select>
+
               <div class="filter-menu-buttons">
-                <button class="filter-button reset">
-                  Reset
+                <button class="filter-button reset" id="reset-button">
+                    Reset
                 </button>
-                <button class="filter-button apply">
-                  Apply
+
+                <button class="filter-button apply" id="apply-button">
+                    Apply
                 </button>
               </div>
+
             </div>
           </div>
           <button class="action-button list" title="List View">
@@ -103,7 +109,7 @@
           </button>
         </div>
       </div>
-      <div class="products-area-wrapper gridView">
+      <div class="products-area-wrapper gridView" id="products-container">
         <div class="products-header">
           <div class="product-cell image">
             Items
@@ -127,7 +133,8 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><path fill="currentColor" d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"/></svg>
             </button></div>
         </div>
-        <div class="products-row">
+
+        <div class="products-row" data-category="furniture" data-status="active">
           <button class="cell-more-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
           </button>
@@ -349,6 +356,7 @@
           <div class="product-cell price"><span class="cell-label">Price:</span>$350</div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
