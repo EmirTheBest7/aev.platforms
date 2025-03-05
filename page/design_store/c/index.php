@@ -53,7 +53,7 @@
 </div>
 
 
-<section class="content section" style="padding: 50px 0 50px 0;">
+<section class="content section" style="padding: 50px 0 50px 0; height: 100vh;">
   <div class="app-container">
     <div class="app-content">
       <div class="app-content-header">
