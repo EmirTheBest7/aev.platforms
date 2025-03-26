@@ -14,6 +14,30 @@ include('../../_inc/functions.php');
   <link rel="stylesheet" href="<?php echo BASE_URL . "_assets/css/core.css" ?>">
   <link rel="stylesheet" href="./style.css">
 
+  <style>
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px; /* Adjust spacing between buttons */
+      margin-top: 20px; /* Optional: Add top margin */
+    }
+
+    .button-container button {
+      padding: 10px 20px;
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1;
+      color: #CC3341;
+      letter-spacing: 2px;
+      border: 1px solid #CC3341;
+    }
+  </style>
+
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -40,7 +64,12 @@ include('../../_inc/functions.php');
       <h3>Get ready for</h3>
       <h1>ΛWDC25</h1>
       <h3>Prague, CZ <strong>MAY 30-31</strong></h3>
-      <h4>C O N C E P T</h4>
+      <h4>Let's Connect!</h4>
+
+      <div class="button-container">
+        <button onclick="location.href = 'https://forms.gle/Yn7FetmrzNHAdsWe8';">RSVP</button>
+        <button onclick="location.href = 'https://aliev.io/page/DC25/AWDC25.PNG';">INVITE</button>
+      </div>
     </div>
 
     </div>
