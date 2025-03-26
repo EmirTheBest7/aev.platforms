@@ -483,8 +483,10 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                   </ul>
                 </div>
                 <!--<h1>Your next<br>interactive<br>experience</h1>-->
-                <h1>Build your<br>digital success<br>with us<span style="color: #0f33ff;">.</span></h1>
-                <button class="cta">Hire Us
+                <!--<h1>Build your<br>digital success<br>with us<span style="color: #0f33ff;">.</span></h1>
+                <button class="cta">Hire Us-->
+                <h1>Shape the future<br>with us at<br><span id="dc25">ΛWDC2025</span></h1>
+                <button onclick="location.href = 'https://aliev.io/page/DC25/';"class="cta">RSVP
                   <svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg"
                     xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
                     style="enable-background:new 0 0 150 118;" xml:space="preserve">
