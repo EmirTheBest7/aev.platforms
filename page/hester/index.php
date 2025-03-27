@@ -42,23 +42,27 @@ session_start();
         Create a morning routine
         <span>to boost my productivity</span>
       </h4>
+      <i class="icon uil uil-lightbulb-alt"></i>
     </li>
     <li class="suggestion">
       <h4 class="text">Help me study
         <span>vocabulary for an exam</span>
       </h4>
+      <i class="icon uil uil-book-open"></i>
     </li>
     <li class="suggestion">
       <h4 class="text">
         Make me a personal webpage
         <span>after asking me three questions</span>
       </h4>
+      <i class="icon uil-code-branch"></i>
     </li>
     <li class="suggestion">
       <h4 class="text">
         Plan a trip
         <span>to experience Crimea like a local</span>
       </h4>
+      <i class="icon uil uil-compass"></i>
     </li>
   </ul>
 

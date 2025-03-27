@@ -83,11 +83,27 @@ body.hide-header .header {
   background: var(--secondary-color);
   text-align: center;
 }
+
+.suggestion-list .suggestion .icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  font-size: 1.3rem;
+  /*margin-top: 2.5rem;*/
+  align-self: flex-end;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  color: var(--text-color);
+  background: var(--primary-color);
+}
+
 .suggestion-list .suggestion:hover {
   background: var(--secondary-hover-color);
 }
 .suggestion-list .suggestion .text {
   font-weight: 400;
+  text-align: left;
 }
 .suggestion-list .suggestion span {
   color: var(--subtitle-color);
