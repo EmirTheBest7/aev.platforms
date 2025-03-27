@@ -3,7 +3,7 @@
 
 if (require './_inc/functions.php') {
     echo "Λ L I Ξ V Platforms | Testing Terminal</br>";
-    echo "Kernel functions connected!</br>";
+    echo "Kernel functions works properly</br>";
     echo "Local IP Adress: " . getHostByName(getHostName()) . "</br>---</br>";
 }
 

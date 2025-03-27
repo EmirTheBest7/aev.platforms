@@ -82,6 +82,9 @@ body.hide-header .header {
   border-radius: 0.75rem;
   background: var(--secondary-color);
   text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
 }
 
 .suggestion-list .suggestion .icon {
