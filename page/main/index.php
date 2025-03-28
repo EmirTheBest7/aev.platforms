@@ -394,6 +394,9 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
             <div class="setting" onclick="#">
               <label for="shortcuts"><i class="uil uil-keyboard"></i> Shortcuts</label>
             </div>
+            <div class="setting" onclick="toggleFullscreen()">
+              <label for="shortcuts"><i class="uil uil-expand-arrows-alt"></i> Fullscreen</label>
+            </div>
             <span class="settings__title field-title">Appearence</span>
             <div class="setting">
               <input type="checkbox" id="dark_mode" checked disabled/>
@@ -1016,6 +1019,19 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
             }
         });
     });
+
+    function toggleFullscreen() {
+        if (!document.fullscreenElement) {
+            // Enter fullscreen mode
+            document.documentElement.requestFullscreen();
+        } else {
+            // Exit fullscreen mode
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+        }
+    }
+
 
     // Keyboard events
     $(document).on('keydown', '.dropdown-select', function (event) {
