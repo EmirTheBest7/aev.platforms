@@ -48,6 +48,9 @@ var Terminal = Terminal || function (cmdLineContainer, outputContainer) {
     case 'Page':
       window.location.href = urlVar[0]+'/'+urlVar[1];
       break;
+    case 'Tools':
+      window.location.href = urlVar[0]+'/'+urlVar[1];
+      break;
     case '0x': // Error
       window.location.href = 'Admin/error/?'+urlVar[0]+'=' + urlVar[1];
       window.history.pushState({}, document.title, window.location.pathname);
@@ -158,8 +161,8 @@ var Terminal = Terminal || function (cmdLineContainer, outputContainer) {
         case 'cat':
           var url = args.join(' ');
           if (!url) {
-            output('Usage: ' + cmd + 'www.emiraliev.com' + '</br>');
-            output('Example: ' + cmd + 'www.emiraliev.com');
+            output('Usage: ' + cmd + 'aliev.io' + '</br>');
+            output('Example: ' + cmd + 'aliev.io');
             break;
           }
           $.get(url, function (data) {
