@@ -31,7 +31,7 @@ session_start();
   <!-- <h4 class="subtitle">How can I help you today?</h4> -->
 
   <select data-menu onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-    <option selected disabled="disabled">HesterGPT v1.6</option>
+    <option selected disabled="disabled">HesterGPT v1.7</option>
     <option disabled="disabled">HesterGPT 1o</option>
     <option value="./avrora/">Avrora</option>
   </select>
