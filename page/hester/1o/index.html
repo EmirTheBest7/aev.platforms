@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HesterGPT Voice Mode Interface</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="lava startup"></div>
+    <div class="sphere startup"></div>
+        <div class="text-container">
+            <div class="floating-text"></div>
+        </div>
+
+    <div class="wave-container">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>    
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const sphere = document.querySelector('.sphere');
+    const lava = document.querySelector('.lava');
+    const floatingText = document.querySelector('.floating-text');
+    
+    // Messages array
+    const messages = [
+        "How are you?",
+        "Wanna chat?",
+        "I'm here to help!",
+        "Feel free to ask me anything.",
+        "What's on your mind?",
+        "Let's talk!",
+        "Need help with your homework?",
+        "What's up?",
+        "My name is HesterGPT.",
+        "What's on your mind?",
+        "Got a question? Well, I've got an answer!",
+        "How's it going?",
+        "How've you been?",
+        "I'm HesterGPT",
+        "How can I help you today?"
+    ];
+
+    // Function to show text with fade animation
+    function showText(text, duration = 2000) {
+        floatingText.style.opacity = '0';
+        setTimeout(() => {
+            floatingText.textContent = text;
+            floatingText.style.opacity = '1';
+        }, 500);
+
+        setTimeout(() => {
+            floatingText.style.opacity = '0';
+        }, duration);
+    }
+
+    // Function to get random message
+    function getRandomMessage() {
+        return messages[Math.floor(Math.random() * messages.length)];
+    }
+
+    // Show initial message immediately with 5-second duration
+    showText("Hello there! My name is HesterGPT.", 5000);
+
+    // Start message cycle after initial greeting
+    setTimeout(() => {
+        setInterval(() => {
+            showText(getRandomMessage());
+        }, 7800);
+    }, 5000); // Changed from 2000 to 5000 to match initial message duration
+
+    // Rest of your startup animations
+    setTimeout(() => {
+        sphere.classList.remove('startup');
+        lava.classList.remove('startup');
+    }, 2000);
+});
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const waveContainer = document.querySelector('.wave-container');
+    
+    // Clear existing waves
+    waveContainer.innerHTML = '';
+    
+    // Generate 60 waves with random properties
+    for (let i = 0; i < 60; i++) {
+        const wave = document.createElement('div');
+        wave.className = 'wave';
+        wave.style.setProperty('--i', Math.random() * 8 + 1);
+        wave.style.animationDelay = `-${Math.random() * 0.25}s`;
+        waveContainer.appendChild(wave);
+    }
+});
+</script>
+<!-- partial -->
+  
+</body>
+</html>
