@@ -23,7 +23,7 @@ const typingForm = document.querySelector(".typing-form"),
   deleteChatButton = document.getElementById("delete-chat-button"),
   suggestions = document.querySelectorAll(".suggestion-list .suggestion"),
   API_KEY = "AIzaSyArssjkfyMCF9JiH_gQtLTNkBvQIHDHcs8",
-  API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-thinking-exp-01-21:generateContent?key=${API_KEY}`,
+  API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${API_KEY}`,
   createMessageElement = (content, ...classes) => {
     const div = document.createElement("div");
     div.classList.add("message", ...classes);
