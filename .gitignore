@@ -3,3 +3,5 @@
 .DS_Store
 *.icloud
 page/main/data.json
+.DS_Store
+page/.DS_Store

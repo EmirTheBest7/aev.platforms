@@ -64,3 +64,11 @@ modeSwitch.addEventListener('click', function () {
   document.documentElement.classList.toggle('light');
   modeSwitch.classList.toggle('active');
 });
+
+/* Preloader */
+$(document).ready(function() {
+  setTimeout(function(){
+    $('.loading-screen').css('z-index', 15).delay(1000);
+    $('.loading-screen').fadeOut().delay(2000);
+  }, 2000);
+});
