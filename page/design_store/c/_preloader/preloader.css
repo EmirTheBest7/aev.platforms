@@ -1,6 +1,6 @@
 .loading-screen {
     background-color: black;
-    color: black;
+    color: white;
     font: 1em/1.5 "DM Sans", sans-serif;
     height: 100vh;
     display: grid;
