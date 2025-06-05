@@ -1,0 +1,1 @@
+<img alt="QR platba" src="https://api.paylibo.com/paylibo/generator/czech/image?accountNumber=2601903730&bankCode=2010&amount=1.00&currency=CZK&vs=1234567890&message=ALIEV.IO&size=200"/>
