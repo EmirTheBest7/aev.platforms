@@ -503,14 +503,14 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                 <div id="globeCanvas"></div>
               </div>
               <div class="intro--options">
-              <a href="#0" style="color: white; padding: 8px 15px; border-radius: 16px; border: 1px solid #282828; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/ukr_img.webp);">
+              <a href="https://aliev.io/home/_api/UI/?Page=4ukraine" style="color: white; padding: 8px 15px; border-radius: 16px; border: 1px solid #282828; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/ukr_img.webp);">
                 <h3 style="margin-bottom: 0; ">#StopTheWar <img src="./img/ukr_flag.svg" style="width: 20px;border-radius: 2px;margin-left: 5px;"></h3>
                 <p style="padding: 0;margin: 10px 0px;">Help Ukraine win this war by donating to local charities.</p>
                 <button class="ripple-button" style="background: rgb(3, 81, 190);color: yellow; border-radius: 8px;" onclick="window.open('https://aliev.io/home/_api/UI/?Page=4ukraine', '_blank')">
                   Donate
                 </button>
               </a>
-              <a href="#0" style="color: white; padding: 8px 15px; border-radius: 16px; border: 1px solid #282828; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/prog.jpeg);">
+              <a href="https://aliev.io/page/careers/list/" style="color: white; padding: 8px 15px; border-radius: 16px; border: 1px solid #282828; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/prog.jpeg);">
                   <h3 style="margin-bottom: 0;">We Are Hiring <i class="uil uil-cube"></i></h3>
                   <p style="padding: 0;margin: 10px 0px;">New roles available in our team. Let's make something great</p>
 
@@ -519,9 +519,9 @@ if(isset($_POST['send_order']) && $_POST['send_order']==1) {
                       Join Us
                   </button>
               </a>
-              <a href="#0" style="color: white; padding: 8px 15px; border-radius: 16px; border: 1px solid #282828; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/artint.jpeg);">
-                  <h3 style="margin-bottom: 0;">HesterGPT v1.6 🤖</h3>
-                  <p style="padding: 0;margin: 10px 0px;">Build v1.6 is here! Experience the next level of AI innovation.</p>
+              <a href="https://aliev.io/page/hester/" style="color: white; padding: 8px 15px; border-radius: 16px; border: 1px solid #282828; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/artint.jpeg);">
+                  <h3 style="margin-bottom: 0;">HesterGPT v1.7 🤖</h3>
+                  <p style="padding: 0;margin: 10px 0px;">Build v1.7 is here! Experience the next level of AI innovation.</p>
 
                   <button class="ripple-button" style="background: rgb(3, 81, 190);color: yellow; border-radius: 8px;"
                       onclick="window.open('https://aliev.io/page/hester/', '_blank')">
