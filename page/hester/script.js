@@ -361,7 +361,7 @@ class TypeAsync extends HTMLSpanElement {
 customElements.define("type-async", TypeAsync, { extends: "span" });
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./_assets/js/service-worker.js')
+  navigator.serviceWorker.register('/page/hester/_assets/js/service-worker.js')
     .then(reg => console.log('Service Worker registered!', reg))
     .catch(err => console.error('Service Worker failed', err));
 }
