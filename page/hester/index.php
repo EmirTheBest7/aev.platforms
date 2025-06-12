@@ -17,7 +17,7 @@ session_start();
 
   <!-- PWA Setup -->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#0f33ff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="HesterGPT">
 
   <link rel="shortcut icon" href="./_assets/icons/favicon.ico" type="image/x-icon" />

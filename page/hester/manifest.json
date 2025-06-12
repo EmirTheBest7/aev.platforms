@@ -1,9 +1,10 @@
 {
     "name": "HesterGPT",
     "short_name": "HesterGPT",
-    "start_url": "https://aliev.io/page/hester/",
+    "start_url": "/page/hester/",
     "display": "standalone",
     "background_color": "#181c1f",
+    "theme_color": "#181c1f",
     "icons": [
       {
         "src": "./_assets/icons/icon-192x192.png",
