@@ -45,7 +45,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   z-index: 99;
-  margin: 0 5px;
+  margin: 0 10px;
   cursor: pointer;
 }
 
