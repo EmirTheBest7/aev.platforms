@@ -71,7 +71,7 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 						<div class="job-listing-header__job-details-middle">
 							<table class="job-listing-header__mata-table">
 								<tr itemprop="baseSalary" itemscope itemtype="http://schema.org/MonetaryAmount">
-									<th>Salary</th>
+									<th>Зарплата</th>
 									<td>
 										<span witemprop="currency"><i class="uil uil-crockery"></i></span>
 										<span itemprop="value"><?php echo $jobs_row['job_salary']; ?><span>
@@ -87,15 +87,15 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 									<td itemprop="address">Прага, Чехія</td>
 								</tr>
 								<tr>
-									<th>Category</th>
+									<th>Категорія</th>
 									<td itemprop="occupationalCategory">Пожирач сирочків</td>
 								</tr>
 								<tr>
-									<th>Type</th>
+									<th>Тип зайнятості</th>
 									<td itemprop="employmentType"><?php echo $jobs_row['job_type']; ?></td>
 								</tr>
 								<tr>
-									<th>Team Lead</th>
+									<th>Керівник команди</th>
 									<td>Emir A.</td>
 								</tr>
 							</table>
@@ -114,8 +114,8 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 				<h2 class="job-listing__job-description-title">Job Description</h2>
 
 				<p><?php echo $jobs_row['job_desc']; ?></p>
-				<p><strong>Job Title &amp; Location:</strong></p>
-				<p><?php echo $jobs_row['job_name']; ?> in <?php echo $jobs_row['job_location']; ?>.</p>
+				<p><strong>Локація:</strong></p>
+				<p>Прага, Чехія</p>
 				
 				<p><strong>Основні обов’язки:</strong></p>
 				<ul>
@@ -130,7 +130,7 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 				</ul>
 				<p><strong>Вимоги до кандидата:</strong></p>
 				<ul>
-					<li>Дуже красиві очі. Щоб сирочки самі розкривались у твоїх руках.</li>
+					<li><strong>Дуже красиві очі.</strong> Щоб сирочки самі розкривались у твоїх руках.</li>
 					<li>Досвід споживання сирочків в екстремальних умовах (наприклад, у ліфті, в метро, під час дзвінка клієнту).</li>
 					<li>Гнучкість язика — для глибокого аналізу глазурі.</li>
 					<li>Вміння дивитись на сирок з любов’ю, але без об’єктивізації.</li>
@@ -152,9 +152,13 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 				</ul>
 				
 				<p><strong>Як податися</strong></p>
-				<p>Надішли відео, де ти повільно їси сирочок під саундтрек із Титаніка, та CV у форматі <code>.syr</code> на пошту <strong>info@aliev.io</strong>.</p>
+				<p>Надішли відео, де ти повільно їси сирочок під саундтрек із Титаніка, та <strong>CV у форматі <code>.syr</code></strong> на пошту <strong>info@aliev.io</strong>.</p>
 
 				<strong>#СирОчіТвоєїМрії #ALIEVPlatforms #Кар’єраМрії</strong>
+
+				<div class="job-listing-header__job-details-bottom" style="justify-content: left;">
+					<a href="https://aliev.io/home/_api/UI/?Page=valentine" class="btn btn-apply">Apply Now</a>
+				</div>
 
 			</section>
 
