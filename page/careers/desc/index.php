@@ -101,7 +101,7 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 							</table>
 						</div>
 						<div class="job-listing-header__job-details-bottom">
-							<a href="https://aliev.io/home/_api/UI/?Page=valentine" class="btn btn-apply">Apply Now</a>
+							<a href="https://aliev.io/home/_api/UI/?Page=valentine" class="btn btn-apply">Подати заявку</a>
 						</div>
 					</div>
 
@@ -120,13 +120,13 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 				<p><strong>Основні обов’язки:</strong></p>
 				<ul>
 					<li>Поглинання мінімум 7 сирочків на годину.</li>
-					<li>Ведення щоденника смакових відчуттів зі словами типу «ніжний», «божественний», «містичний».</li>
+					<li>Ведення щоденника смакових відчуттів.</li>
 					<li>Медитації на тему сирка щовівторка.</li>
-					<li>Участь у внутрішньому конкурсі «Сирочок року» та blind-тестах.</li>
+					<li>Участь у внутрішньому конкурсі «Сирочок року».</li>
 					<li>Спонтанне виголошення сирочкових од у конференц-залі.</li>
 					<li>Тестування нових видів сирочків.</li>
 					<li>Глибоке занурення в сиркову філософію.</li>
-					<li>Не зраджувати сирочкам навіть під час дієти.</li>
+					<li>Не зраджувати сирочкам <strong>навіть під час дієти</strong>.</li>
 				</ul>
 				<p><strong>Вимоги до кандидата:</strong></p>
 				<ul>
@@ -134,16 +134,16 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 					<li>Досвід споживання сирочків в екстремальних умовах (наприклад, у ліфті, в метро, під час дзвінка клієнту).</li>
 					<li>Гнучкість язика — для глибокого аналізу глазурі.</li>
 					<li>Вміння дивитись на сирок з любов’ю, але без об’єктивізації.</li>
-					<li>Знання хоча б одного сиркового мемчика.</li>
+					<li><strong>Знання хоча б одного сиркового мемчика.</strong></li>
 					<li>Не боятись бути сирково-залежним.</li>
-					<li>Робити дегустації на командних мітингах.</li>
-    				<li>Вести Telegram-канал “Життя з сирочком”.</li>
+					<li><strong>Робити дегустації на командних мітингах.</strong></li>
+    				<li>Вести Telegram-канал <strong>“Життя з сирочком”.</strong></li>
 				</ul>
 
 
 				<p><strong>Бонуси:</strong></p>
 				<ul>
-					<li>Часті побачення з босом (особливо в морозильній камері).</li>
+					<li>Часті побачення з босом (особливо біля холодильника).</li>
 					<li>Ліжко у формі сирочка в chill-зоні.</li>
 					<li>Сирочковий дрес-код (піжами з принтом глазурі вітаються).</li>
 					<li>Можливість кар’єрного росту до "Сирного шамана".</li>
@@ -157,7 +157,7 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 				<strong>#СирОчіТвоєїМрії #ALIEVPlatforms #Кар’єраМрії</strong>
 
 				<div class="job-listing-header__job-details-bottom" style="justify-content: left;">
-					<a href="https://aliev.io/home/_api/UI/?Page=valentine" class="btn btn-apply">Apply Now</a>
+					<a href="https://aliev.io/home/_api/UI/?Page=valentine" class="btn btn-apply">Подати заявку</a>
 				</div>
 
 			</section>
