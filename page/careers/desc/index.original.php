@@ -63,7 +63,7 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 
 					<div class="job-listing-header__job-details">
 						<div class="job-listing-header__job-details-top">
-							<h1 class="job-listing-header__job-title" itemprop="title">Професійний пожирач сирочків</h1>
+							<h1 class="job-listing-header__job-title" itemprop="title"><?php echo $jobs_row['job_name']; ?></h1>
 							<span class="job-listing-header__company-name" itemprop="hiringOrganization">
 								<span class="job-listing-header__company-type"><?php echo $jobs_row['job_company']; ?></span>
 							</span>
@@ -73,7 +73,7 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 								<tr itemprop="baseSalary" itemscope itemtype="http://schema.org/MonetaryAmount">
 									<th>Salary</th>
 									<td>
-										<span witemprop="currency"><i class="uil uil-crockery"></i></span>
+										<span witemprop="currency">€</span>
 										<span itemprop="value"><?php echo $jobs_row['job_salary']; ?><span>
 									</td>
 								</tr>
@@ -83,12 +83,12 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 									<td itemprop="jobBenefits">2</td>
 								</tr>-->
 								<tr itemprop="jobLocation" itemscope itemtype="http://schema.org/Place">
-									<th>Локація:</th>
-									<td itemprop="address">Прага, Чехія</td>
+									<th>Location</th>
+									<td itemprop="address"><?php echo $jobs_row['job_location']; ?></td>
 								</tr>
 								<tr>
 									<th>Category</th>
-									<td itemprop="occupationalCategory">Пожирач сирочків</td>
+									<td itemprop="occupationalCategory">Software Development</td>
 								</tr>
 								<tr>
 									<th>Type</th>
@@ -96,12 +96,12 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 								</tr>
 								<tr>
 									<th>Team Lead</th>
-									<td>Emir A.</td>
+									<td><?php echo $jobs_row['job_lead']; ?></td>
 								</tr>
 							</table>
 						</div>
 						<div class="job-listing-header__job-details-bottom">
-							<a href="https://aliev.io/home/_api/UI/?Page=valentine" class="btn btn-apply">Apply Now</a>
+							<a href="mailto:hello@aliev.io" class="btn btn-apply">Apply Now</a>
 						</div>
 					</div>
 
@@ -116,45 +116,85 @@ $jobs_row = mysqli_fetch_assoc($jobs_desc);
 				<p><?php echo $jobs_row['job_desc']; ?></p>
 				<p><strong>Job Title &amp; Location:</strong></p>
 				<p><?php echo $jobs_row['job_name']; ?> in <?php echo $jobs_row['job_location']; ?>.</p>
+				<p><strong>Salary &amp; Benefits:</strong></p>
+				<p>
+					<div class="acs-desc">
+						<p>At our startup, we believe in recognizing and rewarding our team members for their hard work, dedication, and contributions. Our <strong>ACS System</strong> (ΛΞV Credit System) ensures that effort translates directly into tangible rewards. Here's what you can expect:</p>
+						<h4>1. ACS Credits:</h4>
+						<ul>
+							<li>Instead of traditional monetary bonuses, you'll earn <strong>ACS credits</strong> for completing tasks, achieving milestones, or contributing to our company's growth.</li>
+							<li>These credits serve as a digital currency within our startup ecosystem.</li>
+						</ul>
+						<h4>2. Task Completion Rewards:</h4>
+						<ul>
+							<li>Successfully complete a task, whether it's coding a feature, designing a logo, closing a sale, or organizing team events, and receive a predetermined amount of <strong>ACS credits</strong>.</li>
+						</ul>
+						<h4>3. Credit Accumulation:</h4>
+						<ul>
+							<li>Your accumulated <strong>ACS credits</strong> are stored securely in your digital wallet.</li>
+							<li>The more tasks you complete, the higher your <strong>ACS balance</strong> grows.</li>
+						</ul>
+						<h4>4. Conversion to Real Money:</h4>
+						<ul>
+							<li>The exciting part: <strong>ACS credits</strong> are convertible to real money!</li>
+							<li>Transfer your earned credits from your wallet to your bank account or preferred payment method.</li>
+						</ul>
+						<h4>5. Fairness and Transparency:</h4>
+						<ul>
+							<li>We value transparency. You'll always know the value of your contributions and the corresponding <strong>ACS credits</strong> you've earned.</li>
+						</ul>
+						<h4>6. Motivation and Recognition:</h4>
+						<ul>
+							<li><strong>ACS credits</strong> provide a tangible way to recognize and motivate you.</li>
+							<li>Whether it's a small task or a major project, every effort counts.</li>
+						</ul>
+						<h4>7. Security and Accountability:</h4>
+						<ul>
+							<li>Our system maintains a secure ledger of all transactions.</li>
+							<li>Each credit transfer is recorded, ensuring accountability and preventing misuse.</li>
+						</ul>
+						<p>Join us and let your hard work pay off! 💡💰</p>
+					</div>
+					
+					<br>
+					— 🖖 Hey buddy attitude and open culture<br><br>
+					— ⏰ Flexible working hours<br><br>
+					— 🍺 Meetups, team building activities, and other community events<br><br>
+					— 🛍️ Discounted prices on electronics thanks to our partner<br><br>
+				</p>
 				
-				<p><strong>Основні обов’язки:</strong></p>
+				<p><strong>Type of Role:</strong></p>
+				<p>This is a freelance role that includes weekends and late nights.</p>
+				<p><strong>Key Tasks and Responsibilities:</strong></p>
 				<ul>
-					<li>Поглинання мінімум 7 сирочків на годину.</li>
-					<li>Ведення щоденника смакових відчуттів зі словами типу «ніжний», «божественний», «містичний».</li>
-					<li>Медитації на тему сирка щовівторка.</li>
-					<li>Участь у внутрішньому конкурсі «Сирочок року» та blind-тестах.</li>
-					<li>Спонтанне виголошення сирочкових од у конференц-залі.</li>
-					<li>Тестування нових видів сирочків.</li>
-					<li>Глибоке занурення в сиркову філософію.</li>
-					<li>Не зраджувати сирочкам навіть під час дієти.</li>
-				</ul>
-				<p><strong>Вимоги до кандидата:</strong></p>
-				<ul>
-					<li>Дуже красиві очі. Щоб сирочки самі розкривались у твоїх руках.</li>
-					<li>Досвід споживання сирочків в екстремальних умовах (наприклад, у ліфті, в метро, під час дзвінка клієнту).</li>
-					<li>Гнучкість язика — для глибокого аналізу глазурі.</li>
-					<li>Вміння дивитись на сирок з любов’ю, але без об’єктивізації.</li>
-					<li>Знання хоча б одного сиркового мемчика.</li>
-					<li>Не боятись бути сирково-залежним.</li>
-					<li>Робити дегустації на командних мітингах.</li>
-    				<li>Вести Telegram-канал “Життя з сирочком”.</li>
-				</ul>
+					<?php 
 
+					$responsibilities = preg_split('/(?<=[.?!])\s+(?=[a-z])/i', $jobs_row['job_responsibilities']);
+					foreach ($responsibilities as $key=>$item){
+						echo "<li>$item</li>";
+					}
 
-				<p><strong>Бонуси:</strong></p>
+					?>
+				</ul>
+				<p><strong>Skills and Experience Required:</strong></p>
 				<ul>
-					<li>Часті побачення з босом (особливо в морозильній камері).</li>
-					<li>Ліжко у формі сирочка в chill-зоні.</li>
-					<li>Сирочковий дрес-код (піжами з принтом глазурі вітаються).</li>
-					<li>Можливість кар’єрного росту до "Сирного шамана".</li>
-					<li>Безлімітний доступ до VIP-сирочків, які звичайним смертним не сняться.</li>
-					<li>Власна корпоративна ложка з гравіюванням.</li>
+					<?php 
+
+					$skills = preg_split('/(?<=[.?!])\s+(?=[a-z])/i', $jobs_row['job_skills']);
+					foreach ($skills as $key=>$skill){
+						echo "<li>$skill</li>";
+					}
+
+					?>
 				</ul>
 				
-				<p><strong>Як податися</strong></p>
-				<p>Надішли відео, де ти повільно їси сирочок під саундтрек із Титаніка, та CV у форматі <code>.syr</code> на пошту <strong>info@aliev.io</strong>.</p>
-
-				<strong>#СирОчіТвоєїМрії #ALIEVPlatforms #Кар’єраМрії</strong>
+				<p><strong>How to Apply:</strong></p>
+				<p>Apply by submitting your CV to our email <span style="background:#073B4C; color:white;">hello@aliev.io</span> in absolute confidence ensuring we have all your contact
+					details including mobile telephone number and personal e-mail address.</p>
+				<p>Please note that as a member of the IOR (Institute of Recruiters) we never forward CV’s to clients
+					without having fully discussed the role with you and gained your permission to do so.</p>
+				<p>Should you not have been contacted within 5 days you can assume on this occasion you have been
+					unsuccessful.</p>
 
 			</section>
 
