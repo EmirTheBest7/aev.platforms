@@ -567,10 +567,10 @@ body {
 .aev-app-launcher-header {
     padding: 1rem 0.5rem 1rem 0.5rem;
     margin: 0;
-    font-size: 23px;
+    font-size: 18px;
     color: #cecac3;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 130%;
 }
 

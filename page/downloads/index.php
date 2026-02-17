@@ -61,7 +61,7 @@ include('../../_inc/functions.php');
             <nav class="c-tabs secondary-nav" data-toggle="c-tabs" role="navigation">
                 <ul class="c-tab--navigation secondary-nav__list">
                     <li class="c-tab--item secondary-nav__item active"><a href="#test1" class="active">Logos</a></li>
-                    <li class="c-tab--item secondary-nav__item hide"><a href="#test2">Wallpapers</a></li>
+                    <li class="c-tab--item secondary-nav__item"><a href="#test2">Wallpapers</a></li>
                     <li class="c-tab--item secondary-nav__item hide"><a href="#test3">Programs</a></li>
                     <li class="c-tab--item secondary-nav__item"><a href="#test4">Docs</a></li>
                     <li class="c-tab--slider">
@@ -157,9 +157,9 @@ include('../../_inc/functions.php');
                                             </div>
                                             <div class="content">
                                                 <div class="main" style=" color: white; border-top: 1px solid white;   position: relative;padding: 6px 15px;height: 36px;display: flex;justify-content: space-between;">
-                                                    <div>Logo_</div>
-                                                    <button onclick="window.open('./logo/ALIEV.svg')"
-                                                        class="btn ripple-button" style="padding: 0;">Download</button>
+                                                    <div>Unique</div>
+                                                    <button onclick="window.open('./wallpaper/create/')"
+                                                        class="btn ripple-button" style="padding: 0;">Create</button>
                                                 </div>
                                             </div>
                                         </div>

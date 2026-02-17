@@ -2,8 +2,6 @@
 
 include('../../_inc/functions.php');
 
-header("Location: https://aliev.io/page/DC25/");
-die();
 ?>
 
 <!DOCTYPE html>
