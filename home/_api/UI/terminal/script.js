@@ -69,7 +69,7 @@ var Terminal = Terminal || function (cmdLineContainer, outputContainer) {
   ];
 
   const TOOLS_ = [
-    'currency', 'crypto', 'domain', 'editor', 'donate', 'qr', 'gtin', 'math'
+    'currency', 'crypto', 'domain', 'editor', 'donate', 'qr', 'math'
   ];
 
   const ADMIN_ = [
@@ -267,7 +267,7 @@ var Terminal = Terminal || function (cmdLineContainer, outputContainer) {
           output(window.location.href = 'Tools/currency/');
           break;
         case 'gtin':
-          output(window.location.href = 'Tools/gtin/');
+          output(window.location.href = 'Page/gtin/');
           break;
         case 'crypto':
           output(window.location.href = 'Tools/crypto/');
