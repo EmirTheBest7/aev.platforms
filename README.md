@@ -1,4 +1,8 @@
-# aev.platforms
+# ALIEV.IO – Full-Stack Enterprise Solutions Platform
+
+A high-performance IT business ecosystem built for scalability and market expansion. Engineered with a focus on modern UI/UX, robust database security architectures, and integrated social-media-driven lead generation. Designed to bridge the gap between complex enterprise data and seamless user engagement.
+
+---
 
 📌 Important Links: 
 
