@@ -1,24 +1,68 @@
-<div align="center">
-	<h1>ALIEV.IO – Full-Stack Enterprise Solutions Platform</h1>
-	<img src="https://github.com/user-attachments/assets/23c95aae-c0cc-4ac7-b7a8-0aac1b335c2f" /><br>
-</div>
 
-## 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e18ad66f-8af5-4b0b-af63-995c4494b4b2"  alt="ALIEV.IO" width="120"> 
 
-A high-performance IT business ecosystem built for scalability and market expansion. Engineered with a focus on modern UI/UX, robust database security architectures, and integrated social-media-driven lead generation. Designed to bridge the gap between complex enterprise data and seamless user engagement.
+</p>
 
-## 
+<p align="center">
+  <strong>// One digital platform to rule them all. //</strong>
+</p>
 
-📌 Important Links: 
+<p align="center">
+  Build. Automate. Deploy. Scale.
+</p>
 
-[Logo]
-https://aliev.io/page/downloads/logo/ALIEV.svg
+<p align="center">
+  <a href="https://docs.aliev.io"><strong>Documentation</strong></a>
+  ·
+  <a href="https://aliev.io">Website</a>
+  ·
+  <a href="https://github.com/EmirTheBest7/aliev.io/discussions">Community</a>
+  ·
+  <a href="https://github.com/EmirTheBest7/aliev.io/issues">Issues</a>
+</p>
 
-[Docs] 
-https://aliev.io/home/_api/Docs/
+---
 
-[Antitup]
-https://aliev.io/home/_api/UI/?Page=antitup
+## About
 
-[Tasks | Google Disk]
-https://docs.google.com/spreadsheets/d/1pkir_xPHe1FbVHQaRXo3UyEiCShlq9_ZreY2RY1fHLg/edit?usp=sharing
+ALIEV.IO is an open platform for building modern digital systems.
+
+Whether you're creating internal tools, web applications, APIs, automation, infrastructure, or something entirely new, ALIEV.IO provides a single foundation that grows with your ideas.
+
+## Documentation
+
+Getting started is simple.
+
+- Installation
+- Quick Start
+- Concepts
+- Architecture
+- API
+- Deployment
+- Contributing
+
+Read the full documentation at **docs.aliev.io**.
+
+## Philosophy
+
+Software shouldn't feel fragmented.
+
+One platform.
+
+One ecosystem.
+
+Endless possibilities.
+
+## Contributing
+
+ALIEV.IO is open source and community-driven.
+
+Bug reports, ideas, discussions, documentation improvements, and pull requests are always welcome.
+
+If you'd like to contribute, start with the documentation and the Contributing Guide.
+
+## License
+
+MIT © ALIEV.IO Contributors
+
